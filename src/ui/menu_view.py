@@ -68,12 +68,10 @@ class MenuView(arcade.View):
         )
         v_box.add(self.message_label)
 
-        anchor = arcade.gui.UIAnchorWidget(
-            anchor_x="center",
-            anchor_y="center",
-            child=v_box
-        )
-        self.ui_manager.add(anchor)
+        # arcade 2.6+: UIAnchorLayout remplace UIAnchorWidget
+        anchor_layout = arcade.gui.UIAnchorLayout()
+        anchor_layout.add(child=v_box, anchor_x="center", anchor_y="center")
+        self.ui_manager.add(anchor_layout)
 
     def set_message(self, message: str):
         """Met à jour le message d'état du menu."""
