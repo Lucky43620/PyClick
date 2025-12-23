@@ -6,19 +6,22 @@ import random
 from typing import Dict, List, Optional
 from src.systems.stats_system import StatsContainer, CombatCalculator
 from src.systems.item_system import Item, ItemGenerator
+from src.core.difficulty import DifficultySettings
 
 class Enemy:
     """Représente un ennemi en combat"""
 
-    def __init__(self, enemy_data: Dict, tier_data: Dict):
+    def __init__(self, enemy_data: Dict, tier_data: Dict, difficulty: DifficultySettings,
+                 player_level: int, recommended_level: int):
         self.id: str = enemy_data["id"]
         self.name: str = enemy_data["name"]
         self.is_boss: bool = enemy_data.get("is_boss", False)
         self.tier: str = enemy_data["tier"]
+        self.recommended_level: int = recommended_level
 
         # Stats
         self.stats: StatsContainer = StatsContainer()
-        self._init_stats(enemy_data, tier_data)
+        self._init_stats(enemy_data, tier_data, difficulty, player_level)
 
         # Loot (nouveau format)
         loot_data = enemy_data.get("loot", {})
@@ -31,34 +34,32 @@ class Enemy:
 
         # XP basé sur le tier (TRÈS réduit - hardcore)
         tier_num = int(tier_data.get("base_power", 10))
-        self.xp_reward: int = enemy_data.get("xp", max(3, tier_num // 2))
+        base_xp = enemy_data.get("xp", max(3, tier_num // 2))
+        self.xp_reward: int = max(1, int(base_xp * difficulty.reward_xp_mult))
 
         # Status effects
         self.debuffs: List[Dict] = []
 
-    def _init_stats(self, enemy_data: Dict, tier_data: Dict):
-        """Initialise les stats de l'ennemi basé sur le tier"""
-        # Les stats sont dans un sous-objet dans le JSON
+    def _init_stats(self, enemy_data: Dict, tier_data: Dict,
+                    difficulty: DifficultySettings, player_level: int):
+        """Initialise les stats de l'ennemi basé sur le tier et la difficulté"""
         enemy_stats = enemy_data.get("stats", {})
+        recommended_level = tier_data.get("recommended_level", 1)
 
-        # Utiliser les stats du JSON ou les valeurs par défaut du tier
-        self.stats.hp_max = enemy_stats.get("hp", tier_data.get("enemy_hp", 40))
+        scaled = difficulty.scaled_enemy_stats(
+            enemy_stats,
+            player_level,
+            recommended_level,
+            self.is_boss
+        )
+
+        self.stats.hp_max = scaled["hp"]
         self.stats.hp_current = self.stats.hp_max
-        self.stats.atk = enemy_stats.get("atk", tier_data.get("enemy_atk", 6))
-
-        # Stats additionnelles de l'ennemi
-        self.stats.def_stat = enemy_stats.get("def", 0)
-        self.stats.armure = enemy_stats.get("armor", 0)
-        self.stats.vitesse_attaque = enemy_stats.get("attack_speed", 1.0)
-        self.stats.crit_chance = enemy_stats.get("crit_chance", 0)
-
-        # Boss bonus (ENCORE PLUS FORT - hardcore)
-        if self.is_boss:
-            self.stats.hp_max *= 8.0
-            self.stats.hp_current = self.stats.hp_max
-            self.stats.atk *= 2.0
-            self.stats.def_stat *= 3.0
-            self.stats.armure *= 2.0
+        self.stats.atk = scaled["atk"]
+        self.stats.def_stat = scaled["def"]
+        self.stats.armure = scaled["armor"]
+        self.stats.vitesse_attaque = scaled["attack_speed"]
+        self.stats.crit_chance = scaled["crit_chance"]
 
     def take_damage(self, damage: float) -> bool:
         """
@@ -78,9 +79,10 @@ class Enemy:
 class CombatSystem:
     """Gère le système de combat automatique"""
 
-    def __init__(self, data_manager, item_generator: ItemGenerator):
+    def __init__(self, data_manager, item_generator: ItemGenerator, difficulty: DifficultySettings):
         self.data = data_manager
         self.item_generator = item_generator
+        self.difficulty = difficulty
         self.current_enemy: Optional[Enemy] = None
         self.combat_active: bool = False
         self.combat_paused: bool = False
@@ -96,7 +98,7 @@ class CombatSystem:
         self.current_fight_damage_taken: float = 0.0
         self.current_fight_time: float = 0.0
 
-    def start_combat(self, zone_id: str, spawn_boss: bool = False):
+    def start_combat(self, zone_id: str, player, spawn_boss: bool = False):
         """Démarre un combat dans une zone donnée"""
         zone = self.data.get_zone(zone_id)
         if not zone:
@@ -116,8 +118,15 @@ class CombatSystem:
             return
 
         tier_data = self.data.get_tier(zone["tier"])
+        recommended_level = tier_data.get("recommended_level", 1)
 
-        self.current_enemy = Enemy(enemy_data, tier_data)
+        self.current_enemy = Enemy(
+            enemy_data,
+            tier_data,
+            self.difficulty,
+            player.level,
+            recommended_level
+        )
         self.combat_active = True
         self.combat_paused = False
         self.auto_attack_timer = 0.0
@@ -280,15 +289,21 @@ class CombatSystem:
             player.combat_stats["boss_kills"] += 1
 
         # XP
-        player.add_xp(self.current_enemy.xp_reward)
+        reward_factor = self.difficulty.reward_factor(
+            player.level,
+            self.current_enemy.recommended_level
+        )
+        xp_reward = max(1, int(self.current_enemy.xp_reward * reward_factor))
+        player.add_xp(xp_reward)
 
         # Or
-        gold = random.randint(self.current_enemy.gold_min, self.current_enemy.gold_max)
+        base_gold = random.randint(self.current_enemy.gold_min, self.current_enemy.gold_max)
+        gold = max(1, int(base_gold * self.difficulty.reward_gold_mult * reward_factor))
         player.add_gold(gold)
 
         # Loot
         rewards = {
-            "xp": self.current_enemy.xp_reward,
+            "xp": xp_reward,
             "gold": gold,
             "items": [],
             "resources": []
@@ -308,7 +323,7 @@ class CombatSystem:
         for res_drop in self.current_enemy.resource_drops:
             if random.random() * 100 < res_drop.get("chance_pct", 25):
                 res_id = res_drop["resource"]
-                quantity = random.randint(1, 3)
+                quantity = max(1, int(random.randint(1, 3) * reward_factor))
                 player.add_resource(res_id, quantity)
                 rewards["resources"].append({"id": res_id, "quantity": quantity})
 
