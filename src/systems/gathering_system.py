@@ -4,14 +4,16 @@ Système de Récolte - Gère les nodes de ressources cliquables
 
 import random
 from typing import Dict, List, Optional
+from src.core.difficulty import DifficultySettings
 
 class GatherNode:
     """Représente un node de récolte"""
 
-    def __init__(self, node_data: Dict, tier_data: Dict):
+    def __init__(self, node_data: Dict, tier_data: Dict, tier_number: int, difficulty: DifficultySettings):
         self.id: str = node_data["id"]
         self.name: str = node_data["name"]
         self.resource_id: str = node_data["resource"]
+        self.recommended_level: int = tier_data.get("recommended_level", 1)
 
         # Déduire le type du node depuis la ressource
         self.node_type: str = self._deduce_type(node_data["resource"])
@@ -19,7 +21,7 @@ class GatherNode:
 
         # HP du node (combien de fois il faut cliquer)
         base_hp = node_data.get("node_hp", tier_data.get("node_hp", 20))
-        self.max_hp: float = base_hp
+        self.max_hp: float = difficulty.scaled_node_hp(base_hp, tier_number)
         self.current_hp: float = self.max_hp
 
         # Récompenses
@@ -28,7 +30,7 @@ class GatherNode:
         self.max_yield: int = yield_data.get("max", 3)
 
         # Respawn
-        self.respawn_time: float = node_data.get("respawn_sec", 5.0)
+        self.respawn_time: float = difficulty.scaled_respawn(node_data.get("respawn_sec", 5.0))
         self.respawn_timer: float = 0.0
         self.depleted: bool = False
 
@@ -84,8 +86,9 @@ class GatherNode:
 class GatheringSystem:
     """Gère le système de récolte de ressources"""
 
-    def __init__(self, data_manager):
+    def __init__(self, data_manager, difficulty: DifficultySettings):
         self.data = data_manager
+        self.difficulty = difficulty
         self.active_nodes: List[GatherNode] = []
 
     def spawn_nodes_for_zone(self, zone_id: str, num_nodes: int = 5):
@@ -96,6 +99,7 @@ class GatheringSystem:
 
         tier = zone["tier"]
         tier_data = self.data.get_tier(tier)
+        tier_number = self.data.get_tier_number(tier)
 
         # Récupérer les nodes possibles pour cette zone
         zone_resources = zone.get("resources", [])
@@ -115,7 +119,7 @@ class GatheringSystem:
         self.active_nodes.clear()
         for _ in range(num_nodes):
             node_data = random.choice(valid_nodes)
-            node = GatherNode(node_data, tier_data)
+            node = GatherNode(node_data, tier_data, tier_number, self.difficulty)
             self.active_nodes.append(node)
 
     def harvest_node(self, node_index: int, player) -> Optional[Dict]:
@@ -153,10 +157,16 @@ class GatheringSystem:
         if depleted:
             # Calculer les récompenses
             base_yield = random.randint(node.min_yield, node.max_yield)
+            scaled_yield = self.difficulty.scaled_gather_yield(base_yield)
+            reward_factor = self.difficulty.reward_factor(
+                player.level,
+                node.recommended_level
+            )
 
             # Bonus ressources
             bonus_mult = 1.0 + (player_stats.ressources_gagnees_pct / 100.0)
-            final_yield = int(base_yield * bonus_mult)
+            final_yield = int(scaled_yield * bonus_mult * reward_factor)
+            final_yield = max(1, final_yield)
 
             # Chance de double drop
             if random.random() * 100 < player_stats.chance_double_drop_pct:
@@ -167,13 +177,13 @@ class GatheringSystem:
 
             # XP de récolte
             tier_num = self.data.get_tier_number(node.tier)
-            xp_reward = 5 * tier_num
-            player.add_xp(xp_reward)
+            xp_reward = int(5 * tier_num * reward_factor)
+            player.add_xp(max(1, xp_reward))
 
             return {
                 "resource_id": node.resource_id,
                 "quantity": final_yield,
-                "xp": xp_reward,
+                "xp": max(1, xp_reward),
                 "node_name": node.name
             }
 
