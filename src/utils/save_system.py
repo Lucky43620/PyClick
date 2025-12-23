@@ -18,7 +18,7 @@ class SaveSystem:
         self.auto_save_timer: float = 0.0
         self.auto_save_interval: float = 30.0  # Sauvegarde auto toutes les 30 secondes
 
-    def save_game(self, player: Player) -> bool:
+    def save_game(self, player: Player, skill_system=None, station_upgrade_system=None) -> bool:
         """
         Sauvegarde le jeu
 
@@ -27,9 +27,17 @@ class SaveSystem:
         """
         try:
             save_data = {
-                "version": "1.0",
+                "version": "1.1",
                 "player": player.to_dict()
             }
+
+            # Sauvegarder les skills si fournis
+            if skill_system:
+                save_data["skills"] = skill_system.to_dict()
+
+            # Sauvegarder les station upgrades si fournis
+            if station_upgrade_system:
+                save_data["station_upgrades"] = station_upgrade_system.to_dict()
 
             with open(self.save_file, 'w', encoding='utf-8') as f:
                 json.dump(save_data, f, indent=2, ensure_ascii=False)
@@ -41,7 +49,7 @@ class SaveSystem:
             print(f"ERREUR lors de la sauvegarde: {e}")
             return False
 
-    def load_game(self, data_manager) -> Optional[Player]:
+    def load_game(self, data_manager, skill_system=None, station_upgrade_system=None) -> Optional[Player]:
         """
         Charge le jeu
 
@@ -57,6 +65,15 @@ class SaveSystem:
                 save_data = json.load(f)
 
             player = Player.from_dict(save_data["player"], data_manager)
+
+            # Charger les skills
+            if skill_system and "skills" in save_data:
+                skill_system.from_dict(save_data["skills"])
+
+            # Charger les station upgrades
+            if station_upgrade_system and "station_upgrades" in save_data:
+                station_upgrade_system.from_dict(save_data["station_upgrades"])
+
             print(f"Jeu chargé: {self.save_file}")
             return player
 
@@ -79,9 +96,9 @@ class SaveSystem:
             print(f"ERREUR lors de la suppression: {e}")
             return False
 
-    def update_auto_save(self, delta_time: float, player: Player):
+    def update_auto_save(self, delta_time: float, player: Player, skill_system=None, station_upgrade_system=None):
         """Met à jour le timer de sauvegarde automatique"""
         self.auto_save_timer += delta_time
         if self.auto_save_timer >= self.auto_save_interval:
             self.auto_save_timer = 0.0
-            self.save_game(player)
+            self.save_game(player, skill_system, station_upgrade_system)

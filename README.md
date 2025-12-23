@@ -1,149 +1,188 @@
 # PyClick - Idle RPG Clicker/Crafter
 
-**Un monde où la matière garde mémoire**
+## 🎮 Description
 
-Un jeu de rôle idle/clicker/crafting hardcore avec génération procédurale d'items, système de combat automatique, récolte de ressources et crafting complexe.
+Un jeu RPG idle/clicker hardcore avec crafting, combat automatique, récolte de ressources et système de progression profond. Développé en Python avec Arcade.
 
-## Caractéristiques
+## 🚀 Fonctionnalités
 
-### Systèmes de jeu
-- **Combat automatique** : Combattez des ennemis et des boss avec un système de combat profond (critiques, esquive, blocage, procs, dégâts élémentaires)
-- **Récolte de ressources** : Cliquez sur des nodes pour récolter bois, minerais, plantes et autres ressources
-- **Crafting complexe** : Craftez des items avec différentes stations, recettes, et améliorez votre équipement
-- **Génération procédurale d'items** : Chaque item est unique avec qualité, rareté, stats de base et affixes aléatoires
-- **10 zones progressives** : De la Prairie des Jeunes Pousses jusqu'à l'Abyssse Palimpseste (T1-T10)
-- **Système de progression** : XP, levels, stats croissantes
-- **Sauvegarde automatique** : Votre progression est sauvegardée automatiquement toutes les 30 secondes
+### Combat Automatique
+- Combats en temps réel contre des ennemis par zone (T1-T10)
+- Boss avec drops améliorés
+- Stats de combat détaillées en temps réel
+- **Pause/Reprendre** le combat sans pénalité
+- **Fuir** avec pénalité de 20% d'or
+- Système de buffs temporaires
 
-### Difficulté Hardcore
-- Ennemis puissants dès le début
-- Ressources rares
-- Drop rates très bas pour les items de qualité
-- La mort fait perdre 10% de l'or
-- Nécessite de bien gérer son équipement et ses ressources
+### Récolte de Ressources
+- Nodes clickables avec respawn
+- **Outils de récolte** améliorables (T1-T5)
+- 3 types: Pioche (ore), Hache (wood), Faucille (herb)
+- Ressources communes ET rares (cristaux, fragments, essences)
 
-### Interface
-- Style fantasy sombre avec thème médiéval
-- 4 vues principales : Combat, Récolte, Craft, Inventaire
-- HUD complet avec barres de HP/XP, stats, log de combat
-- Système de couleurs par rareté (Common → Legendary)
+### Crafting Avancé
+- **50+ recettes** disponibles
+- Système de scroll pour voir toutes les recettes (UP/DOWN)
+- Multiple stations: Atelier, Forge, Alchimie, Tannerie
+- Items procéduraux avec affixes aléatoires
+- **5 niveaux de rareté**: Commun, Peu commun, Rare, Épique, Légendaire
+- **5 niveaux de qualité**: Pauvre, Normal, Supérieur, Chef-d'œuvre, Parfait
 
-## Installation
+### Système de Potions
+- Potions craftables: Soin (petite/moyenne), Force, Défense, Vitesse
+- Inventaire de potions séparé
+- Utilisation par clic
+- Buffs temporaires visibles
 
-1. Installez Python 3.8 ou supérieur
+### Skills Permanents (NOUVEAU!)
+- **6 compétences** débloquables avec ressources rares:
+  - **Berserk**: +15% ATK
+  - **Forteresse**: +20% HP Max, +10 Armure
+  - **Précision Mortelle**: +5% Crit Chance, +25% Crit Dégâts
+  - **Artisan Expert**: -15% coûts de craft
+  - **Collecteur Efficace**: x2 quantité récoltée
+  - **Fortune**: +25% gain d'or
+- Coût: Fragments + Cristaux + Or
 
-2. Installez les dépendances :
+### Améliorations de Stations (NOUVEAU!)
+- Stations améliorables jusqu'à LVL 2-3
+- Bonus permanents:
+  - Atelier: +vitesse craft, +qualité
+  - Forge: +vitesse craft, +stats items
+  - Alchimie: +effet potions, +durée buffs
+- Coût: Ressources rares (Essences, Cristaux arcanes)
+
+### Progression
+- Système d'XP avec courbe **TRÈS exponentielle** (hardcore)
+- 10 tiers de zones avec ennemis progressifs
+- Équipement dans 9 slots + 3 outils
+- Système de sauvegarde automatique (30s)
+- Navigation entre zones (N/P)
+
+## 📦 Installation
+
 ```bash
-pip install -r requirements.txt
-```
+# Installer les dépendances
+pip install arcade
 
-3. Lancez le jeu :
-```bash
+# Lancer le jeu
 python main.py
 ```
 
-## Commandes
+## 🎯 Contrôles
 
-### Navigation
-- **Cliquez sur les boutons** en bas de l'écran pour changer de vue :
-  - COMBAT : Vue de combat automatique
-  - RÉCOLTE : Nodes de ressources à cliquer
-  - CRAFT : Stations et recettes de crafting
-  - INVENTAIRE : Équipement et sac
+### Souris
+- Clic gauche: Interagir avec UI, nodes, boutons
+- Zones cliquables: Tout en UI
 
-### Raccourcis clavier
-- **S** : Sauvegarder manuellement
-- **N** : Aller à la zone suivante (Next)
-- **P** : Retourner à la zone précédente (Previous)
+### Clavier
+- **S**: Sauvegarder manuellement
+- **N**: Zone suivante
+- **P**: Zone précédente
+- **UP/DOWN**: Scroller les recettes (en mode Craft)
 
-### Actions
-- **Cliquez sur les nodes** en mode Récolte pour récolter
-- **Cliquez sur les recettes** en mode Craft pour crafter
-- **Cliquez sur les items** dans l'inventaire pour les équiper
-- **Cliquez sur "SPAWN BOSS"** en mode Combat pour invoquer le boss de la zone
+### Onglets
+1. **COMBAT**: Combats automatiques + stats
+2. **RÉCOLTE**: Cliquer les nodes pour farmer
+3. **CRAFT**: 50+ recettes avec scroll
+4. **INVENTAIRE**: Équipement + Potions utilisables
+5. **UPGRADES**: Skills permanents + Amélioration de stations
 
-## Structure du projet
+## 🎨 Style Visuel
+
+- **Thème**: Fantasy Dark
+- **Palette**: Tons sombres avec accents dorés
+- **UI**: Inspirée des RPG classiques
+- **Icons**: Pixel art 32x32 (en cours - voir PIXEL_ART_SPECS.md)
+
+## 📁 Structure du Projet
 
 ```
 PyClick/
 ├── main.py                 # Point d'entrée
-├── requirements.txt        # Dépendances
-├── info/                   # Données JSON (stats, items, zones, etc.)
+├── save.json               # Sauvegarde (auto-généré)
 ├── src/
-│   ├── core/              # Coeur du jeu
-│   │   ├── game.py        # Classe principale
-│   │   └── data_manager.py # Chargement des JSON
-│   ├── entities/          # Entités du jeu
-│   │   └── player.py      # Joueur
-│   ├── systems/           # Systèmes de jeu
-│   │   ├── stats_system.py    # Calculs de stats et combat
-│   │   ├── item_system.py     # Génération d'items
-│   │   ├── combat_system.py   # Combat automatique
-│   │   ├── gathering_system.py # Récolte
-│   │   └── crafting_system.py  # Crafting
-│   ├── ui/                # Interface utilisateur
-│   │   └── game_view.py   # Vue principale avec UI
-│   └── utils/             # Utilitaires
-│       └── save_system.py # Sauvegarde/chargement
-└── saves/                 # Fichiers de sauvegarde
+│   ├── core/
+│   │   ├── data_manager.py   # Charge les JSON
+│   │   └── game.py            # Boucle principale
+│   ├── entities/
+│   │   └── player.py          # Joueur + inventaire
+│   ├── systems/
+│   │   ├── combat_system.py   # Combat auto
+│   │   ├── crafting_system.py # Craft
+│   │   ├── gathering_system.py# Récolte
+│   │   ├── item_system.py     # Génération items
+│   │   ├── skill_system.py    # Skills + Station upgrades
+│   │   └── stats_system.py    # Stats & calculs
+│   ├── ui/
+│   │   ├── game_view.py       # Interface 5 onglets
+│   │   └── tooltip.py         # Tooltips items
+│   └── utils/
+│       └── save_system.py     # Sauvegarde JSON
+├── info/                   # Données du jeu (JSON)
+│   ├── tiers.json
+│   ├── zones.json
+│   ├── enemies.json
+│   ├── resources.json
+│   ├── recipes.json
+│   ├── items_base.json
+│   ├── affixes.json
+│   ├── skills.json         # Skills permanents
+│   ├── station_upgrades.json
+│   └── ... (16 fichiers)
+└── assets/                 # Assets (pixel art)
+    └── icons/
+        ├── resources/
+        ├── items/
+        ├── equipment/
+        └── ui/
 ```
 
-## Progression suggérée
+## 🔥 Difficulté HARDCORE
 
-1. **Début (T1)** :
-   - Combattez les premiers ennemis
-   - Récoltez des ressources de base
-   - Craftez de meilleurs équipements
+Le jeu est volontairement **TRÈS difficile**:
 
-2. **Milieu (T2-T5)** :
-   - Explorez de nouvelles zones
-   - Déverrouillez des stations de craft avancées
-   - Cherchez des items de meilleure rareté
+- **Coûts de craft ×8-10**: Farming intensif nécessaire
+- **Stats d'items -50%**: Progression lente
+- **XP exponentielle**: Formule 150 × 1.35^level
+- **Drops rares**: Boss = meilleur loot
+- **Skills coûteux**: Ressources rares requises
+- **Upgrades de stations**: Gros investissement
 
-3. **Fin (T6-T10)** :
-   - Affrontez des boss puissants
-   - Optimisez votre build avec des affixes spécialisés
-   - Maîtrisez l'Abyssse Palimpseste
+**C'est voulu!** Le jeu récompense l'optimisation et la patience.
 
-## Systèmes avancés
+## 🛠️ Technologies
 
-### Génération d'items
-Chaque item est généré avec :
-- **Base** : Définit le slot et les stats de base
-- **Tier** : T1 à T10, détermine la puissance
-- **Qualité** : Poor → Normal → Superior → Masterwork → Perfect (multiplie les stats)
-- **Rareté** : Common → Uncommon → Rare → Epic → Legendary (détermine le nombre d'affixes)
-- **Affixes** : Bonus aléatoires basés sur les tags de l'item
+- **Python 3.11+**
+- **Arcade 3.3.3**: Moteur de jeu 2D
+- **JSON**: Toutes les données du jeu
+- **Architecture data-driven**: Facile à modder
 
-### Formules de calcul
-- **Power** = tier.base_power × quality.mult × rarity.mult
-- **Dégâts** = ATK × crit_mult × réductions (DEF, armure, résistances)
-- **Affixe** = roll(min,max) × (tier^0.35) × rarity.mult
+## 📈 Roadmap
 
-### Crafting
-- Nécessite une station débloquée
-- Consomme des ressources et de l'or
-- Peut générer des items de qualité variable
-- Possibilité de reforger (reroll) les affixes
+- [x] Combat automatique
+- [x] Récolte clickable
+- [x] Crafting avancé
+- [x] Système de potions
+- [x] Skills permanents
+- [x] Upgrade de stations
+- [x] 50+ recettes
+- [ ] Pixel art 32x32 (Phase 1: 30 icons prioritaires)
+- [ ] Sons & musique
+- [ ] Plus de zones (T6-T10)
+- [ ] Système de set d'équipement
+- [ ] Achievements
 
-## Astuces
+## 📝 License
 
-- Équilibrez vos stats : ATK pour tuer vite, DEF pour survivre
-- Les critiques sont puissants : investissez dans crit_chance et crit_degats
-- Farmez les ressources avant de changer de zone
-- Les boss donnent plus de loot mais sont très dangereux
-- Certains affixes sont spécialisés (gather, craft, combat) : adaptez votre équipement
+Projet perso - Libre d'utilisation pour apprentissage
 
-## Développement futur
+## 🎨 Assets
 
-Le jeu est conçu pour être facilement extensible :
-- Ajoutez des JSON dans `info/` pour new content
-- Système de sets d'armure
-- Familiers et collectibles
-- Mode Ascension (prestige)
-- Talents et arbres de compétences
+Le jeu utilise actuellement des placeholders pour les graphismes. Pour créer les assets pixel art, voir [PIXEL_ART_SPECS.md](PIXEL_ART_SPECS.md).
 
-## Crédits
+**Priorité**: 30 icons 32x32 (ressources + UI)
 
-Développé avec Python et Arcade
-Design data-driven basé sur les JSON fournis
+---
+
+**Bon farming!** 🔥

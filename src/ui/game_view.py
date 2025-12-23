@@ -104,7 +104,7 @@ class GameView(arcade.View):
                 self.combat.start_combat(self.player.current_zone_id, spawn_boss=False)
 
         # Auto-save
-        self.save.update_auto_save(delta_time, self.player)
+        self.save.update_auto_save(delta_time, self.player, self.skills, self.station_upgrades)
 
     def _handle_player_death(self):
         """Gère la mort du joueur"""
@@ -585,19 +585,30 @@ class GameView(arcade.View):
             arcade.draw_text(icon, x + item_size // 2, y + item_size // 2 - 8,
                            rarity_color, 20, bold=True, anchor_x="center")
 
-        # Ressources (bas)
+        # Ressources (bas) - Couleurs selon rareté
         res_y = 200
         arcade.draw_text("Ressources:", 50, res_y, self.COLOR_HIGHLIGHT, 14, bold=True)
 
         res_x = 50
         res_y -= 25
         col = 0
-        for res_id, quantity in list(self.player.resources.items())[:15]:  # Afficher 15 premières
+
+        # Couleurs selon rareté de ressource
+        rarity_colors_res = {
+            "commun": self.COLOR_TEXT,
+            "rare": (100, 150, 255),  # Bleu
+            "epic": (200, 100, 255),   # Violet
+            "legendary": (255, 180, 50)  # Or
+        }
+
+        for res_id, quantity in list(self.player.resources.items())[:20]:  # 20 ressources
             res_data = self.data.get_resource(res_id)
             res_name = res_data.get("name", res_id) if res_data else res_id
+            res_rarity = res_data.get("rarity", "commun") if res_data else "commun"
 
-            arcade.draw_text(f"{res_name}: {quantity}", res_x + col * 200, res_y - (col // 3) * 20,
-                           self.COLOR_TEXT, 10)
+            color = rarity_colors_res.get(res_rarity, self.COLOR_TEXT)
+            arcade.draw_text(f"{res_name}: {quantity}", res_x + col * 210, res_y - (col // 4) * 18,
+                           color, 9)
             col += 1
 
     def _draw_bar(self, x, y, width, height, percent, color, bg_color):
@@ -793,7 +804,7 @@ class GameView(arcade.View):
         """Gère les touches du clavier"""
         # Sauvegarder avec S
         if symbol == arcade.key.S:
-            self.save.save_game(self.player)
+            self.save.save_game(self.player, self.skills, self.station_upgrades)
             print("Jeu sauvegardé manuellement")
 
         # Passer à la zone suivante avec N

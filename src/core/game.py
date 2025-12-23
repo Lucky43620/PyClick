@@ -56,7 +56,11 @@ class Game(arcade.Window):
     def _init_player(self):
         """Initialise le joueur (charge ou crée nouveau)"""
         # Essayer de charger
-        self.player = self.save_system.load_game(self.data_manager)
+        self.player = self.save_system.load_game(
+            self.data_manager,
+            self.skill_system,
+            self.station_upgrade_system
+        )
 
         if not self.player:
             # Créer un nouveau joueur
@@ -80,4 +84,4 @@ class Game(arcade.Window):
             self.player.unlock_station("atelier")
 
             # Sauvegarder
-            self.save_system.save_game(self.player)
+            self.save_system.save_game(self.player, self.skill_system, self.station_upgrade_system)

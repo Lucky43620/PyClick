@@ -230,7 +230,7 @@ class CombatSystem:
 
         # Track stats
         if result["is_crit"]:
-            # Stats de crit trackées via player dans le handler
+            pass  # Stats de crit trackées via player dans le handler
 
         # Vol de vie
         if result.get("lifesteal", 0) > 0:
