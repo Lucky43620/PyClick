@@ -5,13 +5,15 @@ Système de Crafting - Gère le crafting d'items avec stations et recettes
 import random
 from typing import Dict, List, Optional
 from src.systems.item_system import Item, ItemGenerator
+from src.core.difficulty import DifficultySettings
 
 class CraftingSystem:
     """Gère le système de crafting"""
 
-    def __init__(self, data_manager, item_generator: ItemGenerator):
+    def __init__(self, data_manager, item_generator: ItemGenerator, difficulty: DifficultySettings):
         self.data = data_manager
         self.item_generator = item_generator
+        self.difficulty = difficulty
 
     def can_craft(self, recipe_id: str, player) -> tuple[bool, str]:
         """
@@ -36,8 +38,11 @@ class CraftingSystem:
         if player.level < required_level:
             return False, f"Nécessite niveau {required_level}"
 
+        # Coûts ajustés par la difficulté
+        scaled_costs = self.difficulty.scaled_recipe_costs(recipe)
+
         # Vérifier les ressources (format: inputs avec resource et qty)
-        for resource in recipe.get("inputs", []):
+        for resource in scaled_costs.get("inputs", []):
             res_id = resource["resource"]
             quantity = resource["qty"]
             if not player.has_resource(res_id, quantity):
@@ -46,7 +51,7 @@ class CraftingSystem:
                 return False, f"Manque: {quantity}x {res_name}"
 
         # Vérifier l'or
-        gold_cost = recipe.get("gold_cost", 0)
+        gold_cost = scaled_costs.get("gold_cost", recipe.get("gold_cost", 0))
         if player.gold < gold_cost:
             return False, f"Manque {gold_cost - player.gold} or"
 
@@ -66,13 +71,16 @@ class CraftingSystem:
             return None
 
         recipe = self.data.get_recipe(recipe_id)
+        if not recipe:
+            return None
+        scaled_costs = self.difficulty.scaled_recipe_costs(recipe)
 
         # Consommer les ressources (format: inputs avec resource et qty)
-        for resource in recipe.get("inputs", []):
+        for resource in scaled_costs.get("inputs", []):
             player.consume_resource(resource["resource"], resource["qty"])
 
         # Consommer l'or
-        player.gold -= recipe.get("gold_cost", 0)
+        player.gold -= scaled_costs.get("gold_cost", recipe.get("gold_cost", 0))
 
         # Déterminer ce qui est crafté (format: outputs array)
         outputs = recipe.get("outputs", [])
@@ -109,7 +117,10 @@ class CraftingSystem:
 
             # XP pour le craft
             tier_num = self.data.get_tier_number(item.tier)
-            xp_reward = 20 * tier_num
+            tier_data = self.data.get_tier(item.tier)
+            recommended_level = tier_data.get("recommended_level", player.level)
+            reward_factor = self.difficulty.reward_factor(player.level, recommended_level)
+            xp_reward = max(1, int(20 * tier_num * self.difficulty.reward_xp_mult * reward_factor))
             player.add_xp(xp_reward)
 
             # Si c'est une potion/consommable, l'ajouter à l'inventaire de potions

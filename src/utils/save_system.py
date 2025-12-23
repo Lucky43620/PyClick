@@ -5,7 +5,8 @@ Système de sauvegarde/chargement
 import json
 import os
 from pathlib import Path
-from typing import Optional
+from typing import Optional, Tuple
+import shutil
 from src.entities.player import Player
 
 class SaveSystem:
@@ -84,6 +85,27 @@ class SaveSystem:
     def has_save(self) -> bool:
         """Vérifie si une sauvegarde existe"""
         return self.save_file.exists()
+
+    def import_save(self, source_path: str) -> Tuple[bool, str]:
+        """
+        Importe un fichier de sauvegarde externe et le copie dans l'emplacement local.
+
+        Returns:
+            (success, message)
+        """
+        try:
+            src = Path(source_path).expanduser()
+            if not src.exists():
+                return False, f"Fichier introuvable: {src}"
+
+            # Vérifier que le JSON est valide avant de l'écraser
+            with open(src, "r", encoding="utf-8") as f:
+                json.load(f)
+
+            shutil.copy(src, self.save_file)
+            return True, f"Sauvegarde importée depuis {src}"
+        except Exception as exc:
+            return False, f"Import impossible: {exc}"
 
     def delete_save(self) -> bool:
         """Supprime la sauvegarde"""

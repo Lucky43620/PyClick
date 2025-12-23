@@ -36,7 +36,7 @@ class GameView(arcade.View):
         self.gathering.spawn_nodes_for_zone(self.player.current_zone_id, 5)
 
         # Démarrer un combat automatiquement
-        self.combat.start_combat(self.player.current_zone_id, spawn_boss=False)
+        self.combat.start_combat(self.player.current_zone_id, self.player, spawn_boss=False)
 
         # UI State
         self.selected_item_index: Optional[int] = None
@@ -45,6 +45,10 @@ class GameView(arcade.View):
         self.hovered_item: Optional[tuple] = None  # (item, x, y) pour tooltip
         self.tooltip = ItemTooltip()
         self.recipe_scroll_offset: int = 0  # Pour scroller les recettes
+        self._scrollbar_dragging: bool = False
+        self._scroll_drag_start_y: float = 0.0
+        self._scroll_drag_start_offset: int = 0
+        self._scroll_drag_max_offset: int = 0
 
         # Crafting en cours
         self.crafting_in_progress: bool = False
@@ -101,7 +105,7 @@ class GameView(arcade.View):
             if result.get("enemy_dead"):
                 # Spawn un nouvel ennemi après 1 seconde
                 # Pour l'instant, spawn immédiatement
-                self.combat.start_combat(self.player.current_zone_id, spawn_boss=False)
+                self.combat.start_combat(self.player.current_zone_id, self.player, spawn_boss=False)
 
         # Auto-save
         self.save.update_auto_save(delta_time, self.player, self.skills, self.station_upgrades)
@@ -134,6 +138,11 @@ class GameView(arcade.View):
 
         # Boutons de navigation (en bas)
         self._draw_nav_buttons()
+
+        # Tooltip d'item si survol
+        if self.hovered_item and isinstance(self.hovered_item[0], object):
+            item, hx, hy = self.hovered_item
+            self.tooltip.draw(item, hx + 20, hy + 20, self.data)
 
     def _draw_rect_filled(self, x, y, width, height, color):
         """Helper pour dessiner un rectangle rempli (x, y, width, height)"""
@@ -186,13 +195,19 @@ class GameView(arcade.View):
             arcade.draw_text(f"Zone: {zone['name']}", x, y, self.COLOR_TEXT, 12)
             y -= 20
             arcade.draw_text(f"{zone['desc']}", x, y, self.COLOR_TEXT_DIM, 10, width=400)
+            y -= 18
+            rec_level = zone.get("level_requirement", zone.get("tier", "")) or ""
+            arcade.draw_text(f"Niveau conseillé: {rec_level}", x, y, self.COLOR_TEXT_DIM, 10)
 
         # Stats de combat (droite)
         x = width - 300
         y = self.window.height - 25
-        arcade.draw_text(f"ATK: {int(stats.atk)}  DEF: {int(stats.def_stat)}", x, y, self.COLOR_TEXT, 12)
+        dps = stats.atk * stats.vitesse_attaque
+        arcade.draw_text(f"ATK: {int(stats.atk)}  DEF: {int(stats.def_stat)}  DPS: {dps:.1f}", x, y, self.COLOR_TEXT, 12)
         y -= 20
         arcade.draw_text(f"Crit: {stats.crit_chance:.1f}%  Esq: {stats.esquive:.1f}%", x, y, self.COLOR_TEXT, 12)
+        y -= 20
+        arcade.draw_text(f"Vitesse: {stats.vitesse_attaque:.2f}/s  Regen: {stats.hp_regen:.1f}/s", x, y, self.COLOR_TEXT_DIM, 11)
 
     def _draw_nav_buttons(self):
         """Dessine les boutons de navigation"""
@@ -235,6 +250,8 @@ class GameView(arcade.View):
             name_color = self.COLOR_HIGHLIGHT if enemy.is_boss else self.COLOR_TEXT
             arcade.draw_text(enemy.name, combat_x, combat_y + 80, name_color, 20,
                            bold=enemy.is_boss, anchor_x="center")
+            arcade.draw_text(f"Tier {enemy.tier.upper()} | Niveau recommandé {enemy.recommended_level}",
+                            combat_x, combat_y + 60, self.COLOR_TEXT_DIM, 11, anchor_x="center")
 
             # Barre de HP de l'ennemi
             hp_percent = enemy.stats.hp_current / enemy.stats.hp_max
@@ -331,6 +348,10 @@ class GameView(arcade.View):
             dmg_taken = int(self.combat.current_fight_damage_taken)
             arcade.draw_text(f"Degats recus: {dmg_taken}", stats_x + 15, current_y, (200, 100, 100), 10)
             current_y -= 25
+
+            enemy_speed = self.combat.current_enemy.stats.vitesse_attaque
+            arcade.draw_text(f"Vitesse ennemi: {enemy_speed:.2f}/s", stats_x + 15, current_y, self.COLOR_TEXT_DIM, 10)
+            current_y -= 18
 
         # Stats globales
         arcade.draw_text("Stats totales:", stats_x + 10, current_y, self.COLOR_TEXT, 11, bold=True)
@@ -486,10 +507,102 @@ class GameView(arcade.View):
                 arcade.draw_text("[ Cliquer pour récolter ]", x + node_width // 2, y + 8,
                                self.COLOR_TEXT_DIM, 10, anchor_x="center")
 
-    def _draw_crafting_view(self):
-        """Vue de crafting"""
+    def _recipe_scroll_context(self) -> dict:
+        """Calcule les métriques partagées pour l'affichage et le drag de la scrollbar des recettes."""
         width = self.window.width
         height = self.window.height - 150
+        recipes = self.crafting.get_available_recipes(self.player)
+        total_recipes = len(recipes)
+
+        recipe_y = height - 80
+        recipe_width = 600
+        recipe_height = 70
+        recipe_x = (width - recipe_width) // 2
+        max_display = 8
+        max_offset = max(0, total_recipes - max_display)
+
+        # Clamp offset
+        self.recipe_scroll_offset = max(0, min(self.recipe_scroll_offset, max_offset))
+
+        scrollbar_x = recipe_x + recipe_width + 15
+        scrollbar_height = max_display * (recipe_height + 10) - 10
+        scrollbar_y_top = recipe_y
+        scrollbar_y_bottom = scrollbar_y_top - scrollbar_height
+        scrollbar_width = 12
+
+        # Thumb
+        scroll_percent = self.recipe_scroll_offset / max_offset if max_offset > 0 else 0
+        visible_percent = max_display / total_recipes if total_recipes else 1
+        thumb_height = max(20, scrollbar_height * visible_percent) if max_offset > 0 else scrollbar_height
+        thumb_travel = max(0, scrollbar_height - thumb_height)
+        thumb_y_top = scrollbar_y_top - (thumb_travel * scroll_percent)
+        thumb_y_bottom = thumb_y_top - thumb_height
+
+        return {
+            "width": width,
+            "height": height,
+            "recipes": recipes,
+            "total_recipes": total_recipes,
+            "recipe_y": recipe_y,
+            "recipe_width": recipe_width,
+            "recipe_height": recipe_height,
+            "recipe_x": recipe_x,
+            "max_display": max_display,
+            "max_offset": max_offset,
+            "scrollbar_x": scrollbar_x,
+            "scrollbar_y_top": scrollbar_y_top,
+            "scrollbar_y_bottom": scrollbar_y_bottom,
+            "scrollbar_width": scrollbar_width,
+            "scrollbar_height": scrollbar_height,
+            "thumb_y_top": thumb_y_top,
+            "thumb_y_bottom": thumb_y_bottom
+        }
+
+    def _is_on_recipe_scrollbar(self, x: float, y: float, ctx: dict) -> bool:
+        """Retourne True si le clic est sur la scrollbar ou son thumb."""
+        return (
+            ctx["total_recipes"] > ctx["max_display"]
+            and ctx["scrollbar_x"] <= x <= ctx["scrollbar_x"] + ctx["scrollbar_width"]
+            and ctx["scrollbar_y_bottom"] <= y <= ctx["scrollbar_y_top"]
+        )
+
+    def _start_recipe_drag(self, x: float, y: float, ctx: dict):
+        """Initialise un drag sur la scrollbar de recettes."""
+        self._scrollbar_dragging = True
+        self._scroll_drag_start_y = y
+        self._scroll_drag_start_offset = self.recipe_scroll_offset
+        self._scroll_drag_max_offset = ctx["max_offset"]
+        self._update_recipe_offset_from_track(y, ctx)
+
+    def _update_recipe_offset_from_track(self, y: float, ctx: dict):
+        """Met à jour l'offset en fonction d'une position verticale dans la scrollbar."""
+        if ctx["max_offset"] <= 0:
+            return
+        percent = (ctx["scrollbar_y_top"] - y) / ctx["scrollbar_height"]
+        percent = max(0.0, min(1.0, percent))
+        self.recipe_scroll_offset = int(round(percent * ctx["max_offset"]))
+
+    def _drag_recipe_scroll(self, y: float, ctx: dict):
+        """Applique un drag continu basé sur la différence de mouvement."""
+        if not self._scrollbar_dragging or ctx["max_offset"] <= 0:
+            return
+        delta_percent = (self._scroll_drag_start_y - y) / ctx["scrollbar_height"]
+        new_offset = int(round(self._scroll_drag_start_offset + delta_percent * ctx["max_offset"]))
+        self.recipe_scroll_offset = max(0, min(ctx["max_offset"], new_offset))
+
+    def _draw_crafting_view(self):
+        """Vue de crafting"""
+        ctx = self._recipe_scroll_context()
+        width = ctx["width"]
+        height = ctx["height"]
+        recipes = ctx["recipes"]
+        total_recipes = ctx["total_recipes"]
+        recipe_y = ctx["recipe_y"]
+        recipe_width = ctx["recipe_width"]
+        recipe_height = ctx["recipe_height"]
+        recipe_x = ctx["recipe_x"]
+        max_display = ctx["max_display"]
+        max_offset = ctx["max_offset"]
 
         # Stations débloquées
         arcade.draw_text("Stations de Craft", 20, height - 30, self.COLOR_HIGHLIGHT, 16, bold=True)
@@ -502,9 +615,6 @@ class GameView(arcade.View):
                 y -= 20
 
         # Recettes disponibles
-        recipes = self.crafting.get_available_recipes(self.player)
-        total_recipes = len(recipes)
-
         arcade.draw_text(f"Recettes ({total_recipes} disponibles)", width // 2, height - 30,
                         self.COLOR_HIGHLIGHT, 16, bold=True, anchor_x="center")
 
@@ -512,16 +622,6 @@ class GameView(arcade.View):
         if total_recipes > 8:
             arcade.draw_text("[ UP/DOWN ou Molette pour naviguer ]", width // 2, height - 50,
                            self.COLOR_TEXT_DIM, 10, anchor_x="center")
-
-        recipe_y = height - 80
-        recipe_width = 600
-        recipe_height = 70  # Réduit pour afficher plus
-        recipe_x = (width - recipe_width) // 2
-        max_display = 8  # Afficher 8 recettes à la fois
-
-        # Assurer que l'offset reste dans les limites
-        max_offset = max(0, total_recipes - max_display)
-        self.recipe_scroll_offset = max(0, min(self.recipe_scroll_offset, max_offset))
 
         # Afficher les recettes avec offset
         displayed_recipes = recipes[self.recipe_scroll_offset:self.recipe_scroll_offset + max_display]
@@ -571,13 +671,13 @@ class GameView(arcade.View):
 
         # Scroll bar visuelle si plus de 8 recettes
         if total_recipes > max_display:
-            scrollbar_x = recipe_x + recipe_width + 15
-            scrollbar_height = max_display * (recipe_height + 10) - 10
-            scrollbar_y_top = recipe_y
-            scrollbar_y_bottom = scrollbar_y_top - scrollbar_height
-            scrollbar_width = 12
+            scrollbar_x = ctx["scrollbar_x"]
+            scrollbar_y_top = ctx["scrollbar_y_top"]
+            scrollbar_y_bottom = ctx["scrollbar_y_bottom"]
+            scrollbar_width = ctx["scrollbar_width"]
+            thumb_y_top = ctx["thumb_y_top"]
+            thumb_y_bottom = ctx["thumb_y_bottom"]
 
-            # Background de la scrollbar
             arcade.draw_lrbt_rectangle_filled(
                 scrollbar_x, scrollbar_x + scrollbar_width,
                 scrollbar_y_bottom, scrollbar_y_top,
@@ -588,14 +688,6 @@ class GameView(arcade.View):
                 scrollbar_y_bottom, scrollbar_y_top,
                 self.COLOR_BORDER, 1
             )
-
-            # Thumb de la scrollbar
-            scroll_percent = self.recipe_scroll_offset / max_offset if max_offset > 0 else 0
-            visible_percent = max_display / total_recipes
-            thumb_height = max(20, scrollbar_height * visible_percent)
-            thumb_travel = scrollbar_height - thumb_height
-            thumb_y_top = scrollbar_y_top - (thumb_travel * scroll_percent)
-            thumb_y_bottom = thumb_y_top - thumb_height
 
             arcade.draw_lrbt_rectangle_filled(
                 scrollbar_x + 2, scrollbar_x + scrollbar_width - 2,
@@ -672,6 +764,8 @@ class GameView(arcade.View):
                 arcade.draw_text(f"+{buff_value} {buff_type} ({time_left}s)",
                                equip_x, buff_y, (255, 200, 100), 10)
                 buff_y -= 18
+        else:
+            arcade.draw_text("Aucun buff actif", equip_x, potion_y - 20, self.COLOR_TEXT_DIM, 10)
 
         # Inventaire (centre-droit)
         inv_x = 350
@@ -762,7 +856,7 @@ class GameView(arcade.View):
                 # Redémarrer un combat si on revient sur combat et qu'il n'y en a pas
                 elif self.current_mode == "combat":
                     if not self.combat.combat_active:
-                        self.combat.start_combat(self.player.current_zone_id, spawn_boss=False)
+                        self.combat.start_combat(self.player.current_zone_id, self.player, spawn_boss=False)
 
                 return
 
@@ -777,6 +871,60 @@ class GameView(arcade.View):
             self._handle_inventory_click(x, y, button)
         elif self.current_mode == "upgrades":
             self._handle_upgrades_click(x, y, button)
+
+    def on_mouse_release(self, x, y, button, modifiers):
+        """Stoppe un éventuel drag de scrollbar."""
+        if button == arcade.MOUSE_BUTTON_LEFT:
+            self._scrollbar_dragging = False
+
+    def on_mouse_drag(self, x, y, dx, dy, buttons, modifiers):
+        """Permet de dragger la scrollbar des recettes."""
+        if self.current_mode == "crafting" and self._scrollbar_dragging:
+            ctx = self._recipe_scroll_context()
+            self._drag_recipe_scroll(y, ctx)
+
+    def on_mouse_motion(self, x, y, dx, dy):
+        """Gère le survol pour les tooltips d'items."""
+        self.hovered_item = None
+        height = self.window.height - 150
+
+        # Survol équipement
+        equip_x = 50
+        equip_y = height - 50
+        slot_names = {
+            "weapon": "Arme",
+            "helmet": "Casque",
+            "chest": "Armure",
+            "legs": "Jambes",
+            "boots": "Bottes",
+            "gloves": "Gants",
+            "ring1": "Anneau 1",
+            "ring2": "Anneau 2",
+            "amulet": "Amulette"
+        }
+        y_pos = equip_y - 30
+        for slot in slot_names.keys():
+            if equip_x <= x <= equip_x + 250 and y_pos - 25 <= y <= y_pos:
+                item = self.player.equipment.get(slot)
+                if item:
+                    self.hovered_item = (item, x, y)
+                    return
+            y_pos -= 25
+
+        # Survol inventaire
+        inv_x = 350
+        inv_y = height - 50
+        cols = 5
+        item_size = 60
+        spacing = 10
+        for i, item in enumerate(self.player.inventory):
+            row = i // cols
+            col = i % cols
+            ix = inv_x + col * (item_size + spacing)
+            iy = inv_y - 40 - row * (item_size + spacing)
+            if ix <= x <= ix + item_size and iy <= y <= iy + item_size:
+                self.hovered_item = (item, x, y)
+                return
 
     def _handle_combat_click(self, x, y, button):
         """Gère les clics en mode combat"""
@@ -813,7 +961,7 @@ class GameView(arcade.View):
             button_y <= y <= button_y + button_height):
             # Spawn un boss
             self.combat.combat_active = False
-            self.combat.start_combat(self.player.current_zone_id, spawn_boss=True)
+            self.combat.start_combat(self.player.current_zone_id, self.player, spawn_boss=True)
             return
 
         # Boutons de changement de zone (en bas à droite)
@@ -886,12 +1034,17 @@ class GameView(arcade.View):
         width = self.window.width
         height = self.window.height - 150
 
-        recipes = self.crafting.get_available_recipes(self.player)
-        recipe_y = height - 80
-        recipe_width = 600
-        recipe_height = 70
-        recipe_x = (width - recipe_width) // 2
-        max_display = 8
+        ctx = self._recipe_scroll_context()
+        if self._is_on_recipe_scrollbar(x, y, ctx):
+            self._start_recipe_drag(x, y, ctx)
+            return
+
+        recipes = ctx["recipes"]
+        recipe_y = ctx["recipe_y"]
+        recipe_width = ctx["recipe_width"]
+        recipe_height = ctx["recipe_height"]
+        recipe_x = ctx["recipe_x"]
+        max_display = ctx["max_display"]
 
         # Utiliser le même offset que pour l'affichage
         displayed_recipes = recipes[self.recipe_scroll_offset:self.recipe_scroll_offset + max_display]
@@ -1060,7 +1213,7 @@ class GameView(arcade.View):
         # Arrêter le combat actuel et en démarrer un nouveau avec les ennemis de la nouvelle zone
         if self.combat.combat_active:
             self.combat.combat_active = False
-        self.combat.start_combat(new_zone_id, spawn_boss=False)
+        self.combat.start_combat(new_zone_id, self.player, spawn_boss=False)
 
         print(f"Voyage vers: {new_zone['name']} (Tier {new_zone['tier']})")
         print(f"Ennemis: {', '.join(new_zone.get('enemies', []))}")
