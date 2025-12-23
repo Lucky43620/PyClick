@@ -120,7 +120,22 @@ class Player:
         Returns:
             L'item qui était équipé dans ce slot, ou None
         """
-        slot = item.slot
+        # Mapping des slots FR->EN (items_base.json est en français)
+        slot_mapping = {
+            "arme": "weapon",
+            "casque": "helmet",
+            "plastron": "chest",
+            "jambieres": "legs",
+            "bottes": "boots",
+            "gants": "gloves",
+            "anneau": "ring",
+            "amulette": "amulet",
+            "outil_pioche": "tool_ore",
+            "outil_hache": "tool_wood",
+            "outil_serpe": "tool_herb",
+        }
+
+        slot = slot_mapping.get(item.slot, item.slot)
 
         # Gérer les anneaux (2 slots)
         if slot == "ring":

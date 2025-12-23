@@ -14,7 +14,10 @@
     "tool_requirement": "aucun",
     "crit_yield_chance_pct": 4,
     "crit_yield_mult": 2.0,
-    "desc": "Noeud cliquable de Prairie des Jeunes Pousses."
+    "desc": "Noeud cliquable de Prairie des Jeunes Pousses.",
+    "yield_min": 1,
+    "yield_max": 1,
+    "respawn_time": 30
   },
   {
     "id": "prairie_des_jeunes_pousses__rocher",
@@ -31,7 +34,10 @@
     "tool_requirement": "pioche",
     "crit_yield_chance_pct": 4,
     "crit_yield_mult": 2.0,
-    "desc": "Noeud cliquable de Prairie des Jeunes Pousses."
+    "desc": "Noeud cliquable de Prairie des Jeunes Pousses.",
+    "yield_min": 1,
+    "yield_max": 1,
+    "respawn_time": 30
   },
   {
     "id": "prairie_des_jeunes_pousses__herbes",
@@ -48,7 +54,10 @@
     "tool_requirement": "serpe",
     "crit_yield_chance_pct": 4,
     "crit_yield_mult": 2.0,
-    "desc": "Noeud cliquable de Prairie des Jeunes Pousses."
+    "desc": "Noeud cliquable de Prairie des Jeunes Pousses.",
+    "yield_min": 1,
+    "yield_max": 1,
+    "respawn_time": 30
   },
   {
     "id": "prairie_des_jeunes_pousses__source",
@@ -65,7 +74,10 @@
     "tool_requirement": "aucun",
     "crit_yield_chance_pct": 4,
     "crit_yield_mult": 2.0,
-    "desc": "Noeud cliquable de Prairie des Jeunes Pousses."
+    "desc": "Noeud cliquable de Prairie des Jeunes Pousses.",
+    "yield_min": 1,
+    "yield_max": 1,
+    "respawn_time": 30
   },
   {
     "id": "bois_des_murmures__arbre_chene",
@@ -82,7 +94,10 @@
     "tool_requirement": "hache",
     "crit_yield_chance_pct": 5,
     "crit_yield_mult": 2.0,
-    "desc": "Noeud cliquable de Bois des Murmures."
+    "desc": "Noeud cliquable de Bois des Murmures.",
+    "yield_min": 1,
+    "yield_max": 1,
+    "respawn_time": 30
   },
   {
     "id": "bois_des_murmures__champis",
@@ -99,7 +114,10 @@
     "tool_requirement": "aucun",
     "crit_yield_chance_pct": 5,
     "crit_yield_mult": 2.0,
-    "desc": "Noeud cliquable de Bois des Murmures."
+    "desc": "Noeud cliquable de Bois des Murmures.",
+    "yield_min": 1,
+    "yield_max": 1,
+    "respawn_time": 30
   },
   {
     "id": "carriere_aux_echos__filon_cuivre",
@@ -116,7 +134,10 @@
     "tool_requirement": "pioche",
     "crit_yield_chance_pct": 6,
     "crit_yield_mult": 2.0,
-    "desc": "Noeud cliquable de Carrière aux Échos."
+    "desc": "Noeud cliquable de Carrière aux Échos.",
+    "yield_min": 1,
+    "yield_max": 1,
+    "respawn_time": 30
   },
   {
     "id": "marais_des_lueurs__marais_venin",
@@ -133,7 +154,10 @@
     "tool_requirement": "serpe",
     "crit_yield_chance_pct": 7,
     "crit_yield_mult": 2.0,
-    "desc": "Noeud cliquable de Marais des Lueurs."
+    "desc": "Noeud cliquable de Marais des Lueurs.",
+    "yield_min": 1,
+    "yield_max": 1,
+    "respawn_time": 30
   },
   {
     "id": "toundra_des_ancetres__glacier",
@@ -150,7 +174,10 @@
     "tool_requirement": "pioche",
     "crit_yield_chance_pct": 9,
     "crit_yield_mult": 2.0,
-    "desc": "Noeud cliquable de Toundra des Ancêtres."
+    "desc": "Noeud cliquable de Toundra des Ancêtres.",
+    "yield_min": 1,
+    "yield_max": 1,
+    "respawn_time": 30
   },
   {
     "id": "ruines_de_l_ordre__ruine_relique",
@@ -167,7 +194,10 @@
     "tool_requirement": "aucun",
     "crit_yield_chance_pct": 11,
     "crit_yield_mult": 2.0,
-    "desc": "Noeud cliquable de Ruines de l'Ordre."
+    "desc": "Noeud cliquable de Ruines de l'Ordre.",
+    "yield_min": 1,
+    "yield_max": 1,
+    "respawn_time": 30
   },
   {
     "id": "iles_celestes__cristal",
@@ -184,7 +214,10 @@
     "tool_requirement": "pioche",
     "crit_yield_chance_pct": 12,
     "crit_yield_mult": 2.0,
-    "desc": "Noeud cliquable de Îles Célestes."
+    "desc": "Noeud cliquable de Îles Célestes.",
+    "yield_min": 1,
+    "yield_max": 1,
+    "respawn_time": 30
   },
   {
     "id": "abysse_palimpseste__faille_encre",
@@ -201,6 +234,9 @@
     "tool_requirement": "aucun",
     "crit_yield_chance_pct": 13,
     "crit_yield_mult": 2.0,
-    "desc": "Noeud cliquable de Abyssse Palimpseste."
+    "desc": "Noeud cliquable de Abyssse Palimpseste.",
+    "yield_min": 1,
+    "yield_max": 1,
+    "respawn_time": 30
   }
 ]

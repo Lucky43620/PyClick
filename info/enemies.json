@@ -5,9 +5,10 @@
     "tier": "t1",
     "is_boss": false,
     "stats": {
-      "hp": 32,
-      "atk": 3,
-      "def": 1
+      "hp": 96,
+      "atk": 6,
+      "def": 2,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -24,7 +25,7 @@
           "chance_pct": 25
         }
       ],
-      "item_drop_chance_pct": 7,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -33,7 +34,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T1."
+    "desc": "Ennemi T1.",
+    "xp": 3
   },
   {
     "id": "rat_des_foins",
@@ -41,9 +43,10 @@
     "tier": "t1",
     "is_boss": false,
     "stats": {
-      "hp": 28,
-      "atk": 4,
-      "def": 1
+      "hp": 84,
+      "atk": 8,
+      "def": 2,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -60,7 +63,7 @@
           "chance_pct": 25
         }
       ],
-      "item_drop_chance_pct": 7,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -69,7 +72,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T1."
+    "desc": "Ennemi T1.",
+    "xp": 3
   },
   {
     "id": "corneille_volee",
@@ -77,9 +81,10 @@
     "tier": "t1",
     "is_boss": false,
     "stats": {
-      "hp": 24,
-      "atk": 4,
-      "def": 0
+      "hp": 72,
+      "atk": 8,
+      "def": 0,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -96,7 +101,7 @@
           "chance_pct": 25
         }
       ],
-      "item_drop_chance_pct": 7,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -105,7 +110,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T1."
+    "desc": "Ennemi T1.",
+    "xp": 3
   },
   {
     "id": "loup_jeune",
@@ -113,9 +119,10 @@
     "tier": "t2",
     "is_boss": false,
     "stats": {
-      "hp": 105,
-      "atk": 13,
-      "def": 3
+      "hp": 315,
+      "atk": 26,
+      "def": 6,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -138,7 +145,7 @@
           "qty_max": 1
         }
       ],
-      "item_drop_chance_pct": 8,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -147,7 +154,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T2."
+    "desc": "Ennemi T2.",
+    "xp": 3
   },
   {
     "id": "esprit_de_branche",
@@ -155,9 +163,10 @@
     "tier": "t2",
     "is_boss": false,
     "stats": {
-      "hp": 93,
-      "atk": 10,
-      "def": 5
+      "hp": 279,
+      "atk": 20,
+      "def": 10,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -180,7 +189,7 @@
           "qty_max": 1
         }
       ],
-      "item_drop_chance_pct": 8,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -189,7 +198,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T2."
+    "desc": "Ennemi T2.",
+    "xp": 3
   },
   {
     "id": "araignee_grise",
@@ -197,9 +207,10 @@
     "tier": "t2",
     "is_boss": false,
     "stats": {
-      "hp": 93,
-      "atk": 12,
-      "def": 4
+      "hp": 279,
+      "atk": 24,
+      "def": 8,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -222,7 +233,7 @@
           "qty_max": 1
         }
       ],
-      "item_drop_chance_pct": 8,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -231,7 +242,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T2."
+    "desc": "Ennemi T2.",
+    "xp": 3
   },
   {
     "id": "taupe_mineuse",
@@ -239,9 +251,10 @@
     "tier": "t3",
     "is_boss": false,
     "stats": {
-      "hp": 219,
-      "atk": 20,
-      "def": 10
+      "hp": 657,
+      "atk": 40,
+      "def": 20,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -270,7 +283,7 @@
           "qty_max": 1
         }
       ],
-      "item_drop_chance_pct": 9,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -279,7 +292,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T3."
+    "desc": "Ennemi T3.",
+    "xp": 3
   },
   {
     "id": "golem_de_gravats",
@@ -287,9 +301,10 @@
     "tier": "t3",
     "is_boss": false,
     "stats": {
-      "hp": 284,
-      "atk": 18,
-      "def": 15
+      "hp": 852,
+      "atk": 36,
+      "def": 30,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -318,7 +333,7 @@
           "qty_max": 1
         }
       ],
-      "item_drop_chance_pct": 9,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -327,7 +342,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T3."
+    "desc": "Ennemi T3.",
+    "xp": 3
   },
   {
     "id": "chauve_souris",
@@ -335,9 +351,10 @@
     "tier": "t3",
     "is_boss": false,
     "stats": {
-      "hp": 153,
-      "atk": 23,
-      "def": 6
+      "hp": 459,
+      "atk": 46,
+      "def": 12,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -366,7 +383,7 @@
           "qty_max": 1
         }
       ],
-      "item_drop_chance_pct": 9,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -375,7 +392,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T3."
+    "desc": "Ennemi T3.",
+    "xp": 3
   },
   {
     "id": "moustique_gigante",
@@ -383,9 +401,10 @@
     "tier": "t4",
     "is_boss": false,
     "stats": {
-      "hp": 273,
-      "atk": 38,
-      "def": 11
+      "hp": 819,
+      "atk": 76,
+      "def": 22,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -414,7 +433,7 @@
           "qty_max": 1
         }
       ],
-      "item_drop_chance_pct": 10,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -423,7 +442,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T4."
+    "desc": "Ennemi T4.",
+    "xp": 3
   },
   {
     "id": "sangsue_sombre",
@@ -431,9 +451,10 @@
     "tier": "t4",
     "is_boss": false,
     "stats": {
-      "hp": 376,
-      "atk": 30,
-      "def": 13
+      "hp": 1128,
+      "atk": 60,
+      "def": 26,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -462,7 +483,7 @@
           "qty_max": 1
         }
       ],
-      "item_drop_chance_pct": 10,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -471,7 +492,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T4."
+    "desc": "Ennemi T4.",
+    "xp": 3
   },
   {
     "id": "secte_boueuse",
@@ -479,9 +501,10 @@
     "tier": "t4",
     "is_boss": false,
     "stats": {
-      "hp": 307,
-      "atk": 34,
-      "def": 15
+      "hp": 921,
+      "atk": 68,
+      "def": 30,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -510,7 +533,7 @@
           "qty_max": 1
         }
       ],
-      "item_drop_chance_pct": 10,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -519,7 +542,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T4."
+    "desc": "Ennemi T4.",
+    "xp": 3
   },
   {
     "id": "scorpion_rouge",
@@ -527,9 +551,10 @@
     "tier": "t5",
     "is_boss": false,
     "stats": {
-      "hp": 484,
-      "atk": 52,
-      "def": 24
+      "hp": 1452,
+      "atk": 104,
+      "def": 48,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -564,7 +589,7 @@
           "qty_max": 1
         }
       ],
-      "item_drop_chance_pct": 11,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -573,7 +598,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T5."
+    "desc": "Ennemi T5.",
+    "xp": 3
   },
   {
     "id": "bandit_des_dunes",
@@ -581,9 +607,10 @@
     "tier": "t5",
     "is_boss": false,
     "stats": {
-      "hp": 435,
-      "atk": 57,
-      "def": 21
+      "hp": 1305,
+      "atk": 114,
+      "def": 42,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -618,7 +645,7 @@
           "qty_max": 1
         }
       ],
-      "item_drop_chance_pct": 11,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -627,7 +654,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T5."
+    "desc": "Ennemi T5.",
+    "xp": 3
   },
   {
     "id": "serpent_de_verre",
@@ -635,9 +663,10 @@
     "tier": "t5",
     "is_boss": false,
     "stats": {
-      "hp": 387,
-      "atk": 62,
-      "def": 18
+      "hp": 1161,
+      "atk": 124,
+      "def": 36,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -672,7 +701,7 @@
           "qty_max": 1
         }
       ],
-      "item_drop_chance_pct": 11,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -681,7 +710,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T5."
+    "desc": "Ennemi T5.",
+    "xp": 3
   },
   {
     "id": "ours_blanc",
@@ -689,9 +719,10 @@
     "tier": "t6",
     "is_boss": false,
     "stats": {
-      "hp": 898,
-      "atk": 67,
-      "def": 36
+      "hp": 2694,
+      "atk": 134,
+      "def": 72,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -726,7 +757,7 @@
           "qty_max": 1
         }
       ],
-      "item_drop_chance_pct": 12,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -735,7 +766,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T6."
+    "desc": "Ennemi T6.",
+    "xp": 3
   },
   {
     "id": "chaman_froid",
@@ -743,9 +775,10 @@
     "tier": "t6",
     "is_boss": false,
     "stats": {
-      "hp": 642,
-      "atk": 73,
-      "def": 32
+      "hp": 1926,
+      "atk": 146,
+      "def": 64,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -780,7 +813,7 @@
           "qty_max": 1
         }
       ],
-      "item_drop_chance_pct": 12,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -789,7 +822,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T6."
+    "desc": "Ennemi T6.",
+    "xp": 3
   },
   {
     "id": "loups_du_givre",
@@ -797,9 +831,10 @@
     "tier": "t6",
     "is_boss": false,
     "stats": {
-      "hp": 642,
-      "atk": 73,
-      "def": 28
+      "hp": 1926,
+      "atk": 146,
+      "def": 56,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -834,7 +869,7 @@
           "qty_max": 1
         }
       ],
-      "item_drop_chance_pct": 12,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -843,7 +878,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T6."
+    "desc": "Ennemi T6.",
+    "xp": 3
   },
   {
     "id": "salamandre",
@@ -851,9 +887,10 @@
     "tier": "t7",
     "is_boss": false,
     "stats": {
-      "hp": 897,
-      "atk": 98,
-      "def": 39
+      "hp": 2691,
+      "atk": 196,
+      "def": 78,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -888,7 +925,7 @@
           "qty_max": 1
         }
       ],
-      "item_drop_chance_pct": 13,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -897,7 +934,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T7."
+    "desc": "Ennemi T7.",
+    "xp": 3
   },
   {
     "id": "forgeron_fou",
@@ -905,9 +943,10 @@
     "tier": "t7",
     "is_boss": false,
     "stats": {
-      "hp": 816,
-      "atk": 106,
-      "def": 44
+      "hp": 2448,
+      "atk": 212,
+      "def": 88,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -942,7 +981,7 @@
           "qty_max": 1
         }
       ],
-      "item_drop_chance_pct": 13,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -951,7 +990,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T7."
+    "desc": "Ennemi T7.",
+    "xp": 3
   },
   {
     "id": "elementaire_braise",
@@ -959,9 +999,10 @@
     "tier": "t7",
     "is_boss": false,
     "stats": {
-      "hp": 979,
-      "atk": 98,
-      "def": 49
+      "hp": 2937,
+      "atk": 196,
+      "def": 98,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -996,7 +1037,7 @@
           "qty_max": 1
         }
       ],
-      "item_drop_chance_pct": 13,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -1005,7 +1046,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T7."
+    "desc": "Ennemi T7.",
+    "xp": 3
   },
   {
     "id": "sentinelle_brisee",
@@ -1013,9 +1055,10 @@
     "tier": "t8",
     "is_boss": false,
     "stats": {
-      "hp": 1305,
-      "atk": 108,
-      "def": 71
+      "hp": 3915,
+      "atk": 216,
+      "def": 142,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -1050,7 +1093,7 @@
           "qty_max": 1
         }
       ],
-      "item_drop_chance_pct": 14,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -1059,7 +1102,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T8."
+    "desc": "Ennemi T8.",
+    "xp": 3
   },
   {
     "id": "mage_oubli",
@@ -1067,9 +1111,10 @@
     "tier": "t8",
     "is_boss": false,
     "stats": {
-      "hp": 1004,
-      "atk": 138,
-      "def": 53
+      "hp": 3012,
+      "atk": 276,
+      "def": 106,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -1104,7 +1149,7 @@
           "qty_max": 1
         }
       ],
-      "item_drop_chance_pct": 14,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -1113,7 +1158,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T8."
+    "desc": "Ennemi T8.",
+    "xp": 3
   },
   {
     "id": "spectre",
@@ -1121,9 +1167,10 @@
     "tier": "t8",
     "is_boss": false,
     "stats": {
-      "hp": 903,
-      "atk": 138,
-      "def": 47
+      "hp": 2709,
+      "atk": 276,
+      "def": 94,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -1158,7 +1205,7 @@
           "qty_max": 1
         }
       ],
-      "item_drop_chance_pct": 14,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -1167,7 +1214,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T8."
+    "desc": "Ennemi T8.",
+    "xp": 3
   },
   {
     "id": "harpie",
@@ -1175,9 +1223,10 @@
     "tier": "t9",
     "is_boss": false,
     "stats": {
-      "hp": 1205,
-      "atk": 174,
-      "def": 62
+      "hp": 3615,
+      "atk": 348,
+      "def": 124,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -1212,7 +1261,7 @@
           "qty_max": 1
         }
       ],
-      "item_drop_chance_pct": 15,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -1221,7 +1270,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T9."
+    "desc": "Ennemi T9.",
+    "xp": 3
   },
   {
     "id": "golem_cristal",
@@ -1229,9 +1279,10 @@
     "tier": "t9",
     "is_boss": false,
     "stats": {
-      "hp": 1807,
-      "atk": 139,
-      "def": 90
+      "hp": 5421,
+      "atk": 278,
+      "def": 180,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -1266,7 +1317,7 @@
           "qty_max": 1
         }
       ],
-      "item_drop_chance_pct": 15,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -1275,7 +1326,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T9."
+    "desc": "Ennemi T9.",
+    "xp": 3
   },
   {
     "id": "tempete_vivante",
@@ -1283,9 +1335,10 @@
     "tier": "t9",
     "is_boss": false,
     "stats": {
-      "hp": 1446,
-      "atk": 185,
-      "def": 69
+      "hp": 4338,
+      "atk": 370,
+      "def": 138,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -1320,7 +1373,7 @@
           "qty_max": 1
         }
       ],
-      "item_drop_chance_pct": 15,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -1329,7 +1382,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T9."
+    "desc": "Ennemi T9.",
+    "xp": 3
   },
   {
     "id": "ombre_lame",
@@ -1337,9 +1391,10 @@
     "tier": "t10",
     "is_boss": false,
     "stats": {
-      "hp": 1844,
-      "atk": 241,
-      "def": 96
+      "hp": 5532,
+      "atk": 482,
+      "def": 192,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -1356,7 +1411,7 @@
           "chance_pct": 25
         }
       ],
-      "item_drop_chance_pct": 16,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -1365,7 +1420,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T10."
+    "desc": "Ennemi T10.",
+    "xp": 3
   },
   {
     "id": "scribe_vide",
@@ -1373,9 +1429,10 @@
     "tier": "t10",
     "is_boss": false,
     "stats": {
-      "hp": 1702,
-      "atk": 227,
-      "def": 104
+      "hp": 5106,
+      "atk": 454,
+      "def": 208,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -1392,7 +1449,7 @@
           "chance_pct": 25
         }
       ],
-      "item_drop_chance_pct": 16,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -1401,7 +1458,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T10."
+    "desc": "Ennemi T10.",
+    "xp": 3
   },
   {
     "id": "bete_paradoxe",
@@ -1409,9 +1467,10 @@
     "tier": "t10",
     "is_boss": false,
     "stats": {
-      "hp": 2412,
-      "atk": 214,
-      "def": 120
+      "hp": 7236,
+      "atk": 428,
+      "def": 240,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -1428,7 +1487,7 @@
           "chance_pct": 25
         }
       ],
-      "item_drop_chance_pct": 16,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 55,
         "peu_commun": 25,
@@ -1437,7 +1496,8 @@
         "legendaire": 2
       }
     },
-    "desc": "Ennemi T10."
+    "desc": "Ennemi T10.",
+    "xp": 3
   },
   {
     "id": "sanglier_cuirasse",
@@ -1445,9 +1505,10 @@
     "tier": "t1",
     "is_boss": true,
     "stats": {
-      "hp": 100,
-      "atk": 7,
-      "def": 4
+      "hp": 600,
+      "atk": 21,
+      "def": 8,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -1496,7 +1557,7 @@
           "qty": 1
         }
       ],
-      "item_drop_chance_pct": 35,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 15,
         "peu_commun": 25,
@@ -1505,7 +1566,8 @@
         "legendaire": 10
       }
     },
-    "desc": "Boss T1."
+    "desc": "Boss T1.",
+    "xp": 3
   },
   {
     "id": "ent_fissure",
@@ -1513,9 +1575,10 @@
     "tier": "t2",
     "is_boss": true,
     "stats": {
-      "hp": 327,
-      "atk": 16,
-      "def": 12
+      "hp": 1962,
+      "atk": 48,
+      "def": 24,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -1568,7 +1631,7 @@
           "qty": 1
         }
       ],
-      "item_drop_chance_pct": 35,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 15,
         "peu_commun": 25,
@@ -1577,7 +1640,8 @@
         "legendaire": 10
       }
     },
-    "desc": "Boss T2."
+    "desc": "Boss T2.",
+    "xp": 3
   },
   {
     "id": "golem_du_puits",
@@ -1585,9 +1649,10 @@
     "tier": "t3",
     "is_boss": true,
     "stats": {
-      "hp": 657,
-      "atk": 33,
-      "def": 24
+      "hp": 3942,
+      "atk": 99,
+      "def": 48,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -1640,7 +1705,7 @@
           "qty": 1
         }
       ],
-      "item_drop_chance_pct": 35,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 15,
         "peu_commun": 25,
@@ -1649,7 +1714,8 @@
         "legendaire": 10
       }
     },
-    "desc": "Boss T3."
+    "desc": "Boss T3.",
+    "xp": 3
   },
   {
     "id": "reine_sangsue",
@@ -1657,9 +1723,10 @@
     "tier": "t4",
     "is_boss": true,
     "stats": {
-      "hp": 1094,
-      "atk": 53,
-      "def": 34
+      "hp": 6564,
+      "atk": 159,
+      "def": 68,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -1712,7 +1779,7 @@
           "qty": 1
         }
       ],
-      "item_drop_chance_pct": 35,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 15,
         "peu_commun": 25,
@@ -1721,7 +1788,8 @@
         "legendaire": 10
       }
     },
-    "desc": "Boss T4."
+    "desc": "Boss T4.",
+    "xp": 3
   },
   {
     "id": "titan_de_sable",
@@ -1729,9 +1797,10 @@
     "tier": "t5",
     "is_boss": true,
     "stats": {
-      "hp": 1645,
-      "atk": 78,
-      "def": 49
+      "hp": 9870,
+      "atk": 234,
+      "def": 98,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -1784,7 +1853,7 @@
           "qty": 1
         }
       ],
-      "item_drop_chance_pct": 35,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 15,
         "peu_commun": 25,
@@ -1793,7 +1862,8 @@
         "legendaire": 10
       }
     },
-    "desc": "Boss T5."
+    "desc": "Boss T5.",
+    "xp": 3
   },
   {
     "id": "matriarche_du_givre",
@@ -1801,9 +1871,10 @@
     "tier": "t6",
     "is_boss": true,
     "stats": {
-      "hp": 2311,
-      "atk": 107,
-      "def": 68
+      "hp": 13866,
+      "atk": 321,
+      "def": 136,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -1856,7 +1927,7 @@
           "qty": 1
         }
       ],
-      "item_drop_chance_pct": 35,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 15,
         "peu_commun": 25,
@@ -1865,7 +1936,8 @@
         "legendaire": 10
       }
     },
-    "desc": "Boss T6."
+    "desc": "Boss T6.",
+    "xp": 3
   },
   {
     "id": "coeur_de_magma",
@@ -1873,9 +1945,10 @@
     "tier": "t7",
     "is_boss": true,
     "stats": {
-      "hp": 3182,
-      "atk": 139,
-      "def": 88
+      "hp": 19092,
+      "atk": 417,
+      "def": 176,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -1928,7 +2001,7 @@
           "qty": 1
         }
       ],
-      "item_drop_chance_pct": 35,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 15,
         "peu_commun": 25,
@@ -1937,7 +2010,8 @@
         "legendaire": 10
       }
     },
-    "desc": "Boss T7."
+    "desc": "Boss T7.",
+    "xp": 3
   },
   {
     "id": "gardien_du_sceau",
@@ -1945,9 +2019,10 @@
     "tier": "t8",
     "is_boss": true,
     "stats": {
-      "hp": 4216,
-      "atk": 178,
-      "def": 118
+      "hp": 25296,
+      "atk": 534,
+      "def": 236,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -2000,7 +2075,7 @@
           "qty": 1
         }
       ],
-      "item_drop_chance_pct": 35,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 15,
         "peu_commun": 25,
@@ -2009,7 +2084,8 @@
         "legendaire": 10
       }
     },
-    "desc": "Boss T8."
+    "desc": "Boss T8.",
+    "xp": 3
   },
   {
     "id": "arbitre_des_nues",
@@ -2017,9 +2093,10 @@
     "tier": "t9",
     "is_boss": true,
     "stats": {
-      "hp": 5422,
-      "atk": 232,
-      "def": 146
+      "hp": 32532,
+      "atk": 696,
+      "def": 292,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -2072,7 +2149,7 @@
           "qty": 1
         }
       ],
-      "item_drop_chance_pct": 35,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 15,
         "peu_commun": 25,
@@ -2081,7 +2158,8 @@
         "legendaire": 10
       }
     },
-    "desc": "Boss T9."
+    "desc": "Boss T9.",
+    "xp": 3
   },
   {
     "id": "archiviste_du_neant",
@@ -2089,9 +2167,10 @@
     "tier": "t10",
     "is_boss": true,
     "stats": {
-      "hp": 7095,
-      "atk": 294,
-      "def": 184
+      "hp": 42570,
+      "atk": 882,
+      "def": 368,
+      "armor": 0
     },
     "loot": {
       "gold": {
@@ -2144,7 +2223,7 @@
           "qty": 1
         }
       ],
-      "item_drop_chance_pct": 35,
+      "item_drop_chance_pct": 0,
       "rarity_weights": {
         "commun": 15,
         "peu_commun": 25,
@@ -2153,6 +2232,4507 @@
         "legendaire": 10
       }
     },
-    "desc": "Boss T10."
+    "desc": "Boss T10.",
+    "xp": 3
+  },
+  {
+    "id": "limace_verte_alpha",
+    "name": "Limace verte Alpha",
+    "tier": "t1",
+    "is_boss": false,
+    "stats": {
+      "hp": 124,
+      "atk": 7,
+      "def": 2,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 2,
+        "max": 6
+      },
+      "resource_drops": [
+        {
+          "resource": "bois_tendre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "pierre_brute",
+          "chance_pct": 25
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T1.",
+    "xp": 3
+  },
+  {
+    "id": "limace_verte_veteran",
+    "name": "Limace verte Vétéran",
+    "tier": "t1",
+    "is_boss": false,
+    "stats": {
+      "hp": 153,
+      "atk": 9,
+      "def": 2,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 2,
+        "max": 6
+      },
+      "resource_drops": [
+        {
+          "resource": "bois_tendre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "pierre_brute",
+          "chance_pct": 25
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T1.",
+    "xp": 4
+  },
+  {
+    "id": "limace_verte_elite",
+    "name": "Limace verte Elite",
+    "tier": "t1",
+    "is_boss": false,
+    "stats": {
+      "hp": 182,
+      "atk": 11,
+      "def": 2,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 2,
+        "max": 6
+      },
+      "resource_drops": [
+        {
+          "resource": "bois_tendre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "pierre_brute",
+          "chance_pct": 25
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T1.",
+    "xp": 5
+  },
+  {
+    "id": "rat_des_foins_alpha",
+    "name": "Rat des foins Alpha",
+    "tier": "t1",
+    "is_boss": false,
+    "stats": {
+      "hp": 109,
+      "atk": 10,
+      "def": 2,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 2,
+        "max": 6
+      },
+      "resource_drops": [
+        {
+          "resource": "bois_tendre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "pierre_brute",
+          "chance_pct": 25
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T1.",
+    "xp": 3
+  },
+  {
+    "id": "rat_des_foins_veteran",
+    "name": "Rat des foins Vétéran",
+    "tier": "t1",
+    "is_boss": false,
+    "stats": {
+      "hp": 134,
+      "atk": 12,
+      "def": 2,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 2,
+        "max": 6
+      },
+      "resource_drops": [
+        {
+          "resource": "bois_tendre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "pierre_brute",
+          "chance_pct": 25
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T1.",
+    "xp": 4
+  },
+  {
+    "id": "rat_des_foins_elite",
+    "name": "Rat des foins Elite",
+    "tier": "t1",
+    "is_boss": false,
+    "stats": {
+      "hp": 159,
+      "atk": 15,
+      "def": 2,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 2,
+        "max": 6
+      },
+      "resource_drops": [
+        {
+          "resource": "bois_tendre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "pierre_brute",
+          "chance_pct": 25
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T1.",
+    "xp": 5
+  },
+  {
+    "id": "corneille_volee_alpha",
+    "name": "Volée de corneilles Alpha",
+    "tier": "t1",
+    "is_boss": false,
+    "stats": {
+      "hp": 93,
+      "atk": 10,
+      "def": 0,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 2,
+        "max": 6
+      },
+      "resource_drops": [
+        {
+          "resource": "bois_tendre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "pierre_brute",
+          "chance_pct": 25
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T1.",
+    "xp": 3
+  },
+  {
+    "id": "corneille_volee_veteran",
+    "name": "Volée de corneilles Vétéran",
+    "tier": "t1",
+    "is_boss": false,
+    "stats": {
+      "hp": 115,
+      "atk": 12,
+      "def": 0,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 2,
+        "max": 6
+      },
+      "resource_drops": [
+        {
+          "resource": "bois_tendre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "pierre_brute",
+          "chance_pct": 25
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T1.",
+    "xp": 4
+  },
+  {
+    "id": "corneille_volee_elite",
+    "name": "Volée de corneilles Elite",
+    "tier": "t1",
+    "is_boss": false,
+    "stats": {
+      "hp": 136,
+      "atk": 15,
+      "def": 0,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 2,
+        "max": 6
+      },
+      "resource_drops": [
+        {
+          "resource": "bois_tendre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "pierre_brute",
+          "chance_pct": 25
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T1.",
+    "xp": 5
+  },
+  {
+    "id": "loup_jeune_alpha",
+    "name": "Loup jeune Alpha",
+    "tier": "t2",
+    "is_boss": false,
+    "stats": {
+      "hp": 409,
+      "atk": 33,
+      "def": 6,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 2,
+        "max": 7
+      },
+      "resource_drops": [
+        {
+          "resource": "bois_chene",
+          "chance_pct": 25
+        },
+        {
+          "resource": "seve",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 9,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T2.",
+    "xp": 3
+  },
+  {
+    "id": "loup_jeune_veteran",
+    "name": "Loup jeune Vétéran",
+    "tier": "t2",
+    "is_boss": false,
+    "stats": {
+      "hp": 504,
+      "atk": 41,
+      "def": 6,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 2,
+        "max": 7
+      },
+      "resource_drops": [
+        {
+          "resource": "bois_chene",
+          "chance_pct": 25
+        },
+        {
+          "resource": "seve",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 9,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T2.",
+    "xp": 4
+  },
+  {
+    "id": "loup_jeune_elite",
+    "name": "Loup jeune Elite",
+    "tier": "t2",
+    "is_boss": false,
+    "stats": {
+      "hp": 598,
+      "atk": 49,
+      "def": 6,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 2,
+        "max": 7
+      },
+      "resource_drops": [
+        {
+          "resource": "bois_chene",
+          "chance_pct": 25
+        },
+        {
+          "resource": "seve",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 9,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T2.",
+    "xp": 5
+  },
+  {
+    "id": "esprit_de_branche_alpha",
+    "name": "Esprit de branche Alpha",
+    "tier": "t2",
+    "is_boss": false,
+    "stats": {
+      "hp": 362,
+      "atk": 26,
+      "def": 10,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 2,
+        "max": 7
+      },
+      "resource_drops": [
+        {
+          "resource": "bois_chene",
+          "chance_pct": 25
+        },
+        {
+          "resource": "seve",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 9,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T2.",
+    "xp": 3
+  },
+  {
+    "id": "esprit_de_branche_veteran",
+    "name": "Esprit de branche Vétéran",
+    "tier": "t2",
+    "is_boss": false,
+    "stats": {
+      "hp": 446,
+      "atk": 32,
+      "def": 10,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 2,
+        "max": 7
+      },
+      "resource_drops": [
+        {
+          "resource": "bois_chene",
+          "chance_pct": 25
+        },
+        {
+          "resource": "seve",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 9,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T2.",
+    "xp": 4
+  },
+  {
+    "id": "esprit_de_branche_elite",
+    "name": "Esprit de branche Elite",
+    "tier": "t2",
+    "is_boss": false,
+    "stats": {
+      "hp": 530,
+      "atk": 38,
+      "def": 10,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 2,
+        "max": 7
+      },
+      "resource_drops": [
+        {
+          "resource": "bois_chene",
+          "chance_pct": 25
+        },
+        {
+          "resource": "seve",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 9,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T2.",
+    "xp": 5
+  },
+  {
+    "id": "araignee_grise_alpha",
+    "name": "Araignée grise Alpha",
+    "tier": "t2",
+    "is_boss": false,
+    "stats": {
+      "hp": 362,
+      "atk": 31,
+      "def": 8,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 2,
+        "max": 7
+      },
+      "resource_drops": [
+        {
+          "resource": "bois_chene",
+          "chance_pct": 25
+        },
+        {
+          "resource": "seve",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 9,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T2.",
+    "xp": 3
+  },
+  {
+    "id": "araignee_grise_veteran",
+    "name": "Araignée grise Vétéran",
+    "tier": "t2",
+    "is_boss": false,
+    "stats": {
+      "hp": 446,
+      "atk": 38,
+      "def": 8,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 2,
+        "max": 7
+      },
+      "resource_drops": [
+        {
+          "resource": "bois_chene",
+          "chance_pct": 25
+        },
+        {
+          "resource": "seve",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 9,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T2.",
+    "xp": 4
+  },
+  {
+    "id": "araignee_grise_elite",
+    "name": "Araignée grise Elite",
+    "tier": "t2",
+    "is_boss": false,
+    "stats": {
+      "hp": 530,
+      "atk": 45,
+      "def": 8,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 2,
+        "max": 7
+      },
+      "resource_drops": [
+        {
+          "resource": "bois_chene",
+          "chance_pct": 25
+        },
+        {
+          "resource": "seve",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 9,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T2.",
+    "xp": 5
+  },
+  {
+    "id": "taupe_mineuse_alpha",
+    "name": "Taupe mineuse Alpha",
+    "tier": "t3",
+    "is_boss": false,
+    "stats": {
+      "hp": 854,
+      "atk": 52,
+      "def": 20,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 3,
+        "max": 9
+      },
+      "resource_drops": [
+        {
+          "resource": "pierre_taillable",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_cuivre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 11,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 6,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T3.",
+    "xp": 3
+  },
+  {
+    "id": "taupe_mineuse_veteran",
+    "name": "Taupe mineuse Vétéran",
+    "tier": "t3",
+    "is_boss": false,
+    "stats": {
+      "hp": 1051,
+      "atk": 64,
+      "def": 20,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 3,
+        "max": 9
+      },
+      "resource_drops": [
+        {
+          "resource": "pierre_taillable",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_cuivre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 11,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 6,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T3.",
+    "xp": 4
+  },
+  {
+    "id": "taupe_mineuse_elite",
+    "name": "Taupe mineuse Elite",
+    "tier": "t3",
+    "is_boss": false,
+    "stats": {
+      "hp": 1248,
+      "atk": 76,
+      "def": 20,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 3,
+        "max": 9
+      },
+      "resource_drops": [
+        {
+          "resource": "pierre_taillable",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_cuivre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 11,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 6,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T3.",
+    "xp": 5
+  },
+  {
+    "id": "golem_de_gravats_alpha",
+    "name": "Golem de gravats Alpha",
+    "tier": "t3",
+    "is_boss": false,
+    "stats": {
+      "hp": 1107,
+      "atk": 46,
+      "def": 30,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 3,
+        "max": 9
+      },
+      "resource_drops": [
+        {
+          "resource": "pierre_taillable",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_cuivre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 11,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 6,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T3.",
+    "xp": 3
+  },
+  {
+    "id": "golem_de_gravats_veteran",
+    "name": "Golem de gravats Vétéran",
+    "tier": "t3",
+    "is_boss": false,
+    "stats": {
+      "hp": 1363,
+      "atk": 57,
+      "def": 30,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 3,
+        "max": 9
+      },
+      "resource_drops": [
+        {
+          "resource": "pierre_taillable",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_cuivre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 11,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 6,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T3.",
+    "xp": 4
+  },
+  {
+    "id": "golem_de_gravats_elite",
+    "name": "Golem de gravats Elite",
+    "tier": "t3",
+    "is_boss": false,
+    "stats": {
+      "hp": 1618,
+      "atk": 68,
+      "def": 30,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 3,
+        "max": 9
+      },
+      "resource_drops": [
+        {
+          "resource": "pierre_taillable",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_cuivre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 11,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 6,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T3.",
+    "xp": 5
+  },
+  {
+    "id": "chauve_souris_alpha",
+    "name": "Chauve-souris Alpha",
+    "tier": "t3",
+    "is_boss": false,
+    "stats": {
+      "hp": 596,
+      "atk": 59,
+      "def": 12,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 3,
+        "max": 9
+      },
+      "resource_drops": [
+        {
+          "resource": "pierre_taillable",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_cuivre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 11,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 6,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T3.",
+    "xp": 3
+  },
+  {
+    "id": "chauve_souris_veteran",
+    "name": "Chauve-souris Vétéran",
+    "tier": "t3",
+    "is_boss": false,
+    "stats": {
+      "hp": 734,
+      "atk": 73,
+      "def": 12,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 3,
+        "max": 9
+      },
+      "resource_drops": [
+        {
+          "resource": "pierre_taillable",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_cuivre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 11,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 6,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T3.",
+    "xp": 4
+  },
+  {
+    "id": "chauve_souris_elite",
+    "name": "Chauve-souris Elite",
+    "tier": "t3",
+    "is_boss": false,
+    "stats": {
+      "hp": 872,
+      "atk": 87,
+      "def": 12,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 3,
+        "max": 9
+      },
+      "resource_drops": [
+        {
+          "resource": "pierre_taillable",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_cuivre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 11,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 6,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T3.",
+    "xp": 5
+  },
+  {
+    "id": "moustique_gigante_alpha",
+    "name": "Moustique gigante Alpha",
+    "tier": "t4",
+    "is_boss": false,
+    "stats": {
+      "hp": 1064,
+      "atk": 98,
+      "def": 22,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 3,
+        "max": 10
+      },
+      "resource_drops": [
+        {
+          "resource": "herbe_medicinale",
+          "chance_pct": 25
+        },
+        {
+          "resource": "venin_distille",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 13,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 7,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T4.",
+    "xp": 3
+  },
+  {
+    "id": "moustique_gigante_veteran",
+    "name": "Moustique gigante Vétéran",
+    "tier": "t4",
+    "is_boss": false,
+    "stats": {
+      "hp": 1310,
+      "atk": 121,
+      "def": 22,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 3,
+        "max": 10
+      },
+      "resource_drops": [
+        {
+          "resource": "herbe_medicinale",
+          "chance_pct": 25
+        },
+        {
+          "resource": "venin_distille",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 13,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 7,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T4.",
+    "xp": 4
+  },
+  {
+    "id": "moustique_gigante_elite",
+    "name": "Moustique gigante Elite",
+    "tier": "t4",
+    "is_boss": false,
+    "stats": {
+      "hp": 1556,
+      "atk": 144,
+      "def": 22,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 3,
+        "max": 10
+      },
+      "resource_drops": [
+        {
+          "resource": "herbe_medicinale",
+          "chance_pct": 25
+        },
+        {
+          "resource": "venin_distille",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 13,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 7,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T4.",
+    "xp": 5
+  },
+  {
+    "id": "sangsue_sombre_alpha",
+    "name": "Sangsue sombre Alpha",
+    "tier": "t4",
+    "is_boss": false,
+    "stats": {
+      "hp": 1466,
+      "atk": 78,
+      "def": 26,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 3,
+        "max": 10
+      },
+      "resource_drops": [
+        {
+          "resource": "herbe_medicinale",
+          "chance_pct": 25
+        },
+        {
+          "resource": "venin_distille",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 13,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 7,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T4.",
+    "xp": 3
+  },
+  {
+    "id": "sangsue_sombre_veteran",
+    "name": "Sangsue sombre Vétéran",
+    "tier": "t4",
+    "is_boss": false,
+    "stats": {
+      "hp": 1804,
+      "atk": 96,
+      "def": 26,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 3,
+        "max": 10
+      },
+      "resource_drops": [
+        {
+          "resource": "herbe_medicinale",
+          "chance_pct": 25
+        },
+        {
+          "resource": "venin_distille",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 13,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 7,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T4.",
+    "xp": 4
+  },
+  {
+    "id": "sangsue_sombre_elite",
+    "name": "Sangsue sombre Elite",
+    "tier": "t4",
+    "is_boss": false,
+    "stats": {
+      "hp": 2143,
+      "atk": 114,
+      "def": 26,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 3,
+        "max": 10
+      },
+      "resource_drops": [
+        {
+          "resource": "herbe_medicinale",
+          "chance_pct": 25
+        },
+        {
+          "resource": "venin_distille",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 13,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 7,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T4.",
+    "xp": 5
+  },
+  {
+    "id": "secte_boueuse_alpha",
+    "name": "Secte boueuse Alpha",
+    "tier": "t4",
+    "is_boss": false,
+    "stats": {
+      "hp": 1197,
+      "atk": 88,
+      "def": 30,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 3,
+        "max": 10
+      },
+      "resource_drops": [
+        {
+          "resource": "herbe_medicinale",
+          "chance_pct": 25
+        },
+        {
+          "resource": "venin_distille",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 13,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 7,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T4.",
+    "xp": 3
+  },
+  {
+    "id": "secte_boueuse_veteran",
+    "name": "Secte boueuse Vétéran",
+    "tier": "t4",
+    "is_boss": false,
+    "stats": {
+      "hp": 1473,
+      "atk": 108,
+      "def": 30,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 3,
+        "max": 10
+      },
+      "resource_drops": [
+        {
+          "resource": "herbe_medicinale",
+          "chance_pct": 25
+        },
+        {
+          "resource": "venin_distille",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 13,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 7,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T4.",
+    "xp": 4
+  },
+  {
+    "id": "secte_boueuse_elite",
+    "name": "Secte boueuse Elite",
+    "tier": "t4",
+    "is_boss": false,
+    "stats": {
+      "hp": 1749,
+      "atk": 129,
+      "def": 30,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 3,
+        "max": 10
+      },
+      "resource_drops": [
+        {
+          "resource": "herbe_medicinale",
+          "chance_pct": 25
+        },
+        {
+          "resource": "venin_distille",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 13,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 7,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T4.",
+    "xp": 5
+  },
+  {
+    "id": "scorpion_rouge_alpha",
+    "name": "Scorpion rouge Alpha",
+    "tier": "t5",
+    "is_boss": false,
+    "stats": {
+      "hp": 1887,
+      "atk": 135,
+      "def": 48,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 4,
+        "max": 12
+      },
+      "resource_drops": [
+        {
+          "resource": "sable_vitre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_argent",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 15,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 8,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T5.",
+    "xp": 3
+  },
+  {
+    "id": "scorpion_rouge_veteran",
+    "name": "Scorpion rouge Vétéran",
+    "tier": "t5",
+    "is_boss": false,
+    "stats": {
+      "hp": 2323,
+      "atk": 166,
+      "def": 48,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 4,
+        "max": 12
+      },
+      "resource_drops": [
+        {
+          "resource": "sable_vitre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_argent",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 15,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 8,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T5.",
+    "xp": 4
+  },
+  {
+    "id": "scorpion_rouge_elite",
+    "name": "Scorpion rouge Elite",
+    "tier": "t5",
+    "is_boss": false,
+    "stats": {
+      "hp": 2758,
+      "atk": 197,
+      "def": 48,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 4,
+        "max": 12
+      },
+      "resource_drops": [
+        {
+          "resource": "sable_vitre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_argent",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 15,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 8,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T5.",
+    "xp": 5
+  },
+  {
+    "id": "bandit_des_dunes_alpha",
+    "name": "Bandit des dunes Alpha",
+    "tier": "t5",
+    "is_boss": false,
+    "stats": {
+      "hp": 1696,
+      "atk": 148,
+      "def": 42,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 4,
+        "max": 12
+      },
+      "resource_drops": [
+        {
+          "resource": "sable_vitre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_argent",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 15,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 8,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T5.",
+    "xp": 3
+  },
+  {
+    "id": "bandit_des_dunes_veteran",
+    "name": "Bandit des dunes Vétéran",
+    "tier": "t5",
+    "is_boss": false,
+    "stats": {
+      "hp": 2088,
+      "atk": 182,
+      "def": 42,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 4,
+        "max": 12
+      },
+      "resource_drops": [
+        {
+          "resource": "sable_vitre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_argent",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 15,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 8,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T5.",
+    "xp": 4
+  },
+  {
+    "id": "bandit_des_dunes_elite",
+    "name": "Bandit des dunes Elite",
+    "tier": "t5",
+    "is_boss": false,
+    "stats": {
+      "hp": 2479,
+      "atk": 216,
+      "def": 42,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 4,
+        "max": 12
+      },
+      "resource_drops": [
+        {
+          "resource": "sable_vitre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_argent",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 15,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 8,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T5.",
+    "xp": 5
+  },
+  {
+    "id": "serpent_de_verre_alpha",
+    "name": "Serpent de verre Alpha",
+    "tier": "t5",
+    "is_boss": false,
+    "stats": {
+      "hp": 1509,
+      "atk": 161,
+      "def": 36,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 4,
+        "max": 12
+      },
+      "resource_drops": [
+        {
+          "resource": "sable_vitre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_argent",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 15,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 8,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T5.",
+    "xp": 3
+  },
+  {
+    "id": "serpent_de_verre_veteran",
+    "name": "Serpent de verre Vétéran",
+    "tier": "t5",
+    "is_boss": false,
+    "stats": {
+      "hp": 1857,
+      "atk": 198,
+      "def": 36,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 4,
+        "max": 12
+      },
+      "resource_drops": [
+        {
+          "resource": "sable_vitre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_argent",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 15,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 8,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T5.",
+    "xp": 4
+  },
+  {
+    "id": "serpent_de_verre_elite",
+    "name": "Serpent de verre Elite",
+    "tier": "t5",
+    "is_boss": false,
+    "stats": {
+      "hp": 2205,
+      "atk": 235,
+      "def": 36,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 4,
+        "max": 12
+      },
+      "resource_drops": [
+        {
+          "resource": "sable_vitre",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_argent",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 15,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 8,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T5.",
+    "xp": 5
+  },
+  {
+    "id": "ours_blanc_alpha",
+    "name": "Ours blanc Alpha",
+    "tier": "t6",
+    "is_boss": false,
+    "stats": {
+      "hp": 3502,
+      "atk": 174,
+      "def": 72,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 4,
+        "max": 13
+      },
+      "resource_drops": [
+        {
+          "resource": "fourrure_epaisse",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_or",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 17,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 9,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T6.",
+    "xp": 3
+  },
+  {
+    "id": "ours_blanc_veteran",
+    "name": "Ours blanc Vétéran",
+    "tier": "t6",
+    "is_boss": false,
+    "stats": {
+      "hp": 4310,
+      "atk": 214,
+      "def": 72,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 4,
+        "max": 13
+      },
+      "resource_drops": [
+        {
+          "resource": "fourrure_epaisse",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_or",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 17,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 9,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T6.",
+    "xp": 4
+  },
+  {
+    "id": "ours_blanc_elite",
+    "name": "Ours blanc Elite",
+    "tier": "t6",
+    "is_boss": false,
+    "stats": {
+      "hp": 5118,
+      "atk": 254,
+      "def": 72,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 4,
+        "max": 13
+      },
+      "resource_drops": [
+        {
+          "resource": "fourrure_epaisse",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_or",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 17,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 9,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T6.",
+    "xp": 5
+  },
+  {
+    "id": "chaman_froid_alpha",
+    "name": "Chaman du froid Alpha",
+    "tier": "t6",
+    "is_boss": false,
+    "stats": {
+      "hp": 2503,
+      "atk": 189,
+      "def": 64,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 4,
+        "max": 13
+      },
+      "resource_drops": [
+        {
+          "resource": "fourrure_epaisse",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_or",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 17,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 9,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T6.",
+    "xp": 3
+  },
+  {
+    "id": "chaman_froid_veteran",
+    "name": "Chaman du froid Vétéran",
+    "tier": "t6",
+    "is_boss": false,
+    "stats": {
+      "hp": 3081,
+      "atk": 233,
+      "def": 64,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 4,
+        "max": 13
+      },
+      "resource_drops": [
+        {
+          "resource": "fourrure_epaisse",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_or",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 17,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 9,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T6.",
+    "xp": 4
+  },
+  {
+    "id": "chaman_froid_elite",
+    "name": "Chaman du froid Elite",
+    "tier": "t6",
+    "is_boss": false,
+    "stats": {
+      "hp": 3659,
+      "atk": 277,
+      "def": 64,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 4,
+        "max": 13
+      },
+      "resource_drops": [
+        {
+          "resource": "fourrure_epaisse",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_or",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 17,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 9,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T6.",
+    "xp": 5
+  },
+  {
+    "id": "loups_du_givre_alpha",
+    "name": "Loups du givre Alpha",
+    "tier": "t6",
+    "is_boss": false,
+    "stats": {
+      "hp": 2503,
+      "atk": 189,
+      "def": 56,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 4,
+        "max": 13
+      },
+      "resource_drops": [
+        {
+          "resource": "fourrure_epaisse",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_or",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 17,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 9,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T6.",
+    "xp": 3
+  },
+  {
+    "id": "loups_du_givre_veteran",
+    "name": "Loups du givre Vétéran",
+    "tier": "t6",
+    "is_boss": false,
+    "stats": {
+      "hp": 3081,
+      "atk": 233,
+      "def": 56,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 4,
+        "max": 13
+      },
+      "resource_drops": [
+        {
+          "resource": "fourrure_epaisse",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_or",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 17,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 9,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T6.",
+    "xp": 4
+  },
+  {
+    "id": "loups_du_givre_elite",
+    "name": "Loups du givre Elite",
+    "tier": "t6",
+    "is_boss": false,
+    "stats": {
+      "hp": 3659,
+      "atk": 277,
+      "def": 56,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 4,
+        "max": 13
+      },
+      "resource_drops": [
+        {
+          "resource": "fourrure_epaisse",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_or",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 17,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 9,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T6.",
+    "xp": 5
+  },
+  {
+    "id": "salamandre_alpha",
+    "name": "Salamandre Alpha",
+    "tier": "t7",
+    "is_boss": false,
+    "stats": {
+      "hp": 3498,
+      "atk": 254,
+      "def": 78,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 5,
+        "max": 15
+      },
+      "resource_drops": [
+        {
+          "resource": "obsidienne",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_mithril",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 19,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 10,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T7.",
+    "xp": 3
+  },
+  {
+    "id": "salamandre_veteran",
+    "name": "Salamandre Vétéran",
+    "tier": "t7",
+    "is_boss": false,
+    "stats": {
+      "hp": 4305,
+      "atk": 313,
+      "def": 78,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 5,
+        "max": 15
+      },
+      "resource_drops": [
+        {
+          "resource": "obsidienne",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_mithril",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 19,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 10,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T7.",
+    "xp": 4
+  },
+  {
+    "id": "salamandre_elite",
+    "name": "Salamandre Elite",
+    "tier": "t7",
+    "is_boss": false,
+    "stats": {
+      "hp": 5112,
+      "atk": 372,
+      "def": 78,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 5,
+        "max": 15
+      },
+      "resource_drops": [
+        {
+          "resource": "obsidienne",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_mithril",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 19,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 10,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T7.",
+    "xp": 5
+  },
+  {
+    "id": "forgeron_fou_alpha",
+    "name": "Forgeron fou Alpha",
+    "tier": "t7",
+    "is_boss": false,
+    "stats": {
+      "hp": 3182,
+      "atk": 275,
+      "def": 88,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 5,
+        "max": 15
+      },
+      "resource_drops": [
+        {
+          "resource": "obsidienne",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_mithril",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 19,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 10,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T7.",
+    "xp": 3
+  },
+  {
+    "id": "forgeron_fou_veteran",
+    "name": "Forgeron fou Vétéran",
+    "tier": "t7",
+    "is_boss": false,
+    "stats": {
+      "hp": 3916,
+      "atk": 339,
+      "def": 88,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 5,
+        "max": 15
+      },
+      "resource_drops": [
+        {
+          "resource": "obsidienne",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_mithril",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 19,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 10,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T7.",
+    "xp": 4
+  },
+  {
+    "id": "forgeron_fou_elite",
+    "name": "Forgeron fou Elite",
+    "tier": "t7",
+    "is_boss": false,
+    "stats": {
+      "hp": 4651,
+      "atk": 402,
+      "def": 88,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 5,
+        "max": 15
+      },
+      "resource_drops": [
+        {
+          "resource": "obsidienne",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_mithril",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 19,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 10,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T7.",
+    "xp": 5
+  },
+  {
+    "id": "elementaire_braise_alpha",
+    "name": "Élémentaire de braise Alpha",
+    "tier": "t7",
+    "is_boss": false,
+    "stats": {
+      "hp": 3818,
+      "atk": 254,
+      "def": 98,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 5,
+        "max": 15
+      },
+      "resource_drops": [
+        {
+          "resource": "obsidienne",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_mithril",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 19,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 10,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T7.",
+    "xp": 3
+  },
+  {
+    "id": "elementaire_braise_veteran",
+    "name": "Élémentaire de braise Vétéran",
+    "tier": "t7",
+    "is_boss": false,
+    "stats": {
+      "hp": 4699,
+      "atk": 313,
+      "def": 98,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 5,
+        "max": 15
+      },
+      "resource_drops": [
+        {
+          "resource": "obsidienne",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_mithril",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 19,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 10,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T7.",
+    "xp": 4
+  },
+  {
+    "id": "elementaire_braise_elite",
+    "name": "Élémentaire de braise Elite",
+    "tier": "t7",
+    "is_boss": false,
+    "stats": {
+      "hp": 5580,
+      "atk": 372,
+      "def": 98,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 5,
+        "max": 15
+      },
+      "resource_drops": [
+        {
+          "resource": "obsidienne",
+          "chance_pct": 25
+        },
+        {
+          "resource": "minerai_mithril",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 19,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 10,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T7.",
+    "xp": 5
+  },
+  {
+    "id": "sentinelle_brisee_alpha",
+    "name": "Sentinelle brisée Alpha",
+    "tier": "t8",
+    "is_boss": false,
+    "stats": {
+      "hp": 5089,
+      "atk": 280,
+      "def": 142,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 5,
+        "max": 16
+      },
+      "resource_drops": [
+        {
+          "resource": "pierre_runique",
+          "chance_pct": 25
+        },
+        {
+          "resource": "fragment_relique",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 21,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 11,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T8.",
+    "xp": 3
+  },
+  {
+    "id": "sentinelle_brisee_veteran",
+    "name": "Sentinelle brisée Vétéran",
+    "tier": "t8",
+    "is_boss": false,
+    "stats": {
+      "hp": 6264,
+      "atk": 345,
+      "def": 142,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 5,
+        "max": 16
+      },
+      "resource_drops": [
+        {
+          "resource": "pierre_runique",
+          "chance_pct": 25
+        },
+        {
+          "resource": "fragment_relique",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 21,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 11,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T8.",
+    "xp": 4
+  },
+  {
+    "id": "sentinelle_brisee_elite",
+    "name": "Sentinelle brisée Elite",
+    "tier": "t8",
+    "is_boss": false,
+    "stats": {
+      "hp": 7438,
+      "atk": 410,
+      "def": 142,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 5,
+        "max": 16
+      },
+      "resource_drops": [
+        {
+          "resource": "pierre_runique",
+          "chance_pct": 25
+        },
+        {
+          "resource": "fragment_relique",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 21,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 11,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T8.",
+    "xp": 5
+  },
+  {
+    "id": "mage_oubli_alpha",
+    "name": "Mage de l'oubli Alpha",
+    "tier": "t8",
+    "is_boss": false,
+    "stats": {
+      "hp": 3915,
+      "atk": 358,
+      "def": 106,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 5,
+        "max": 16
+      },
+      "resource_drops": [
+        {
+          "resource": "pierre_runique",
+          "chance_pct": 25
+        },
+        {
+          "resource": "fragment_relique",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 21,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 11,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T8.",
+    "xp": 3
+  },
+  {
+    "id": "mage_oubli_veteran",
+    "name": "Mage de l'oubli Vétéran",
+    "tier": "t8",
+    "is_boss": false,
+    "stats": {
+      "hp": 4819,
+      "atk": 441,
+      "def": 106,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 5,
+        "max": 16
+      },
+      "resource_drops": [
+        {
+          "resource": "pierre_runique",
+          "chance_pct": 25
+        },
+        {
+          "resource": "fragment_relique",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 21,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 11,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T8.",
+    "xp": 4
+  },
+  {
+    "id": "mage_oubli_elite",
+    "name": "Mage de l'oubli Elite",
+    "tier": "t8",
+    "is_boss": false,
+    "stats": {
+      "hp": 5722,
+      "atk": 524,
+      "def": 106,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 5,
+        "max": 16
+      },
+      "resource_drops": [
+        {
+          "resource": "pierre_runique",
+          "chance_pct": 25
+        },
+        {
+          "resource": "fragment_relique",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 21,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 11,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T8.",
+    "xp": 5
+  },
+  {
+    "id": "spectre_alpha",
+    "name": "Spectre Alpha",
+    "tier": "t8",
+    "is_boss": false,
+    "stats": {
+      "hp": 3521,
+      "atk": 358,
+      "def": 94,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 5,
+        "max": 16
+      },
+      "resource_drops": [
+        {
+          "resource": "pierre_runique",
+          "chance_pct": 25
+        },
+        {
+          "resource": "fragment_relique",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 21,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 11,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T8.",
+    "xp": 3
+  },
+  {
+    "id": "spectre_veteran",
+    "name": "Spectre Vétéran",
+    "tier": "t8",
+    "is_boss": false,
+    "stats": {
+      "hp": 4334,
+      "atk": 441,
+      "def": 94,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 5,
+        "max": 16
+      },
+      "resource_drops": [
+        {
+          "resource": "pierre_runique",
+          "chance_pct": 25
+        },
+        {
+          "resource": "fragment_relique",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 21,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 11,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T8.",
+    "xp": 4
+  },
+  {
+    "id": "spectre_elite",
+    "name": "Spectre Elite",
+    "tier": "t8",
+    "is_boss": false,
+    "stats": {
+      "hp": 5147,
+      "atk": 524,
+      "def": 94,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 5,
+        "max": 16
+      },
+      "resource_drops": [
+        {
+          "resource": "pierre_runique",
+          "chance_pct": 25
+        },
+        {
+          "resource": "fragment_relique",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 21,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 11,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T8.",
+    "xp": 5
+  },
+  {
+    "id": "harpie_alpha",
+    "name": "Harpie Alpha",
+    "tier": "t9",
+    "is_boss": false,
+    "stats": {
+      "hp": 4699,
+      "atk": 452,
+      "def": 124,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 6,
+        "max": 18
+      },
+      "resource_drops": [
+        {
+          "resource": "cristal_azur",
+          "chance_pct": 25
+        },
+        {
+          "resource": "plume_d_orage",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 23,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 12,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T9.",
+    "xp": 3
+  },
+  {
+    "id": "harpie_veteran",
+    "name": "Harpie Vétéran",
+    "tier": "t9",
+    "is_boss": false,
+    "stats": {
+      "hp": 5784,
+      "atk": 556,
+      "def": 124,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 6,
+        "max": 18
+      },
+      "resource_drops": [
+        {
+          "resource": "cristal_azur",
+          "chance_pct": 25
+        },
+        {
+          "resource": "plume_d_orage",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 23,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 12,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T9.",
+    "xp": 4
+  },
+  {
+    "id": "harpie_elite",
+    "name": "Harpie Elite",
+    "tier": "t9",
+    "is_boss": false,
+    "stats": {
+      "hp": 6868,
+      "atk": 661,
+      "def": 124,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 6,
+        "max": 18
+      },
+      "resource_drops": [
+        {
+          "resource": "cristal_azur",
+          "chance_pct": 25
+        },
+        {
+          "resource": "plume_d_orage",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 23,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 12,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T9.",
+    "xp": 5
+  },
+  {
+    "id": "golem_cristal_alpha",
+    "name": "Golem de cristal Alpha",
+    "tier": "t9",
+    "is_boss": false,
+    "stats": {
+      "hp": 7047,
+      "atk": 361,
+      "def": 180,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 6,
+        "max": 18
+      },
+      "resource_drops": [
+        {
+          "resource": "cristal_azur",
+          "chance_pct": 25
+        },
+        {
+          "resource": "plume_d_orage",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 23,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 12,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T9.",
+    "xp": 3
+  },
+  {
+    "id": "golem_cristal_veteran",
+    "name": "Golem de cristal Vétéran",
+    "tier": "t9",
+    "is_boss": false,
+    "stats": {
+      "hp": 8673,
+      "atk": 444,
+      "def": 180,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 6,
+        "max": 18
+      },
+      "resource_drops": [
+        {
+          "resource": "cristal_azur",
+          "chance_pct": 25
+        },
+        {
+          "resource": "plume_d_orage",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 23,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 12,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T9.",
+    "xp": 4
+  },
+  {
+    "id": "golem_cristal_elite",
+    "name": "Golem de cristal Elite",
+    "tier": "t9",
+    "is_boss": false,
+    "stats": {
+      "hp": 10299,
+      "atk": 528,
+      "def": 180,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 6,
+        "max": 18
+      },
+      "resource_drops": [
+        {
+          "resource": "cristal_azur",
+          "chance_pct": 25
+        },
+        {
+          "resource": "plume_d_orage",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 23,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 12,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T9.",
+    "xp": 5
+  },
+  {
+    "id": "tempete_vivante_alpha",
+    "name": "Tempête vivante Alpha",
+    "tier": "t9",
+    "is_boss": false,
+    "stats": {
+      "hp": 5639,
+      "atk": 481,
+      "def": 138,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 6,
+        "max": 18
+      },
+      "resource_drops": [
+        {
+          "resource": "cristal_azur",
+          "chance_pct": 25
+        },
+        {
+          "resource": "plume_d_orage",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 23,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 12,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T9.",
+    "xp": 3
+  },
+  {
+    "id": "tempete_vivante_veteran",
+    "name": "Tempête vivante Vétéran",
+    "tier": "t9",
+    "is_boss": false,
+    "stats": {
+      "hp": 6940,
+      "atk": 592,
+      "def": 138,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 6,
+        "max": 18
+      },
+      "resource_drops": [
+        {
+          "resource": "cristal_azur",
+          "chance_pct": 25
+        },
+        {
+          "resource": "plume_d_orage",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 23,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 12,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T9.",
+    "xp": 4
+  },
+  {
+    "id": "tempete_vivante_elite",
+    "name": "Tempête vivante Elite",
+    "tier": "t9",
+    "is_boss": false,
+    "stats": {
+      "hp": 8242,
+      "atk": 703,
+      "def": 138,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 6,
+        "max": 18
+      },
+      "resource_drops": [
+        {
+          "resource": "cristal_azur",
+          "chance_pct": 25
+        },
+        {
+          "resource": "plume_d_orage",
+          "chance_pct": 25
+        },
+        {
+          "resource": "cristal_feu",
+          "chance_pct": 23,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "fragment_combat",
+          "chance_pct": 12,
+          "qty_min": 1,
+          "qty_max": 1
+        },
+        {
+          "resource": "essence_forge",
+          "chance_pct": 2,
+          "qty_min": 1,
+          "qty_max": 1
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T9.",
+    "xp": 5
+  },
+  {
+    "id": "ombre_lame_alpha",
+    "name": "Ombre-lame Alpha",
+    "tier": "t10",
+    "is_boss": false,
+    "stats": {
+      "hp": 7191,
+      "atk": 626,
+      "def": 192,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 6,
+        "max": 19
+      },
+      "resource_drops": [
+        {
+          "resource": "encre_vivante",
+          "chance_pct": 25
+        },
+        {
+          "resource": "fragment_abyssal",
+          "chance_pct": 25
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T10.",
+    "xp": 3
+  },
+  {
+    "id": "ombre_lame_veteran",
+    "name": "Ombre-lame Vétéran",
+    "tier": "t10",
+    "is_boss": false,
+    "stats": {
+      "hp": 8851,
+      "atk": 771,
+      "def": 192,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 6,
+        "max": 19
+      },
+      "resource_drops": [
+        {
+          "resource": "encre_vivante",
+          "chance_pct": 25
+        },
+        {
+          "resource": "fragment_abyssal",
+          "chance_pct": 25
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T10.",
+    "xp": 4
+  },
+  {
+    "id": "ombre_lame_elite",
+    "name": "Ombre-lame Elite",
+    "tier": "t10",
+    "is_boss": false,
+    "stats": {
+      "hp": 10510,
+      "atk": 915,
+      "def": 192,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 6,
+        "max": 19
+      },
+      "resource_drops": [
+        {
+          "resource": "encre_vivante",
+          "chance_pct": 25
+        },
+        {
+          "resource": "fragment_abyssal",
+          "chance_pct": 25
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T10.",
+    "xp": 5
+  },
+  {
+    "id": "scribe_vide_alpha",
+    "name": "Scribe du vide Alpha",
+    "tier": "t10",
+    "is_boss": false,
+    "stats": {
+      "hp": 6637,
+      "atk": 590,
+      "def": 208,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 6,
+        "max": 19
+      },
+      "resource_drops": [
+        {
+          "resource": "encre_vivante",
+          "chance_pct": 25
+        },
+        {
+          "resource": "fragment_abyssal",
+          "chance_pct": 25
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T10.",
+    "xp": 3
+  },
+  {
+    "id": "scribe_vide_veteran",
+    "name": "Scribe du vide Vétéran",
+    "tier": "t10",
+    "is_boss": false,
+    "stats": {
+      "hp": 8169,
+      "atk": 726,
+      "def": 208,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 6,
+        "max": 19
+      },
+      "resource_drops": [
+        {
+          "resource": "encre_vivante",
+          "chance_pct": 25
+        },
+        {
+          "resource": "fragment_abyssal",
+          "chance_pct": 25
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T10.",
+    "xp": 4
+  },
+  {
+    "id": "scribe_vide_elite",
+    "name": "Scribe du vide Elite",
+    "tier": "t10",
+    "is_boss": false,
+    "stats": {
+      "hp": 9701,
+      "atk": 862,
+      "def": 208,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 6,
+        "max": 19
+      },
+      "resource_drops": [
+        {
+          "resource": "encre_vivante",
+          "chance_pct": 25
+        },
+        {
+          "resource": "fragment_abyssal",
+          "chance_pct": 25
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T10.",
+    "xp": 5
+  },
+  {
+    "id": "bete_paradoxe_alpha",
+    "name": "Bête paradoxe Alpha",
+    "tier": "t10",
+    "is_boss": false,
+    "stats": {
+      "hp": 9406,
+      "atk": 556,
+      "def": 240,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 6,
+        "max": 19
+      },
+      "resource_drops": [
+        {
+          "resource": "encre_vivante",
+          "chance_pct": 25
+        },
+        {
+          "resource": "fragment_abyssal",
+          "chance_pct": 25
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T10.",
+    "xp": 3
+  },
+  {
+    "id": "bete_paradoxe_veteran",
+    "name": "Bête paradoxe Vétéran",
+    "tier": "t10",
+    "is_boss": false,
+    "stats": {
+      "hp": 11577,
+      "atk": 684,
+      "def": 240,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 6,
+        "max": 19
+      },
+      "resource_drops": [
+        {
+          "resource": "encre_vivante",
+          "chance_pct": 25
+        },
+        {
+          "resource": "fragment_abyssal",
+          "chance_pct": 25
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T10.",
+    "xp": 4
+  },
+  {
+    "id": "bete_paradoxe_elite",
+    "name": "Bête paradoxe Elite",
+    "tier": "t10",
+    "is_boss": false,
+    "stats": {
+      "hp": 13748,
+      "atk": 813,
+      "def": 240,
+      "armor": 0
+    },
+    "loot": {
+      "gold": {
+        "min": 6,
+        "max": 19
+      },
+      "resource_drops": [
+        {
+          "resource": "encre_vivante",
+          "chance_pct": 25
+        },
+        {
+          "resource": "fragment_abyssal",
+          "chance_pct": 25
+        }
+      ],
+      "item_drop_chance_pct": 0,
+      "rarity_weights": {
+        "commun": 55,
+        "peu_commun": 25,
+        "rare": 12,
+        "epique": 6,
+        "legendaire": 2
+      }
+    },
+    "desc": "Ennemi T10.",
+    "xp": 5
   }
 ]

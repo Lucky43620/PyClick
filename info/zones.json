@@ -21,9 +21,19 @@
     "enemies": [
       "limace_verte",
       "rat_des_foins",
-      "corneille_volee"
+      "corneille_volee",
+      "limace_verte_alpha",
+      "limace_verte_veteran",
+      "limace_verte_elite",
+      "rat_des_foins_alpha",
+      "rat_des_foins_veteran",
+      "rat_des_foins_elite",
+      "corneille_volee_alpha",
+      "corneille_volee_veteran",
+      "corneille_volee_elite"
     ],
-    "boss": "sanglier_cuirasse"
+    "boss": "sanglier_cuirasse",
+    "level_requirement": 1
   },
   {
     "id": "bois_des_murmures",
@@ -47,9 +57,19 @@
     "enemies": [
       "loup_jeune",
       "esprit_de_branche",
-      "araignee_grise"
+      "araignee_grise",
+      "loup_jeune_alpha",
+      "loup_jeune_veteran",
+      "loup_jeune_elite",
+      "esprit_de_branche_alpha",
+      "esprit_de_branche_veteran",
+      "esprit_de_branche_elite",
+      "araignee_grise_alpha",
+      "araignee_grise_veteran",
+      "araignee_grise_elite"
     ],
-    "boss": "ent_fissure"
+    "boss": "ent_fissure",
+    "level_requirement": 5
   },
   {
     "id": "carriere_aux_echos",
@@ -73,9 +93,19 @@
     "enemies": [
       "taupe_mineuse",
       "golem_de_gravats",
-      "chauve_souris"
+      "chauve_souris",
+      "taupe_mineuse_alpha",
+      "taupe_mineuse_veteran",
+      "taupe_mineuse_elite",
+      "golem_de_gravats_alpha",
+      "golem_de_gravats_veteran",
+      "golem_de_gravats_elite",
+      "chauve_souris_alpha",
+      "chauve_souris_veteran",
+      "chauve_souris_elite"
     ],
-    "boss": "golem_du_puits"
+    "boss": "golem_du_puits",
+    "level_requirement": 10
   },
   {
     "id": "marais_des_lueurs",
@@ -99,9 +129,19 @@
     "enemies": [
       "moustique_gigante",
       "sangsue_sombre",
-      "secte_boueuse"
+      "secte_boueuse",
+      "moustique_gigante_alpha",
+      "moustique_gigante_veteran",
+      "moustique_gigante_elite",
+      "sangsue_sombre_alpha",
+      "sangsue_sombre_veteran",
+      "sangsue_sombre_elite",
+      "secte_boueuse_alpha",
+      "secte_boueuse_veteran",
+      "secte_boueuse_elite"
     ],
-    "boss": "reine_sangsue"
+    "boss": "reine_sangsue",
+    "level_requirement": 15
   },
   {
     "id": "desert_des_verres",
@@ -125,9 +165,19 @@
     "enemies": [
       "scorpion_rouge",
       "bandit_des_dunes",
-      "serpent_de_verre"
+      "serpent_de_verre",
+      "scorpion_rouge_alpha",
+      "scorpion_rouge_veteran",
+      "scorpion_rouge_elite",
+      "bandit_des_dunes_alpha",
+      "bandit_des_dunes_veteran",
+      "bandit_des_dunes_elite",
+      "serpent_de_verre_alpha",
+      "serpent_de_verre_veteran",
+      "serpent_de_verre_elite"
     ],
-    "boss": "titan_de_sable"
+    "boss": "titan_de_sable",
+    "level_requirement": 20
   },
   {
     "id": "toundra_des_ancetres",
@@ -151,9 +201,19 @@
     "enemies": [
       "ours_blanc",
       "chaman_froid",
-      "loups_du_givre"
+      "loups_du_givre",
+      "ours_blanc_alpha",
+      "ours_blanc_veteran",
+      "ours_blanc_elite",
+      "chaman_froid_alpha",
+      "chaman_froid_veteran",
+      "chaman_froid_elite",
+      "loups_du_givre_alpha",
+      "loups_du_givre_veteran",
+      "loups_du_givre_elite"
     ],
-    "boss": "matriarche_du_givre"
+    "boss": "matriarche_du_givre",
+    "level_requirement": 25
   },
   {
     "id": "volcan_de_kar",
@@ -177,9 +237,19 @@
     "enemies": [
       "salamandre",
       "forgeron_fou",
-      "elementaire_braise"
+      "elementaire_braise",
+      "salamandre_alpha",
+      "salamandre_veteran",
+      "salamandre_elite",
+      "forgeron_fou_alpha",
+      "forgeron_fou_veteran",
+      "forgeron_fou_elite",
+      "elementaire_braise_alpha",
+      "elementaire_braise_veteran",
+      "elementaire_braise_elite"
     ],
-    "boss": "coeur_de_magma"
+    "boss": "coeur_de_magma",
+    "level_requirement": 30
   },
   {
     "id": "ruines_de_l_ordre",
@@ -203,9 +273,19 @@
     "enemies": [
       "sentinelle_brisee",
       "mage_oubli",
-      "spectre"
+      "spectre",
+      "sentinelle_brisee_alpha",
+      "sentinelle_brisee_veteran",
+      "sentinelle_brisee_elite",
+      "mage_oubli_alpha",
+      "mage_oubli_veteran",
+      "mage_oubli_elite",
+      "spectre_alpha",
+      "spectre_veteran",
+      "spectre_elite"
     ],
-    "boss": "gardien_du_sceau"
+    "boss": "gardien_du_sceau",
+    "level_requirement": 35
   },
   {
     "id": "iles_celestes",
@@ -229,9 +309,19 @@
     "enemies": [
       "harpie",
       "golem_cristal",
-      "tempete_vivante"
+      "tempete_vivante",
+      "harpie_alpha",
+      "harpie_veteran",
+      "harpie_elite",
+      "golem_cristal_alpha",
+      "golem_cristal_veteran",
+      "golem_cristal_elite",
+      "tempete_vivante_alpha",
+      "tempete_vivante_veteran",
+      "tempete_vivante_elite"
     ],
-    "boss": "arbitre_des_nues"
+    "boss": "arbitre_des_nues",
+    "level_requirement": 40
   },
   {
     "id": "abysse_palimpseste",
@@ -253,8 +343,18 @@
     "enemies": [
       "ombre_lame",
       "scribe_vide",
-      "bete_paradoxe"
+      "bete_paradoxe",
+      "ombre_lame_alpha",
+      "ombre_lame_veteran",
+      "ombre_lame_elite",
+      "scribe_vide_alpha",
+      "scribe_vide_veteran",
+      "scribe_vide_elite",
+      "bete_paradoxe_alpha",
+      "bete_paradoxe_veteran",
+      "bete_paradoxe_elite"
     ],
-    "boss": "archiviste_du_neant"
+    "boss": "archiviste_du_neant",
+    "level_requirement": 45
   }
 ]

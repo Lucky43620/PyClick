@@ -289,30 +289,28 @@ class ItemGenerator:
 
     def generate_starter_equipment(self) -> List[Item]:
         """Génère l'équipement de départ du joueur (tier 1, common, poor quality)"""
+        # HARDCORE MODE: Un seul item de départ très faible
         starter_items = []
 
-        # Arme de départ
+        # Arme de départ SEULEMENT - pas d'armure!
         weapon_bases = [item for item in self.data.items_base
-                       if item["slot"] == "weapon" and item["tier"] == "t1"]
+                       if item["slot"] == "arme" and item["tier"] == "t1"]
         if weapon_bases:
-            weapon = self.generate_item(
-                weapon_bases[0]["id"],
-                rarity_id="common",
-                quality_id="poor"
-            )
-            starter_items.append(weapon)
+            weapon = Item()
+            weapon.base_id = weapon_bases[0]["id"]
+            weapon.name = "Bâton pourri"
+            weapon.slot = "arme"
+            weapon.tier = "t1"
+            weapon.rarity_id = "commun"
+            weapon.quality_id = "q1"
 
-        # Armure de départ simple
-        armor_slots = ["chest", "helmet"]
-        for slot in armor_slots:
-            armor_bases = [item for item in self.data.items_base
-                          if item["slot"] == slot and item["tier"] == "t1"]
-            if armor_bases:
-                armor = self.generate_item(
-                    armor_bases[0]["id"],
-                    rarity_id="common",
-                    quality_id="poor"
-                )
-                starter_items.append(armor)
+            # Stats ULTRA faibles - à peine mieux que rien
+            weapon.base_stats.atk = 2.0  # Seulement +2 ATK!
+            weapon.affixes = []  # Aucun affixe
+            weapon.gold_value = 1
+            weapon.level_requirement = 1
+            weapon.power_score = 2.0
+
+            starter_items.append(weapon)
 
         return starter_items

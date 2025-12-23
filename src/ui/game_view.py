@@ -352,6 +352,82 @@ class GameView(arcade.View):
         arcade.draw_text(f"Degats total: {total_dmg}",
                         stats_x + 15, current_y, (150, 150, 150), 9)
 
+        # SÉLECTEUR DE ZONE (en bas à droite)
+        zone_panel_width = 400
+        zone_panel_height = 150
+        zone_panel_x = width - zone_panel_width - 20
+        zone_panel_y = 70  # Juste au-dessus des boutons de nav
+
+        arcade.draw_lrbt_rectangle_filled(
+            zone_panel_x, zone_panel_x + zone_panel_width,
+            zone_panel_y, zone_panel_y + zone_panel_height,
+            self.COLOR_PANEL
+        )
+        arcade.draw_lrbt_rectangle_outline(
+            zone_panel_x, zone_panel_x + zone_panel_width,
+            zone_panel_y, zone_panel_y + zone_panel_height,
+            self.COLOR_BORDER, 2
+        )
+
+        arcade.draw_text("Sélection de Zone", zone_panel_x + 10, zone_panel_y + zone_panel_height - 20,
+                        self.COLOR_HIGHLIGHT, 13, bold=True)
+
+        # Zone actuelle
+        current_zone = self.data.get_zone(self.player.current_zone_id)
+        if current_zone:
+            arcade.draw_text(f"Actuelle: {current_zone['name']} (T{current_zone['tier'][1:]})",
+                           zone_panel_x + 10, zone_panel_y + zone_panel_height - 45,
+                           self.COLOR_TEXT, 11)
+
+        # Boutons de navigation de zone
+        btn_width = 120
+        btn_height = 35
+        btn_y = zone_panel_y + 20
+
+        # Bouton ZONE PRÉCÉDENTE
+        prev_btn_x = zone_panel_x + 20
+        arcade.draw_lrbt_rectangle_filled(
+            prev_btn_x, prev_btn_x + btn_width,
+            btn_y, btn_y + btn_height,
+            self.COLOR_PANEL_LIGHT
+        )
+        arcade.draw_lrbt_rectangle_outline(
+            prev_btn_x, prev_btn_x + btn_width,
+            btn_y, btn_y + btn_height,
+            self.COLOR_BORDER, 2
+        )
+        arcade.draw_text("◄ ZONE PRÉC", prev_btn_x + btn_width // 2, btn_y + 10,
+                        self.COLOR_TEXT, 10, bold=True, anchor_x="center")
+
+        # Bouton ZONE SUIVANTE
+        next_btn_x = prev_btn_x + btn_width + 20
+        # Vérifier si la zone suivante est débloquée
+        zones = self.data.zones
+        current_idx = next((i for i, z in enumerate(zones) if z["id"] == self.player.current_zone_id), 0)
+        next_zone = zones[(current_idx + 1) % len(zones)]
+        can_access = self.player.level >= next_zone.get("level_requirement", 1)
+
+        btn_color = self.COLOR_HIGHLIGHT if can_access else (60, 60, 60)
+        arcade.draw_lrbt_rectangle_filled(
+            next_btn_x, next_btn_x + btn_width,
+            btn_y, btn_y + btn_height,
+            btn_color
+        )
+        arcade.draw_lrbt_rectangle_outline(
+            next_btn_x, next_btn_x + btn_width,
+            btn_y, btn_y + btn_height,
+            self.COLOR_BORDER, 2
+        )
+        arcade.draw_text("ZONE SUIV ►", next_btn_x + btn_width // 2, btn_y + 10,
+                        self.COLOR_TEXT if can_access else self.COLOR_TEXT_DIM,
+                        10, bold=True, anchor_x="center")
+
+        # Info zone suivante
+        if not can_access:
+            arcade.draw_text(f"Requis: Level {next_zone.get('level_requirement', 1)}",
+                           next_btn_x + btn_width // 2, btn_y - 15,
+                           (200, 100, 100), 9, anchor_x="center")
+
     def _draw_gathering_view(self):
         """Vue de récolte"""
         width = self.window.width
@@ -434,7 +510,7 @@ class GameView(arcade.View):
 
         # Instructions de navigation
         if total_recipes > 8:
-            arcade.draw_text("[ UP/DOWN pour naviguer ]", width // 2, height - 50,
+            arcade.draw_text("[ UP/DOWN ou Molette pour naviguer ]", width // 2, height - 50,
                            self.COLOR_TEXT_DIM, 10, anchor_x="center")
 
         recipe_y = height - 80
@@ -493,6 +569,47 @@ class GameView(arcade.View):
                 arcade.draw_text(recipe_info["reason"], recipe_x + recipe_width - 200, y + 20,
                                self.COLOR_TEXT_DIM, 10)
 
+        # Scroll bar visuelle si plus de 8 recettes
+        if total_recipes > max_display:
+            scrollbar_x = recipe_x + recipe_width + 15
+            scrollbar_height = max_display * (recipe_height + 10) - 10
+            scrollbar_y_top = recipe_y
+            scrollbar_y_bottom = scrollbar_y_top - scrollbar_height
+            scrollbar_width = 12
+
+            # Background de la scrollbar
+            arcade.draw_lrbt_rectangle_filled(
+                scrollbar_x, scrollbar_x + scrollbar_width,
+                scrollbar_y_bottom, scrollbar_y_top,
+                self.COLOR_PANEL
+            )
+            arcade.draw_lrbt_rectangle_outline(
+                scrollbar_x, scrollbar_x + scrollbar_width,
+                scrollbar_y_bottom, scrollbar_y_top,
+                self.COLOR_BORDER, 1
+            )
+
+            # Thumb de la scrollbar
+            scroll_percent = self.recipe_scroll_offset / max_offset if max_offset > 0 else 0
+            visible_percent = max_display / total_recipes
+            thumb_height = max(20, scrollbar_height * visible_percent)
+            thumb_travel = scrollbar_height - thumb_height
+            thumb_y_top = scrollbar_y_top - (thumb_travel * scroll_percent)
+            thumb_y_bottom = thumb_y_top - thumb_height
+
+            arcade.draw_lrbt_rectangle_filled(
+                scrollbar_x + 2, scrollbar_x + scrollbar_width - 2,
+                thumb_y_bottom, thumb_y_top,
+                self.COLOR_HIGHLIGHT
+            )
+
+            # Indicateur de position
+            arcade.draw_text(
+                f"{self.recipe_scroll_offset + 1}-{min(self.recipe_scroll_offset + max_display, total_recipes)} / {total_recipes}",
+                scrollbar_x, scrollbar_y_bottom - 20,
+                self.COLOR_TEXT_DIM, 9, anchor_x="left"
+            )
+
     def _draw_inventory_view(self):
         """Vue d'inventaire et équipement"""
         width = self.window.width
@@ -520,7 +637,7 @@ class GameView(arcade.View):
         for slot, label in slot_names.items():
             item = self.player.equipment.get(slot)
 
-            if item:
+            if item and hasattr(item, 'name'):
                 rarity_color = self.RARITY_COLORS.get(item.rarity_id, self.COLOR_TEXT)
                 arcade.draw_text(f"{label}: {item.name}", equip_x, y, rarity_color, 11)
             else:
@@ -651,18 +768,20 @@ class GameView(arcade.View):
 
         # Clics spécifiques selon le mode
         if self.current_mode == "combat":
-            self._handle_combat_click(x, y)
+            self._handle_combat_click(x, y, button)
         elif self.current_mode == "gathering":
-            self._handle_gathering_click(x, y)
+            self._handle_gathering_click(x, y, button)
         elif self.current_mode == "crafting":
-            self._handle_crafting_click(x, y)
+            self._handle_crafting_click(x, y, button)
         elif self.current_mode == "inventory":
-            self._handle_inventory_click(x, y)
+            self._handle_inventory_click(x, y, button)
         elif self.current_mode == "upgrades":
-            self._handle_upgrades_click(x, y)
+            self._handle_upgrades_click(x, y, button)
 
-    def _handle_combat_click(self, x, y):
+    def _handle_combat_click(self, x, y, button):
         """Gère les clics en mode combat"""
+        if button != arcade.MOUSE_BUTTON_LEFT:
+            return
         width = self.window.width
         height = self.window.height - 150
 
@@ -697,8 +816,40 @@ class GameView(arcade.View):
             self.combat.start_combat(self.player.current_zone_id, spawn_boss=True)
             return
 
-    def _handle_gathering_click(self, x, y):
+        # Boutons de changement de zone (en bas à droite)
+        zone_panel_width = 400
+        zone_panel_x = width - zone_panel_width - 20
+        zone_panel_y = 70
+        zone_btn_width = 120
+        zone_btn_height = 35
+        zone_btn_y = zone_panel_y + 20
+
+        # Bouton ZONE PRÉCÉDENTE
+        prev_btn_x = zone_panel_x + 20
+        if (prev_btn_x <= x <= prev_btn_x + zone_btn_width and
+            zone_btn_y <= y <= zone_btn_y + zone_btn_height):
+            self._change_zone(-1)
+            return
+
+        # Bouton ZONE SUIVANTE
+        next_btn_x = prev_btn_x + zone_btn_width + 20
+        if (next_btn_x <= x <= next_btn_x + zone_btn_width and
+            zone_btn_y <= y <= zone_btn_y + zone_btn_height):
+            # Vérifier si on peut accéder à la zone suivante
+            zones = self.data.zones
+            current_idx = next((i for i, z in enumerate(zones) if z["id"] == self.player.current_zone_id), 0)
+            next_zone = zones[(current_idx + 1) % len(zones)]
+
+            if self.player.level >= next_zone.get("level_requirement", 1):
+                self._change_zone(1)
+            else:
+                print(f"Zone verrouillée! Requis: Level {next_zone.get('level_requirement', 1)}")
+            return
+
+    def _handle_gathering_click(self, x, y, button):
         """Gère les clics en mode récolte"""
+        if button != arcade.MOUSE_BUTTON_LEFT:
+            return
         width = self.window.width
         height = self.window.height - 150
 
@@ -728,8 +879,10 @@ class GameView(arcade.View):
                     print(f"Récolté: {reward['quantity']}x {reward['resource_id']} (+{reward['xp']} XP)")
                 break
 
-    def _handle_crafting_click(self, x, y):
+    def _handle_crafting_click(self, x, y, button):
         """Gère les clics en mode crafting"""
+        if button != arcade.MOUSE_BUTTON_LEFT:
+            return
         width = self.window.width
         height = self.window.height - 150
 
@@ -756,10 +909,73 @@ class GameView(arcade.View):
                     print(f"Crafté: {item.name}")
                 break
 
-    def _handle_inventory_click(self, x, y):
+    def _handle_inventory_click(self, x, y, button):
         """Gère les clics en mode inventaire"""
         height = self.window.height - 150
         equip_x = 50
+
+        # Clic droit sur équipement pour déséquiper
+        if button == arcade.MOUSE_BUTTON_RIGHT:
+            equip_y = height - 50
+            slot_names = {
+                "weapon": "Arme",
+                "helmet": "Casque",
+                "chest": "Armure",
+                "legs": "Jambes",
+                "boots": "Bottes",
+                "gloves": "Gants",
+                "ring1": "Anneau 1",
+                "ring2": "Anneau 2",
+                "amulet": "Amulette"
+            }
+
+            y_pos = equip_y - 30
+            for slot, label in slot_names.items():
+                if equip_x <= x <= equip_x + 250 and y_pos - 25 <= y <= y_pos:
+                    item = self.player.equipment.get(slot)
+                    if item:
+                        # Déséquiper l'item
+                        self.player.equipment[slot] = None
+                        item.is_equipped = False
+                        self.player.add_item_to_inventory(item)
+                        print(f"Déséquipé: {item.name}")
+                        return
+                y_pos -= 25
+
+            # Clic droit sur inventaire pour inspecter
+            inv_x = 350
+            inv_y = height - 50
+            cols = 5
+            item_size = 60
+            spacing = 10
+
+            for i, item in enumerate(self.player.inventory):
+                row = i // cols
+                col = i % cols
+                ix = inv_x + col * (item_size + spacing)
+                iy = inv_y - 40 - row * (item_size + spacing)
+
+                if ix <= x <= ix + item_size and iy <= y <= iy + item_size:
+                    # Afficher stats de l'item
+                    print(f"\n=== {item.name} ===")
+                    print(f"Tier: {item.tier} | Rareté: {item.rarity_id} | Qualité: {item.quality_id}")
+                    stats = item.get_total_stats()
+                    if stats.atk > 0: print(f"ATK: +{stats.atk}")
+                    if stats.def_stat > 0: print(f"DEF: +{stats.def_stat}")
+                    if stats.hp_max > 0: print(f"HP Max: +{stats.hp_max}")
+                    if stats.crit_chance > 0: print(f"Crit: +{stats.crit_chance}%")
+                    if stats.crit_dmg > 0: print(f"Crit Dmg: +{stats.crit_dmg}%")
+                    if item.affixes:
+                        print("Affixes:")
+                        for affix in item.affixes:
+                            affix_data = self.data.get_affix(affix["affix_id"])
+                            print(f"  - {affix_data.get('name', 'Unknown')}: +{affix['rolled_value']}")
+                    print(f"Valeur: {item.gold_value} or")
+                    return
+
+        # Clic gauche - potions et équiper items
+        if button != arcade.MOUSE_BUTTON_LEFT:
+            return
 
         # Vérifier clics sur les potions (gauche, sous équipement)
         # Calculer la position Y approximative des potions
@@ -807,14 +1023,6 @@ class GameView(arcade.View):
             self.save.save_game(self.player, self.skills, self.station_upgrades)
             print("Jeu sauvegardé manuellement")
 
-        # Passer à la zone suivante avec N
-        if symbol == arcade.key.N:
-            self._change_zone(1)
-
-        # Passer à la zone précédente avec P
-        if symbol == arcade.key.P:
-            self._change_zone(-1)
-
         # Scroller les recettes avec UP/DOWN (si en mode crafting)
         if self.current_mode == "crafting":
             if symbol == arcade.key.UP:
@@ -823,6 +1031,17 @@ class GameView(arcade.View):
                 recipes = self.crafting.get_available_recipes(self.player)
                 max_offset = max(0, len(recipes) - 8)
                 self.recipe_scroll_offset = min(max_offset, self.recipe_scroll_offset + 1)
+
+    def on_mouse_scroll(self, x, y, scroll_x, scroll_y):
+        """Gère le scroll de la molette de la souris"""
+        # Scroll dans le craft
+        if self.current_mode == "crafting":
+            recipes = self.crafting.get_available_recipes(self.player)
+            max_offset = max(0, len(recipes) - 8)
+
+            # scroll_y > 0 = scroll up, scroll_y < 0 = scroll down
+            self.recipe_scroll_offset -= int(scroll_y)
+            self.recipe_scroll_offset = max(0, min(max_offset, self.recipe_scroll_offset))
 
     def _change_zone(self, direction: int):
         """Change de zone"""
@@ -964,8 +1183,10 @@ class GameView(arcade.View):
 
             station_y -= panel_height + 10
 
-    def _handle_upgrades_click(self, x, y):
+    def _handle_upgrades_click(self, x, y, button):
         """Gère les clics en mode upgrades"""
+        if button != arcade.MOUSE_BUTTON_LEFT:
+            return
         width = self.window.width
         height = self.window.height - 150
 
