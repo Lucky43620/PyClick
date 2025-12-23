@@ -109,8 +109,8 @@ class MenuView(arcade.View):
         width, height = self.window.width, self.window.height
 
         # Fond
-        arcade.draw_lrtb_rectangle_filled(0, width, height, 0, (12, 8, 12))
-        arcade.draw_lrtb_rectangle_outline(60, width - 60, height - 40, 40, (90, 70, 60), 3)
+        arcade.draw_lrbt_rectangle_filled(0, width, 0, height, (12, 8, 12))
+        arcade.draw_lrbt_rectangle_outline(60, width - 60, 40, height - 40, (90, 70, 60), 3)
 
         self.ui_manager.draw()
 
