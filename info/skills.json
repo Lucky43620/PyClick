@@ -1,0 +1,166 @@
+[
+  {
+    "id": "skill_berserker",
+    "name": "Berserk",
+    "type": "combat",
+    "desc": "Augmente ATK de 15% en permanence",
+    "cost": [
+      {
+        "resource": "fragment_combat",
+        "qty": 10
+      },
+      {
+        "resource": "cristal_feu",
+        "qty": 5
+      },
+      {
+        "gold": 500
+      }
+    ],
+    "effect": {
+      "stat": "atk",
+      "type": "percent",
+      "value": 15
+    },
+    "requires_level": 5
+  },
+  {
+    "id": "skill_tank",
+    "name": "Forteresse",
+    "type": "combat",
+    "desc": "Augmente HP Max de 20% et Armure de 10",
+    "cost": [
+      {
+        "resource": "fragment_combat",
+        "qty": 12
+      },
+      {
+        "resource": "cristal_glace",
+        "qty": 5
+      },
+      {
+        "gold": 600
+      }
+    ],
+    "effect": [
+      {
+        "stat": "hp_max",
+        "type": "percent",
+        "value": 20
+      },
+      {
+        "stat": "armure",
+        "type": "flat",
+        "value": 10
+      }
+    ],
+    "requires_level": 8
+  },
+  {
+    "id": "skill_critique",
+    "name": "Precision Mortelle",
+    "type": "combat",
+    "desc": "Augmente Crit Chance de 5% et Crit Degats de 25%",
+    "cost": [
+      {
+        "resource": "fragment_combat",
+        "qty": 15
+      },
+      {
+        "resource": "cristal_arcane",
+        "qty": 3
+      },
+      {
+        "gold": 800
+      }
+    ],
+    "effect": [
+      {
+        "stat": "crit_chance",
+        "type": "flat",
+        "value": 5
+      },
+      {
+        "stat": "crit_degats",
+        "type": "flat",
+        "value": 25
+      }
+    ],
+    "requires_level": 10
+  },
+  {
+    "id": "skill_artisan_expert",
+    "name": "Artisan Expert",
+    "type": "crafting",
+    "desc": "Reduit les couts de craft de 15%",
+    "cost": [
+      {
+        "resource": "fragment_artisan",
+        "qty": 10
+      },
+      {
+        "resource": "essence_forge",
+        "qty": 3
+      },
+      {
+        "gold": 700
+      }
+    ],
+    "effect": {
+      "stat": "cout_craft_reduc_pct",
+      "type": "flat",
+      "value": 15
+    },
+    "requires_level": 7
+  },
+  {
+    "id": "skill_collecteur",
+    "name": "Collecteur Efficace",
+    "type": "gathering",
+    "desc": "Double la quantite de ressources recoltees",
+    "cost": [
+      {
+        "resource": "fragment_collecte",
+        "qty": 15
+      },
+      {
+        "resource": "cristal_arcane",
+        "qty": 5
+      },
+      {
+        "gold": 1000
+      }
+    ],
+    "effect": {
+      "stat": "gather_multi",
+      "type": "flat",
+      "value": 2
+    },
+    "requires_level": 12
+  },
+  {
+    "id": "skill_fortune",
+    "name": "Fortune",
+    "type": "general",
+    "desc": "Augmente gain d'or de 25%",
+    "cost": [
+      {
+        "resource": "parchemin_ancien",
+        "qty": 1
+      },
+      {
+        "resource": "cristal_arcane",
+        "qty": 10
+      },
+      {
+        "gold": 2000
+      }
+    ],
+    "effect": {
+      "stat": "gain_or_pct",
+      "type": "flat",
+      "value": 25
+    },
+    "requires_level": 15
+  }
+]

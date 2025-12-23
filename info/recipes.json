@@ -1,0 +1,8995 @@
+[
+  {
+    "id": "recipe__arme__bois__t1",
+    "station": "atelier",
+    "time_sec": 4,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "fibres_sauvages",
+        "qty": 384
+      },
+      {
+        "resource": "eau_claire",
+        "qty": 384
+      },
+      {
+        "resource": "pierre_brute",
+        "qty": 256
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__bois__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__arme__tissu__t1",
+    "station": "metier_a_tisser",
+    "time_sec": 4,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "fibres_sauvages",
+        "qty": 192
+      },
+      {
+        "resource": "eau_claire",
+        "qty": 384
+      },
+      {
+        "resource": "bois_tendre",
+        "qty": 256
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__tissu__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__arme__cuir__t1",
+    "station": "tannerie",
+    "time_sec": 4,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "pierre_brute",
+        "qty": 320
+      },
+      {
+        "resource": "bois_tendre",
+        "qty": 320
+      },
+      {
+        "resource": "eau_claire",
+        "qty": 192
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__cuir__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__casque__bois__t1",
+    "station": "atelier",
+    "time_sec": 2,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "pierre_brute",
+        "qty": 384
+      },
+      {
+        "resource": "bois_tendre",
+        "qty": 384
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__bois__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__casque__tissu__t1",
+    "station": "metier_a_tisser",
+    "time_sec": 2,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "fibres_sauvages",
+        "qty": 192
+      },
+      {
+        "resource": "pierre_brute",
+        "qty": 192
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__tissu__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__casque__cuir__t1",
+    "station": "tannerie",
+    "time_sec": 2,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "eau_claire",
+        "qty": 320
+      },
+      {
+        "resource": "fibres_sauvages",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__cuir__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__plastron__bois__t1",
+    "station": "atelier",
+    "time_sec": 4,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "fibres_sauvages",
+        "qty": 448
+      },
+      {
+        "resource": "pierre_brute",
+        "qty": 192
+      },
+      {
+        "resource": "bois_tendre",
+        "qty": 320
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__bois__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__plastron__tissu__t1",
+    "station": "metier_a_tisser",
+    "time_sec": 4,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "eau_claire",
+        "qty": 192
+      },
+      {
+        "resource": "pierre_brute",
+        "qty": 192
+      },
+      {
+        "resource": "bois_tendre",
+        "qty": 256
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__tissu__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__plastron__cuir__t1",
+    "station": "tannerie",
+    "time_sec": 4,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "bois_tendre",
+        "qty": 192
+      },
+      {
+        "resource": "pierre_brute",
+        "qty": 448
+      },
+      {
+        "resource": "eau_claire",
+        "qty": 384
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__cuir__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__gants__bois__t1",
+    "station": "atelier",
+    "time_sec": 2,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "eau_claire",
+        "qty": 448
+      },
+      {
+        "resource": "bois_tendre",
+        "qty": 256
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__bois__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__gants__tissu__t1",
+    "station": "metier_a_tisser",
+    "time_sec": 2,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "pierre_brute",
+        "qty": 320
+      },
+      {
+        "resource": "fibres_sauvages",
+        "qty": 320
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__tissu__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__gants__cuir__t1",
+    "station": "tannerie",
+    "time_sec": 2,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "pierre_brute",
+        "qty": 192
+      },
+      {
+        "resource": "fibres_sauvages",
+        "qty": 256
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__cuir__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__bottes__bois__t1",
+    "station": "atelier",
+    "time_sec": 2,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "pierre_brute",
+        "qty": 256
+      },
+      {
+        "resource": "eau_claire",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__bois__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__bottes__tissu__t1",
+    "station": "metier_a_tisser",
+    "time_sec": 2,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "pierre_brute",
+        "qty": 256
+      },
+      {
+        "resource": "bois_tendre",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__tissu__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__bottes__cuir__t1",
+    "station": "tannerie",
+    "time_sec": 2,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "bois_tendre",
+        "qty": 384
+      },
+      {
+        "resource": "eau_claire",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__cuir__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__anneau__tissu__t1",
+    "station": "metier_a_tisser",
+    "time_sec": 2,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "eau_claire",
+        "qty": 256
+      },
+      {
+        "resource": "fibres_sauvages",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__tissu__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__anneau__cuir__t1",
+    "station": "tannerie",
+    "time_sec": 2,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "pierre_brute",
+        "qty": 192
+      },
+      {
+        "resource": "eau_claire",
+        "qty": 384
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__cuir__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__amulette__tissu__t1",
+    "station": "metier_a_tisser",
+    "time_sec": 2,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "pierre_brute",
+        "qty": 448
+      },
+      {
+        "resource": "bois_tendre",
+        "qty": 256
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__tissu__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__amulette__cuir__t1",
+    "station": "tannerie",
+    "time_sec": 2,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "pierre_brute",
+        "qty": 320
+      },
+      {
+        "resource": "bois_tendre",
+        "qty": 192
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__cuir__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__bouclier__bois__t1",
+    "station": "atelier",
+    "time_sec": 4,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "pierre_brute",
+        "qty": 256
+      },
+      {
+        "resource": "eau_claire",
+        "qty": 448
+      },
+      {
+        "resource": "bois_tendre",
+        "qty": 192
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__bois__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__bouclier__tissu__t1",
+    "station": "metier_a_tisser",
+    "time_sec": 4,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "pierre_brute",
+        "qty": 256
+      },
+      {
+        "resource": "eau_claire",
+        "qty": 192
+      },
+      {
+        "resource": "fibres_sauvages",
+        "qty": 192
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__tissu__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__bouclier__cuir__t1",
+    "station": "tannerie",
+    "time_sec": 4,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "pierre_brute",
+        "qty": 320
+      },
+      {
+        "resource": "fibres_sauvages",
+        "qty": 448
+      },
+      {
+        "resource": "bois_tendre",
+        "qty": 320
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__cuir__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__outil_hache__bois__t1",
+    "station": "atelier",
+    "time_sec": 2,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "bois_tendre",
+        "qty": 448
+      },
+      {
+        "resource": "pierre_brute",
+        "qty": 256
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_hache__bois__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__outil_hache__cuir__t1",
+    "station": "atelier",
+    "time_sec": 2,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "eau_claire",
+        "qty": 320
+      },
+      {
+        "resource": "bois_tendre",
+        "qty": 192
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_hache__cuir__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__outil_pioche__bois__t1",
+    "station": "atelier",
+    "time_sec": 2,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "eau_claire",
+        "qty": 384
+      },
+      {
+        "resource": "pierre_brute",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_pioche__bois__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__outil_pioche__cuir__t1",
+    "station": "atelier",
+    "time_sec": 2,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "pierre_brute",
+        "qty": 320
+      },
+      {
+        "resource": "fibres_sauvages",
+        "qty": 256
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_pioche__cuir__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__outil_serpe__bois__t1",
+    "station": "atelier",
+    "time_sec": 2,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "pierre_brute",
+        "qty": 256
+      },
+      {
+        "resource": "fibres_sauvages",
+        "qty": 320
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_serpe__bois__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__outil_serpe__cuir__t1",
+    "station": "atelier",
+    "time_sec": 2,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "eau_claire",
+        "qty": 192
+      },
+      {
+        "resource": "fibres_sauvages",
+        "qty": 256
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_serpe__cuir__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__arme__bois__t2",
+    "station": "atelier",
+    "time_sec": 5,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "seve",
+        "qty": 256
+      },
+      {
+        "resource": "bois_chene",
+        "qty": 448
+      },
+      {
+        "resource": "cuir_brut",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__bois__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__arme__tissu__t2",
+    "station": "metier_a_tisser",
+    "time_sec": 5,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "seve",
+        "qty": 256
+      },
+      {
+        "resource": "bois_chene",
+        "qty": 256
+      },
+      {
+        "resource": "champignon_lune",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__tissu__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__arme__cuir__t2",
+    "station": "tannerie",
+    "time_sec": 5,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "champignon_lune",
+        "qty": 320
+      },
+      {
+        "resource": "cuir_brut",
+        "qty": 256
+      },
+      {
+        "resource": "bois_chene",
+        "qty": 256
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__cuir__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__arme__os__t2",
+    "station": "atelier",
+    "time_sec": 5,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "bois_chene",
+        "qty": 512
+      },
+      {
+        "resource": "cuir_brut",
+        "qty": 320
+      },
+      {
+        "resource": "champignon_lune",
+        "qty": 320
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__os__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__casque__bois__t2",
+    "station": "atelier",
+    "time_sec": 3,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "champignon_lune",
+        "qty": 512
+      },
+      {
+        "resource": "seve",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__bois__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__casque__tissu__t2",
+    "station": "metier_a_tisser",
+    "time_sec": 3,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "cuir_brut",
+        "qty": 256
+      },
+      {
+        "resource": "bois_chene",
+        "qty": 256
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__tissu__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__casque__cuir__t2",
+    "station": "tannerie",
+    "time_sec": 3,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "seve",
+        "qty": 384
+      },
+      {
+        "resource": "bois_chene",
+        "qty": 256
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__cuir__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__casque__os__t2",
+    "station": "atelier",
+    "time_sec": 3,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "seve",
+        "qty": 448
+      },
+      {
+        "resource": "champignon_lune",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__os__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__plastron__bois__t2",
+    "station": "atelier",
+    "time_sec": 5,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "champignon_lune",
+        "qty": 320
+      },
+      {
+        "resource": "bois_chene",
+        "qty": 512
+      },
+      {
+        "resource": "seve",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__bois__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__plastron__tissu__t2",
+    "station": "metier_a_tisser",
+    "time_sec": 5,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "bois_chene",
+        "qty": 384
+      },
+      {
+        "resource": "cuir_brut",
+        "qty": 320
+      },
+      {
+        "resource": "champignon_lune",
+        "qty": 384
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__tissu__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__plastron__cuir__t2",
+    "station": "tannerie",
+    "time_sec": 5,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "champignon_lune",
+        "qty": 320
+      },
+      {
+        "resource": "cuir_brut",
+        "qty": 256
+      },
+      {
+        "resource": "seve",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__cuir__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__plastron__os__t2",
+    "station": "atelier",
+    "time_sec": 5,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "cuir_brut",
+        "qty": 320
+      },
+      {
+        "resource": "bois_chene",
+        "qty": 320
+      },
+      {
+        "resource": "champignon_lune",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__os__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__gants__bois__t2",
+    "station": "atelier",
+    "time_sec": 3,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "seve",
+        "qty": 384
+      },
+      {
+        "resource": "champignon_lune",
+        "qty": 384
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__bois__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__gants__tissu__t2",
+    "station": "metier_a_tisser",
+    "time_sec": 3,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "champignon_lune",
+        "qty": 256
+      },
+      {
+        "resource": "bois_chene",
+        "qty": 256
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__tissu__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__gants__cuir__t2",
+    "station": "tannerie",
+    "time_sec": 3,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "champignon_lune",
+        "qty": 512
+      },
+      {
+        "resource": "bois_chene",
+        "qty": 320
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__cuir__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__gants__os__t2",
+    "station": "atelier",
+    "time_sec": 3,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "champignon_lune",
+        "qty": 320
+      },
+      {
+        "resource": "bois_chene",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__os__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__bottes__bois__t2",
+    "station": "atelier",
+    "time_sec": 3,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "cuir_brut",
+        "qty": 320
+      },
+      {
+        "resource": "seve",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__bois__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__bottes__tissu__t2",
+    "station": "metier_a_tisser",
+    "time_sec": 3,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "champignon_lune",
+        "qty": 512
+      },
+      {
+        "resource": "bois_chene",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__tissu__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__bottes__cuir__t2",
+    "station": "tannerie",
+    "time_sec": 3,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "champignon_lune",
+        "qty": 256
+      },
+      {
+        "resource": "seve",
+        "qty": 384
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__cuir__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__bottes__os__t2",
+    "station": "atelier",
+    "time_sec": 3,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "champignon_lune",
+        "qty": 448
+      },
+      {
+        "resource": "cuir_brut",
+        "qty": 320
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__os__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__anneau__tissu__t2",
+    "station": "metier_a_tisser",
+    "time_sec": 3,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "seve",
+        "qty": 448
+      },
+      {
+        "resource": "cuir_brut",
+        "qty": 256
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__tissu__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__anneau__cuir__t2",
+    "station": "tannerie",
+    "time_sec": 3,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "cuir_brut",
+        "qty": 256
+      },
+      {
+        "resource": "bois_chene",
+        "qty": 256
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__cuir__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__amulette__tissu__t2",
+    "station": "metier_a_tisser",
+    "time_sec": 3,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "cuir_brut",
+        "qty": 320
+      },
+      {
+        "resource": "bois_chene",
+        "qty": 320
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__tissu__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__amulette__cuir__t2",
+    "station": "tannerie",
+    "time_sec": 3,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "seve",
+        "qty": 320
+      },
+      {
+        "resource": "cuir_brut",
+        "qty": 384
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__cuir__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__bouclier__bois__t2",
+    "station": "atelier",
+    "time_sec": 5,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "cuir_brut",
+        "qty": 512
+      },
+      {
+        "resource": "seve",
+        "qty": 256
+      },
+      {
+        "resource": "champignon_lune",
+        "qty": 384
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__bois__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__bouclier__tissu__t2",
+    "station": "metier_a_tisser",
+    "time_sec": 5,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "cuir_brut",
+        "qty": 320
+      },
+      {
+        "resource": "bois_chene",
+        "qty": 512
+      },
+      {
+        "resource": "champignon_lune",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__tissu__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__bouclier__cuir__t2",
+    "station": "tannerie",
+    "time_sec": 5,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "cuir_brut",
+        "qty": 320
+      },
+      {
+        "resource": "bois_chene",
+        "qty": 256
+      },
+      {
+        "resource": "seve",
+        "qty": 320
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__cuir__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__bouclier__os__t2",
+    "station": "atelier",
+    "time_sec": 5,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "seve",
+        "qty": 384
+      },
+      {
+        "resource": "champignon_lune",
+        "qty": 448
+      },
+      {
+        "resource": "cuir_brut",
+        "qty": 256
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__os__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__outil_hache__bois__t2",
+    "station": "atelier",
+    "time_sec": 3,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "bois_chene",
+        "qty": 448
+      },
+      {
+        "resource": "cuir_brut",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_hache__bois__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__outil_hache__cuir__t2",
+    "station": "atelier",
+    "time_sec": 3,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "cuir_brut",
+        "qty": 448
+      },
+      {
+        "resource": "bois_chene",
+        "qty": 320
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_hache__cuir__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__outil_hache__os__t2",
+    "station": "atelier",
+    "time_sec": 3,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "bois_chene",
+        "qty": 448
+      },
+      {
+        "resource": "champignon_lune",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_hache__os__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__outil_pioche__bois__t2",
+    "station": "atelier",
+    "time_sec": 3,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "bois_chene",
+        "qty": 384
+      },
+      {
+        "resource": "seve",
+        "qty": 384
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_pioche__bois__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__outil_pioche__cuir__t2",
+    "station": "atelier",
+    "time_sec": 3,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "cuir_brut",
+        "qty": 384
+      },
+      {
+        "resource": "seve",
+        "qty": 256
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_pioche__cuir__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__outil_pioche__os__t2",
+    "station": "atelier",
+    "time_sec": 3,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "cuir_brut",
+        "qty": 448
+      },
+      {
+        "resource": "champignon_lune",
+        "qty": 384
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_pioche__os__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__outil_serpe__bois__t2",
+    "station": "atelier",
+    "time_sec": 3,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "bois_chene",
+        "qty": 384
+      },
+      {
+        "resource": "cuir_brut",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_serpe__bois__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__outil_serpe__cuir__t2",
+    "station": "atelier",
+    "time_sec": 3,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "seve",
+        "qty": 512
+      },
+      {
+        "resource": "champignon_lune",
+        "qty": 256
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_serpe__cuir__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__outil_serpe__os__t2",
+    "station": "atelier",
+    "time_sec": 3,
+    "gold_cost": 1500,
+    "inputs": [
+      {
+        "resource": "cuir_brut",
+        "qty": 320
+      },
+      {
+        "resource": "bois_chene",
+        "qty": 384
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_serpe__os__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 11
+  },
+  {
+    "id": "recipe__arme__cuivre__t3",
+    "station": "forge",
+    "time_sec": 6,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "minerai_fer",
+        "qty": 448
+      },
+      {
+        "resource": "minerai_cuivre",
+        "qty": 320
+      },
+      {
+        "resource": "pierre_taillable",
+        "qty": 512
+      },
+      {
+        "resource": "minerai_cuivre",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__cuivre__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__arme__cuir__t3",
+    "station": "tannerie",
+    "time_sec": 6,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "sel_amer",
+        "qty": 384
+      },
+      {
+        "resource": "minerai_cuivre",
+        "qty": 448
+      },
+      {
+        "resource": "pierre_taillable",
+        "qty": 384
+      },
+      {
+        "resource": "minerai_cuivre",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__cuir__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__arme__tissu__t3",
+    "station": "metier_a_tisser",
+    "time_sec": 6,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "minerai_fer",
+        "qty": 576
+      },
+      {
+        "resource": "sel_amer",
+        "qty": 576
+      },
+      {
+        "resource": "minerai_cuivre",
+        "qty": 320
+      },
+      {
+        "resource": "minerai_cuivre",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__tissu__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__casque__cuivre__t3",
+    "station": "forge",
+    "time_sec": 4,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "pierre_taillable",
+        "qty": 320
+      },
+      {
+        "resource": "sel_amer",
+        "qty": 384
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__cuivre__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__casque__cuir__t3",
+    "station": "tannerie",
+    "time_sec": 4,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "minerai_cuivre",
+        "qty": 448
+      },
+      {
+        "resource": "minerai_fer",
+        "qty": 320
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__cuir__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__casque__tissu__t3",
+    "station": "metier_a_tisser",
+    "time_sec": 4,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "pierre_taillable",
+        "qty": 448
+      },
+      {
+        "resource": "sel_amer",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__tissu__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__plastron__cuivre__t3",
+    "station": "forge",
+    "time_sec": 6,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "minerai_fer",
+        "qty": 576
+      },
+      {
+        "resource": "sel_amer",
+        "qty": 448
+      },
+      {
+        "resource": "pierre_taillable",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__cuivre__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__plastron__cuir__t3",
+    "station": "tannerie",
+    "time_sec": 6,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "pierre_taillable",
+        "qty": 576
+      },
+      {
+        "resource": "minerai_fer",
+        "qty": 384
+      },
+      {
+        "resource": "sel_amer",
+        "qty": 384
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__cuir__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__plastron__tissu__t3",
+    "station": "metier_a_tisser",
+    "time_sec": 6,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "sel_amer",
+        "qty": 320
+      },
+      {
+        "resource": "minerai_cuivre",
+        "qty": 384
+      },
+      {
+        "resource": "minerai_fer",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__tissu__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__gants__cuivre__t3",
+    "station": "forge",
+    "time_sec": 4,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "minerai_cuivre",
+        "qty": 320
+      },
+      {
+        "resource": "sel_amer",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__cuivre__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__gants__cuir__t3",
+    "station": "tannerie",
+    "time_sec": 4,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "pierre_taillable",
+        "qty": 512
+      },
+      {
+        "resource": "sel_amer",
+        "qty": 320
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__cuir__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__gants__tissu__t3",
+    "station": "metier_a_tisser",
+    "time_sec": 4,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "minerai_cuivre",
+        "qty": 448
+      },
+      {
+        "resource": "sel_amer",
+        "qty": 384
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__tissu__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__bottes__cuivre__t3",
+    "station": "forge",
+    "time_sec": 4,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "sel_amer",
+        "qty": 384
+      },
+      {
+        "resource": "minerai_fer",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__cuivre__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__bottes__cuir__t3",
+    "station": "tannerie",
+    "time_sec": 4,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "sel_amer",
+        "qty": 384
+      },
+      {
+        "resource": "pierre_taillable",
+        "qty": 320
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__cuir__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__bottes__tissu__t3",
+    "station": "metier_a_tisser",
+    "time_sec": 4,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "minerai_fer",
+        "qty": 448
+      },
+      {
+        "resource": "minerai_cuivre",
+        "qty": 384
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__tissu__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__anneau__cuir__t3",
+    "station": "tannerie",
+    "time_sec": 4,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "sel_amer",
+        "qty": 512
+      },
+      {
+        "resource": "pierre_taillable",
+        "qty": 320
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__cuir__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__anneau__tissu__t3",
+    "station": "metier_a_tisser",
+    "time_sec": 4,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "minerai_cuivre",
+        "qty": 576
+      },
+      {
+        "resource": "pierre_taillable",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__tissu__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__amulette__cuir__t3",
+    "station": "tannerie",
+    "time_sec": 4,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "minerai_fer",
+        "qty": 576
+      },
+      {
+        "resource": "pierre_taillable",
+        "qty": 384
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__cuir__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__amulette__tissu__t3",
+    "station": "metier_a_tisser",
+    "time_sec": 4,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "minerai_fer",
+        "qty": 320
+      },
+      {
+        "resource": "pierre_taillable",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__tissu__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__bouclier__cuivre__t3",
+    "station": "forge",
+    "time_sec": 6,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "sel_amer",
+        "qty": 448
+      },
+      {
+        "resource": "minerai_cuivre",
+        "qty": 320
+      },
+      {
+        "resource": "minerai_fer",
+        "qty": 448
+      },
+      {
+        "resource": "minerai_cuivre",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__cuivre__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__bouclier__cuir__t3",
+    "station": "tannerie",
+    "time_sec": 6,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "minerai_fer",
+        "qty": 576
+      },
+      {
+        "resource": "pierre_taillable",
+        "qty": 576
+      },
+      {
+        "resource": "sel_amer",
+        "qty": 448
+      },
+      {
+        "resource": "minerai_cuivre",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__cuir__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__bouclier__tissu__t3",
+    "station": "metier_a_tisser",
+    "time_sec": 6,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "sel_amer",
+        "qty": 512
+      },
+      {
+        "resource": "pierre_taillable",
+        "qty": 448
+      },
+      {
+        "resource": "minerai_cuivre",
+        "qty": 576
+      },
+      {
+        "resource": "minerai_cuivre",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__tissu__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__outil_hache__cuivre__t3",
+    "station": "atelier",
+    "time_sec": 4,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "minerai_cuivre",
+        "qty": 512
+      },
+      {
+        "resource": "sel_amer",
+        "qty": 384
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_hache__cuivre__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__outil_hache__cuir__t3",
+    "station": "atelier",
+    "time_sec": 4,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "pierre_taillable",
+        "qty": 384
+      },
+      {
+        "resource": "sel_amer",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_hache__cuir__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__outil_pioche__cuivre__t3",
+    "station": "atelier",
+    "time_sec": 4,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "minerai_fer",
+        "qty": 384
+      },
+      {
+        "resource": "minerai_cuivre",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_pioche__cuivre__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__outil_pioche__cuir__t3",
+    "station": "atelier",
+    "time_sec": 4,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "pierre_taillable",
+        "qty": 384
+      },
+      {
+        "resource": "minerai_fer",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_pioche__cuir__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__outil_serpe__cuivre__t3",
+    "station": "atelier",
+    "time_sec": 4,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "pierre_taillable",
+        "qty": 384
+      },
+      {
+        "resource": "minerai_fer",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_serpe__cuivre__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__outil_serpe__cuir__t3",
+    "station": "atelier",
+    "time_sec": 4,
+    "gold_cost": 2800,
+    "inputs": [
+      {
+        "resource": "pierre_taillable",
+        "qty": 384
+      },
+      {
+        "resource": "minerai_cuivre",
+        "qty": 320
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_serpe__cuir__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 21
+  },
+  {
+    "id": "recipe__arme__fer__t4",
+    "station": "forge",
+    "time_sec": 7,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "bois_spongieux",
+        "qty": 448
+      },
+      {
+        "resource": "herbe_medicinale",
+        "qty": 512
+      },
+      {
+        "resource": "essence_ombre",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__fer__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__arme__cuir__t4",
+    "station": "tannerie",
+    "time_sec": 7,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "bois_spongieux",
+        "qty": 448
+      },
+      {
+        "resource": "essence_ombre",
+        "qty": 448
+      },
+      {
+        "resource": "herbe_medicinale",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__cuir__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__arme__tissu__t4",
+    "station": "metier_a_tisser",
+    "time_sec": 7,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "essence_ombre",
+        "qty": 448
+      },
+      {
+        "resource": "venin_distille",
+        "qty": 640
+      },
+      {
+        "resource": "bois_spongieux",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__tissu__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__casque__fer__t4",
+    "station": "forge",
+    "time_sec": 5,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "herbe_medicinale",
+        "qty": 384
+      },
+      {
+        "resource": "venin_distille",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__fer__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__casque__cuir__t4",
+    "station": "tannerie",
+    "time_sec": 5,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "herbe_medicinale",
+        "qty": 448
+      },
+      {
+        "resource": "essence_ombre",
+        "qty": 384
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__cuir__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__casque__tissu__t4",
+    "station": "metier_a_tisser",
+    "time_sec": 5,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "venin_distille",
+        "qty": 384
+      },
+      {
+        "resource": "essence_ombre",
+        "qty": 384
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__tissu__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__plastron__fer__t4",
+    "station": "forge",
+    "time_sec": 7,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "venin_distille",
+        "qty": 384
+      },
+      {
+        "resource": "herbe_medicinale",
+        "qty": 640
+      },
+      {
+        "resource": "essence_ombre",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__fer__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__plastron__cuir__t4",
+    "station": "tannerie",
+    "time_sec": 7,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "essence_ombre",
+        "qty": 512
+      },
+      {
+        "resource": "herbe_medicinale",
+        "qty": 384
+      },
+      {
+        "resource": "venin_distille",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__cuir__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__plastron__tissu__t4",
+    "station": "metier_a_tisser",
+    "time_sec": 7,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "bois_spongieux",
+        "qty": 448
+      },
+      {
+        "resource": "venin_distille",
+        "qty": 384
+      },
+      {
+        "resource": "herbe_medicinale",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__tissu__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__gants__fer__t4",
+    "station": "forge",
+    "time_sec": 5,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "essence_ombre",
+        "qty": 576
+      },
+      {
+        "resource": "bois_spongieux",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__fer__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__gants__cuir__t4",
+    "station": "tannerie",
+    "time_sec": 5,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "venin_distille",
+        "qty": 384
+      },
+      {
+        "resource": "essence_ombre",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__cuir__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__gants__tissu__t4",
+    "station": "metier_a_tisser",
+    "time_sec": 5,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "venin_distille",
+        "qty": 576
+      },
+      {
+        "resource": "bois_spongieux",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__tissu__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__bottes__fer__t4",
+    "station": "forge",
+    "time_sec": 5,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "venin_distille",
+        "qty": 448
+      },
+      {
+        "resource": "essence_ombre",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__fer__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__bottes__cuir__t4",
+    "station": "tannerie",
+    "time_sec": 5,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "venin_distille",
+        "qty": 512
+      },
+      {
+        "resource": "bois_spongieux",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__cuir__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__bottes__tissu__t4",
+    "station": "metier_a_tisser",
+    "time_sec": 5,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "essence_ombre",
+        "qty": 576
+      },
+      {
+        "resource": "bois_spongieux",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__tissu__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__anneau__cuir__t4",
+    "station": "tannerie",
+    "time_sec": 5,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "venin_distille",
+        "qty": 448
+      },
+      {
+        "resource": "bois_spongieux",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__cuir__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__anneau__tissu__t4",
+    "station": "metier_a_tisser",
+    "time_sec": 5,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "essence_ombre",
+        "qty": 640
+      },
+      {
+        "resource": "herbe_medicinale",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__tissu__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__amulette__cuir__t4",
+    "station": "tannerie",
+    "time_sec": 5,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "venin_distille",
+        "qty": 576
+      },
+      {
+        "resource": "herbe_medicinale",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__cuir__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__amulette__tissu__t4",
+    "station": "metier_a_tisser",
+    "time_sec": 5,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "venin_distille",
+        "qty": 384
+      },
+      {
+        "resource": "herbe_medicinale",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__tissu__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__bouclier__fer__t4",
+    "station": "forge",
+    "time_sec": 7,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "essence_ombre",
+        "qty": 512
+      },
+      {
+        "resource": "herbe_medicinale",
+        "qty": 512
+      },
+      {
+        "resource": "venin_distille",
+        "qty": 384
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__fer__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__bouclier__cuir__t4",
+    "station": "tannerie",
+    "time_sec": 7,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "bois_spongieux",
+        "qty": 384
+      },
+      {
+        "resource": "venin_distille",
+        "qty": 384
+      },
+      {
+        "resource": "herbe_medicinale",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__cuir__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__bouclier__tissu__t4",
+    "station": "metier_a_tisser",
+    "time_sec": 7,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "herbe_medicinale",
+        "qty": 512
+      },
+      {
+        "resource": "venin_distille",
+        "qty": 640
+      },
+      {
+        "resource": "essence_ombre",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__tissu__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__relique__fer__t4",
+    "station": "forge",
+    "time_sec": 5,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "herbe_medicinale",
+        "qty": 512
+      },
+      {
+        "resource": "essence_ombre",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "relique__fer__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__relique__cuir__t4",
+    "station": "tannerie",
+    "time_sec": 5,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "venin_distille",
+        "qty": 640
+      },
+      {
+        "resource": "bois_spongieux",
+        "qty": 384
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "relique__cuir__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__relique__tissu__t4",
+    "station": "metier_a_tisser",
+    "time_sec": 5,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "bois_spongieux",
+        "qty": 576
+      },
+      {
+        "resource": "venin_distille",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "relique__tissu__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__outil_hache__fer__t4",
+    "station": "atelier",
+    "time_sec": 5,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "venin_distille",
+        "qty": 384
+      },
+      {
+        "resource": "bois_spongieux",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_hache__fer__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__outil_hache__cuir__t4",
+    "station": "atelier",
+    "time_sec": 5,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "herbe_medicinale",
+        "qty": 384
+      },
+      {
+        "resource": "essence_ombre",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_hache__cuir__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__outil_pioche__fer__t4",
+    "station": "atelier",
+    "time_sec": 5,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "essence_ombre",
+        "qty": 384
+      },
+      {
+        "resource": "bois_spongieux",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_pioche__fer__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__outil_pioche__cuir__t4",
+    "station": "atelier",
+    "time_sec": 5,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "bois_spongieux",
+        "qty": 384
+      },
+      {
+        "resource": "venin_distille",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_pioche__cuir__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__outil_serpe__fer__t4",
+    "station": "atelier",
+    "time_sec": 5,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "herbe_medicinale",
+        "qty": 512
+      },
+      {
+        "resource": "venin_distille",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_serpe__fer__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__outil_serpe__cuir__t4",
+    "station": "atelier",
+    "time_sec": 5,
+    "gold_cost": 4500,
+    "inputs": [
+      {
+        "resource": "bois_spongieux",
+        "qty": 512
+      },
+      {
+        "resource": "essence_ombre",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_serpe__cuir__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 31
+  },
+  {
+    "id": "recipe__arme__acier__t5",
+    "station": "forge",
+    "time_sec": 8,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "cactus_sucre",
+        "qty": 640
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 512
+      },
+      {
+        "resource": "minerai_argent",
+        "qty": 448
+      },
+      {
+        "resource": "minerai_argent",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__acier__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__arme__cuir_renforce__t5",
+    "station": "tannerie",
+    "time_sec": 8,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "minerai_argent",
+        "qty": 512
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 512
+      },
+      {
+        "resource": "cactus_sucre",
+        "qty": 512
+      },
+      {
+        "resource": "minerai_argent",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__cuir_renforce__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__arme__tissu_fin__t5",
+    "station": "metier_a_tisser",
+    "time_sec": 8,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "cactus_sucre",
+        "qty": 704
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 512
+      },
+      {
+        "resource": "sable_vitre",
+        "qty": 512
+      },
+      {
+        "resource": "minerai_argent",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__tissu_fin__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__arme__verre__t5",
+    "station": "atelier",
+    "time_sec": 8,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "sable_vitre",
+        "qty": 512
+      },
+      {
+        "resource": "cactus_sucre",
+        "qty": 448
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 704
+      },
+      {
+        "resource": "minerai_argent",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__verre__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__casque__acier__t5",
+    "station": "forge",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "sable_vitre",
+        "qty": 448
+      },
+      {
+        "resource": "minerai_argent",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__acier__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__casque__cuir_renforce__t5",
+    "station": "tannerie",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "cactus_sucre",
+        "qty": 576
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__cuir_renforce__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__casque__tissu_fin__t5",
+    "station": "metier_a_tisser",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "essence_feu",
+        "qty": 704
+      },
+      {
+        "resource": "cactus_sucre",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__tissu_fin__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__casque__verre__t5",
+    "station": "atelier",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "sable_vitre",
+        "qty": 704
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__verre__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__plastron__acier__t5",
+    "station": "forge",
+    "time_sec": 8,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "minerai_argent",
+        "qty": 448
+      },
+      {
+        "resource": "cactus_sucre",
+        "qty": 512
+      },
+      {
+        "resource": "sable_vitre",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__acier__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__plastron__cuir_renforce__t5",
+    "station": "tannerie",
+    "time_sec": 8,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "minerai_argent",
+        "qty": 512
+      },
+      {
+        "resource": "cactus_sucre",
+        "qty": 704
+      },
+      {
+        "resource": "sable_vitre",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__cuir_renforce__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__plastron__tissu_fin__t5",
+    "station": "metier_a_tisser",
+    "time_sec": 8,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "sable_vitre",
+        "qty": 512
+      },
+      {
+        "resource": "cactus_sucre",
+        "qty": 512
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__tissu_fin__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__plastron__verre__t5",
+    "station": "atelier",
+    "time_sec": 8,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "sable_vitre",
+        "qty": 576
+      },
+      {
+        "resource": "cactus_sucre",
+        "qty": 512
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__verre__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__gants__acier__t5",
+    "station": "forge",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "sable_vitre",
+        "qty": 640
+      },
+      {
+        "resource": "cactus_sucre",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__acier__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__gants__cuir_renforce__t5",
+    "station": "tannerie",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "cactus_sucre",
+        "qty": 448
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__cuir_renforce__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__gants__tissu_fin__t5",
+    "station": "metier_a_tisser",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "minerai_argent",
+        "qty": 576
+      },
+      {
+        "resource": "sable_vitre",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__tissu_fin__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__gants__verre__t5",
+    "station": "atelier",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "sable_vitre",
+        "qty": 512
+      },
+      {
+        "resource": "cactus_sucre",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__verre__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__bottes__acier__t5",
+    "station": "forge",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "minerai_argent",
+        "qty": 512
+      },
+      {
+        "resource": "sable_vitre",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__acier__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__bottes__cuir_renforce__t5",
+    "station": "tannerie",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "minerai_argent",
+        "qty": 512
+      },
+      {
+        "resource": "cactus_sucre",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__cuir_renforce__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__bottes__tissu_fin__t5",
+    "station": "metier_a_tisser",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "cactus_sucre",
+        "qty": 448
+      },
+      {
+        "resource": "sable_vitre",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__tissu_fin__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__bottes__verre__t5",
+    "station": "atelier",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "cactus_sucre",
+        "qty": 640
+      },
+      {
+        "resource": "sable_vitre",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__verre__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__anneau__acier__t5",
+    "station": "forge",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "minerai_argent",
+        "qty": 704
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__acier__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__anneau__cuir_renforce__t5",
+    "station": "tannerie",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "sable_vitre",
+        "qty": 640
+      },
+      {
+        "resource": "minerai_argent",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__cuir_renforce__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__anneau__tissu_fin__t5",
+    "station": "metier_a_tisser",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "cactus_sucre",
+        "qty": 512
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__tissu_fin__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__anneau__verre__t5",
+    "station": "atelier",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "essence_feu",
+        "qty": 512
+      },
+      {
+        "resource": "sable_vitre",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__verre__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__amulette__acier__t5",
+    "station": "forge",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "essence_feu",
+        "qty": 512
+      },
+      {
+        "resource": "sable_vitre",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__acier__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__amulette__cuir_renforce__t5",
+    "station": "tannerie",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "sable_vitre",
+        "qty": 576
+      },
+      {
+        "resource": "cactus_sucre",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__cuir_renforce__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__amulette__tissu_fin__t5",
+    "station": "metier_a_tisser",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "essence_feu",
+        "qty": 640
+      },
+      {
+        "resource": "sable_vitre",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__tissu_fin__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__amulette__verre__t5",
+    "station": "atelier",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "essence_feu",
+        "qty": 704
+      },
+      {
+        "resource": "sable_vitre",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__verre__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__bouclier__acier__t5",
+    "station": "forge",
+    "time_sec": 8,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "minerai_argent",
+        "qty": 448
+      },
+      {
+        "resource": "sable_vitre",
+        "qty": 640
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 448
+      },
+      {
+        "resource": "minerai_argent",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__acier__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__bouclier__cuir_renforce__t5",
+    "station": "tannerie",
+    "time_sec": 8,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "cactus_sucre",
+        "qty": 640
+      },
+      {
+        "resource": "minerai_argent",
+        "qty": 512
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 704
+      },
+      {
+        "resource": "minerai_argent",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__cuir_renforce__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__bouclier__tissu_fin__t5",
+    "station": "metier_a_tisser",
+    "time_sec": 8,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "sable_vitre",
+        "qty": 448
+      },
+      {
+        "resource": "cactus_sucre",
+        "qty": 448
+      },
+      {
+        "resource": "minerai_argent",
+        "qty": 704
+      },
+      {
+        "resource": "minerai_argent",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__tissu_fin__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__bouclier__verre__t5",
+    "station": "atelier",
+    "time_sec": 8,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "minerai_argent",
+        "qty": 576
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 640
+      },
+      {
+        "resource": "sable_vitre",
+        "qty": 704
+      },
+      {
+        "resource": "minerai_argent",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__verre__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__relique__acier__t5",
+    "station": "forge",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "cactus_sucre",
+        "qty": 640
+      },
+      {
+        "resource": "sable_vitre",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "relique__acier__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__relique__cuir_renforce__t5",
+    "station": "tannerie",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "sable_vitre",
+        "qty": 448
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "relique__cuir_renforce__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__relique__tissu_fin__t5",
+    "station": "metier_a_tisser",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "cactus_sucre",
+        "qty": 640
+      },
+      {
+        "resource": "minerai_argent",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "relique__tissu_fin__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__relique__verre__t5",
+    "station": "enchantement",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "sable_vitre",
+        "qty": 512
+      },
+      {
+        "resource": "minerai_argent",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "relique__verre__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__outil_hache__acier__t5",
+    "station": "atelier",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "minerai_argent",
+        "qty": 512
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_hache__acier__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__outil_hache__cuir_renforce__t5",
+    "station": "atelier",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "essence_feu",
+        "qty": 512
+      },
+      {
+        "resource": "cactus_sucre",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_hache__cuir_renforce__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__outil_pioche__acier__t5",
+    "station": "atelier",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "essence_feu",
+        "qty": 704
+      },
+      {
+        "resource": "minerai_argent",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_pioche__acier__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__outil_pioche__cuir_renforce__t5",
+    "station": "atelier",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "sable_vitre",
+        "qty": 576
+      },
+      {
+        "resource": "minerai_argent",
+        "qty": 448
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_pioche__cuir_renforce__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__outil_serpe__acier__t5",
+    "station": "atelier",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "minerai_argent",
+        "qty": 640
+      },
+      {
+        "resource": "cactus_sucre",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_serpe__acier__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__outil_serpe__cuir_renforce__t5",
+    "station": "atelier",
+    "time_sec": 6,
+    "gold_cost": 6500,
+    "inputs": [
+      {
+        "resource": "essence_feu",
+        "qty": 576
+      },
+      {
+        "resource": "sable_vitre",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_serpe__cuir_renforce__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 41
+  },
+  {
+    "id": "recipe__arme__or__t6",
+    "station": "forge",
+    "time_sec": 8,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "fourrure_epaisse",
+        "qty": 768
+      },
+      {
+        "resource": "minerai_or",
+        "qty": 704
+      },
+      {
+        "resource": "glace_pure",
+        "qty": 704
+      },
+      {
+        "resource": "minerai_or",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__or__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__arme__fourrure__t6",
+    "station": "tannerie",
+    "time_sec": 8,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "fourrure_epaisse",
+        "qty": 768
+      },
+      {
+        "resource": "glace_pure",
+        "qty": 704
+      },
+      {
+        "resource": "minerai_or",
+        "qty": 512
+      },
+      {
+        "resource": "minerai_or",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__fourrure__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__arme__acier__t6",
+    "station": "forge",
+    "time_sec": 8,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "essence_glace",
+        "qty": 768
+      },
+      {
+        "resource": "minerai_or",
+        "qty": 576
+      },
+      {
+        "resource": "fourrure_epaisse",
+        "qty": 512
+      },
+      {
+        "resource": "minerai_or",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__acier__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__casque__or__t6",
+    "station": "forge",
+    "time_sec": 6,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "glace_pure",
+        "qty": 704
+      },
+      {
+        "resource": "fourrure_epaisse",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__or__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__casque__fourrure__t6",
+    "station": "tannerie",
+    "time_sec": 6,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "glace_pure",
+        "qty": 640
+      },
+      {
+        "resource": "minerai_or",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__fourrure__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__casque__acier__t6",
+    "station": "forge",
+    "time_sec": 6,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "fourrure_epaisse",
+        "qty": 512
+      },
+      {
+        "resource": "glace_pure",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__acier__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__plastron__or__t6",
+    "station": "forge",
+    "time_sec": 8,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "fourrure_epaisse",
+        "qty": 512
+      },
+      {
+        "resource": "glace_pure",
+        "qty": 768
+      },
+      {
+        "resource": "minerai_or",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__or__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__plastron__fourrure__t6",
+    "station": "tannerie",
+    "time_sec": 8,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "glace_pure",
+        "qty": 576
+      },
+      {
+        "resource": "essence_glace",
+        "qty": 640
+      },
+      {
+        "resource": "minerai_or",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__fourrure__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__plastron__acier__t6",
+    "station": "forge",
+    "time_sec": 8,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "essence_glace",
+        "qty": 704
+      },
+      {
+        "resource": "minerai_or",
+        "qty": 768
+      },
+      {
+        "resource": "glace_pure",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__acier__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__gants__or__t6",
+    "station": "forge",
+    "time_sec": 6,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "fourrure_epaisse",
+        "qty": 640
+      },
+      {
+        "resource": "essence_glace",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__or__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__gants__fourrure__t6",
+    "station": "tannerie",
+    "time_sec": 6,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "essence_glace",
+        "qty": 512
+      },
+      {
+        "resource": "minerai_or",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__fourrure__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__gants__acier__t6",
+    "station": "forge",
+    "time_sec": 6,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "glace_pure",
+        "qty": 704
+      },
+      {
+        "resource": "essence_glace",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__acier__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__bottes__or__t6",
+    "station": "forge",
+    "time_sec": 6,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "glace_pure",
+        "qty": 704
+      },
+      {
+        "resource": "minerai_or",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__or__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__bottes__fourrure__t6",
+    "station": "tannerie",
+    "time_sec": 6,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "fourrure_epaisse",
+        "qty": 512
+      },
+      {
+        "resource": "glace_pure",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__fourrure__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__bottes__acier__t6",
+    "station": "forge",
+    "time_sec": 6,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "glace_pure",
+        "qty": 512
+      },
+      {
+        "resource": "essence_glace",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__acier__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__anneau__or__t6",
+    "station": "forge",
+    "time_sec": 6,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "glace_pure",
+        "qty": 704
+      },
+      {
+        "resource": "minerai_or",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__or__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__anneau__fourrure__t6",
+    "station": "tannerie",
+    "time_sec": 6,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "fourrure_epaisse",
+        "qty": 512
+      },
+      {
+        "resource": "essence_glace",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__fourrure__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__anneau__acier__t6",
+    "station": "forge",
+    "time_sec": 6,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "essence_glace",
+        "qty": 576
+      },
+      {
+        "resource": "glace_pure",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__acier__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__amulette__or__t6",
+    "station": "forge",
+    "time_sec": 6,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "essence_glace",
+        "qty": 704
+      },
+      {
+        "resource": "fourrure_epaisse",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__or__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__amulette__fourrure__t6",
+    "station": "tannerie",
+    "time_sec": 6,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "glace_pure",
+        "qty": 576
+      },
+      {
+        "resource": "minerai_or",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__fourrure__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__amulette__acier__t6",
+    "station": "forge",
+    "time_sec": 6,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "minerai_or",
+        "qty": 512
+      },
+      {
+        "resource": "glace_pure",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__acier__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__bouclier__or__t6",
+    "station": "forge",
+    "time_sec": 8,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "minerai_or",
+        "qty": 704
+      },
+      {
+        "resource": "glace_pure",
+        "qty": 576
+      },
+      {
+        "resource": "fourrure_epaisse",
+        "qty": 512
+      },
+      {
+        "resource": "minerai_or",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__or__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__bouclier__fourrure__t6",
+    "station": "tannerie",
+    "time_sec": 8,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "minerai_or",
+        "qty": 768
+      },
+      {
+        "resource": "fourrure_epaisse",
+        "qty": 576
+      },
+      {
+        "resource": "glace_pure",
+        "qty": 512
+      },
+      {
+        "resource": "minerai_or",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__fourrure__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__bouclier__acier__t6",
+    "station": "forge",
+    "time_sec": 8,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "essence_glace",
+        "qty": 704
+      },
+      {
+        "resource": "minerai_or",
+        "qty": 768
+      },
+      {
+        "resource": "fourrure_epaisse",
+        "qty": 512
+      },
+      {
+        "resource": "minerai_or",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__acier__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__relique__or__t6",
+    "station": "forge",
+    "time_sec": 6,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "glace_pure",
+        "qty": 640
+      },
+      {
+        "resource": "minerai_or",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "relique__or__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__relique__fourrure__t6",
+    "station": "tannerie",
+    "time_sec": 6,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "essence_glace",
+        "qty": 768
+      },
+      {
+        "resource": "minerai_or",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "relique__fourrure__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__relique__acier__t6",
+    "station": "forge",
+    "time_sec": 6,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "minerai_or",
+        "qty": 768
+      },
+      {
+        "resource": "glace_pure",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "relique__acier__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__outil_hache__fourrure__t6",
+    "station": "atelier",
+    "time_sec": 6,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "glace_pure",
+        "qty": 512
+      },
+      {
+        "resource": "fourrure_epaisse",
+        "qty": 512
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_hache__fourrure__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__outil_hache__acier__t6",
+    "station": "atelier",
+    "time_sec": 6,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "glace_pure",
+        "qty": 576
+      },
+      {
+        "resource": "minerai_or",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_hache__acier__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__outil_pioche__fourrure__t6",
+    "station": "atelier",
+    "time_sec": 6,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "minerai_or",
+        "qty": 704
+      },
+      {
+        "resource": "glace_pure",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_pioche__fourrure__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__outil_pioche__acier__t6",
+    "station": "atelier",
+    "time_sec": 6,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "minerai_or",
+        "qty": 576
+      },
+      {
+        "resource": "essence_glace",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_pioche__acier__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__outil_serpe__fourrure__t6",
+    "station": "atelier",
+    "time_sec": 6,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "minerai_or",
+        "qty": 640
+      },
+      {
+        "resource": "essence_glace",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_serpe__fourrure__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__outil_serpe__acier__t6",
+    "station": "atelier",
+    "time_sec": 6,
+    "gold_cost": 8700,
+    "inputs": [
+      {
+        "resource": "minerai_or",
+        "qty": 704
+      },
+      {
+        "resource": "fourrure_epaisse",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_serpe__acier__t6",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 51
+  },
+  {
+    "id": "recipe__arme__mithril__t7",
+    "station": "forge",
+    "time_sec": 9,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "minerai_mithril",
+        "qty": 576
+      },
+      {
+        "resource": "obsidienne",
+        "qty": 768
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 832
+      },
+      {
+        "resource": "obsidienne",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__mithril__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__arme__obsidienne__t7",
+    "station": "forge",
+    "time_sec": 9,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "soufre",
+        "qty": 832
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 704
+      },
+      {
+        "resource": "obsidienne",
+        "qty": 768
+      },
+      {
+        "resource": "obsidienne",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__obsidienne__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__arme__cuir_renforce__t7",
+    "station": "tannerie",
+    "time_sec": 9,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "essence_feu",
+        "qty": 832
+      },
+      {
+        "resource": "minerai_mithril",
+        "qty": 832
+      },
+      {
+        "resource": "soufre",
+        "qty": 576
+      },
+      {
+        "resource": "obsidienne",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__cuir_renforce__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__casque__mithril__t7",
+    "station": "forge",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "soufre",
+        "qty": 704
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__mithril__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__casque__obsidienne__t7",
+    "station": "forge",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "soufre",
+        "qty": 704
+      },
+      {
+        "resource": "minerai_mithril",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__obsidienne__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__casque__cuir_renforce__t7",
+    "station": "tannerie",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "soufre",
+        "qty": 576
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 832
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__cuir_renforce__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__plastron__mithril__t7",
+    "station": "forge",
+    "time_sec": 9,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "essence_feu",
+        "qty": 704
+      },
+      {
+        "resource": "minerai_mithril",
+        "qty": 768
+      },
+      {
+        "resource": "obsidienne",
+        "qty": 832
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__mithril__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__plastron__obsidienne__t7",
+    "station": "forge",
+    "time_sec": 9,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "soufre",
+        "qty": 576
+      },
+      {
+        "resource": "minerai_mithril",
+        "qty": 640
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__obsidienne__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__plastron__cuir_renforce__t7",
+    "station": "tannerie",
+    "time_sec": 9,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "essence_feu",
+        "qty": 832
+      },
+      {
+        "resource": "obsidienne",
+        "qty": 832
+      },
+      {
+        "resource": "soufre",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__cuir_renforce__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__gants__mithril__t7",
+    "station": "forge",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "soufre",
+        "qty": 576
+      },
+      {
+        "resource": "minerai_mithril",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__mithril__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__gants__obsidienne__t7",
+    "station": "forge",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "obsidienne",
+        "qty": 704
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__obsidienne__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__gants__cuir_renforce__t7",
+    "station": "tannerie",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "soufre",
+        "qty": 576
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__cuir_renforce__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__bottes__mithril__t7",
+    "station": "forge",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "essence_feu",
+        "qty": 768
+      },
+      {
+        "resource": "obsidienne",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__mithril__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__bottes__obsidienne__t7",
+    "station": "forge",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "minerai_mithril",
+        "qty": 704
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__obsidienne__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__bottes__cuir_renforce__t7",
+    "station": "tannerie",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "soufre",
+        "qty": 704
+      },
+      {
+        "resource": "minerai_mithril",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__cuir_renforce__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__anneau__mithril__t7",
+    "station": "forge",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "essence_feu",
+        "qty": 832
+      },
+      {
+        "resource": "minerai_mithril",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__mithril__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__anneau__obsidienne__t7",
+    "station": "forge",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "essence_feu",
+        "qty": 768
+      },
+      {
+        "resource": "minerai_mithril",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__obsidienne__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__anneau__cuir_renforce__t7",
+    "station": "tannerie",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "essence_feu",
+        "qty": 576
+      },
+      {
+        "resource": "minerai_mithril",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__cuir_renforce__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__amulette__mithril__t7",
+    "station": "forge",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "obsidienne",
+        "qty": 640
+      },
+      {
+        "resource": "soufre",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__mithril__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__amulette__obsidienne__t7",
+    "station": "forge",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "minerai_mithril",
+        "qty": 704
+      },
+      {
+        "resource": "soufre",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__obsidienne__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__amulette__cuir_renforce__t7",
+    "station": "tannerie",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "essence_feu",
+        "qty": 640
+      },
+      {
+        "resource": "soufre",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__cuir_renforce__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__bouclier__mithril__t7",
+    "station": "forge",
+    "time_sec": 9,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "soufre",
+        "qty": 576
+      },
+      {
+        "resource": "obsidienne",
+        "qty": 768
+      },
+      {
+        "resource": "minerai_mithril",
+        "qty": 768
+      },
+      {
+        "resource": "obsidienne",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__mithril__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__bouclier__obsidienne__t7",
+    "station": "forge",
+    "time_sec": 9,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "soufre",
+        "qty": 704
+      },
+      {
+        "resource": "minerai_mithril",
+        "qty": 832
+      },
+      {
+        "resource": "obsidienne",
+        "qty": 640
+      },
+      {
+        "resource": "obsidienne",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__obsidienne__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__bouclier__cuir_renforce__t7",
+    "station": "tannerie",
+    "time_sec": 9,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "obsidienne",
+        "qty": 576
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 768
+      },
+      {
+        "resource": "minerai_mithril",
+        "qty": 576
+      },
+      {
+        "resource": "obsidienne",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__cuir_renforce__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__relique__mithril__t7",
+    "station": "forge",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "minerai_mithril",
+        "qty": 768
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "relique__mithril__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__relique__obsidienne__t7",
+    "station": "forge",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "soufre",
+        "qty": 640
+      },
+      {
+        "resource": "minerai_mithril",
+        "qty": 832
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "relique__obsidienne__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__relique__cuir_renforce__t7",
+    "station": "tannerie",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "minerai_mithril",
+        "qty": 704
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 832
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "relique__cuir_renforce__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__outil_hache__mithril__t7",
+    "station": "atelier",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "essence_feu",
+        "qty": 576
+      },
+      {
+        "resource": "minerai_mithril",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_hache__mithril__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__outil_hache__obsidienne__t7",
+    "station": "atelier",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "soufre",
+        "qty": 576
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_hache__obsidienne__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__outil_hache__cuir_renforce__t7",
+    "station": "atelier",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "obsidienne",
+        "qty": 832
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_hache__cuir_renforce__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__outil_pioche__mithril__t7",
+    "station": "atelier",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "minerai_mithril",
+        "qty": 704
+      },
+      {
+        "resource": "obsidienne",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_pioche__mithril__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__outil_pioche__obsidienne__t7",
+    "station": "atelier",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "minerai_mithril",
+        "qty": 640
+      },
+      {
+        "resource": "obsidienne",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_pioche__obsidienne__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__outil_pioche__cuir_renforce__t7",
+    "station": "atelier",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "minerai_mithril",
+        "qty": 640
+      },
+      {
+        "resource": "soufre",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_pioche__cuir_renforce__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__outil_serpe__mithril__t7",
+    "station": "atelier",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "obsidienne",
+        "qty": 704
+      },
+      {
+        "resource": "essence_feu",
+        "qty": 832
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_serpe__mithril__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__outil_serpe__obsidienne__t7",
+    "station": "atelier",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "essence_feu",
+        "qty": 576
+      },
+      {
+        "resource": "soufre",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_serpe__obsidienne__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__outil_serpe__cuir_renforce__t7",
+    "station": "atelier",
+    "time_sec": 7,
+    "gold_cost": 11200,
+    "inputs": [
+      {
+        "resource": "minerai_mithril",
+        "qty": 832
+      },
+      {
+        "resource": "soufre",
+        "qty": 576
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_serpe__cuir_renforce__t7",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 61
+  },
+  {
+    "id": "recipe__arme__rune__t8",
+    "station": "enchantement",
+    "time_sec": 10,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "pierre_runique",
+        "qty": 832
+      },
+      {
+        "resource": "fragment_relique",
+        "qty": 768
+      },
+      {
+        "resource": "poussiere_arcane",
+        "qty": 832
+      },
+      {
+        "resource": "pierre_runique",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__rune__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__arme__obsidienne__t8",
+    "station": "forge",
+    "time_sec": 10,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "essence_lumiere",
+        "qty": 768
+      },
+      {
+        "resource": "poussiere_arcane",
+        "qty": 896
+      },
+      {
+        "resource": "fragment_relique",
+        "qty": 704
+      },
+      {
+        "resource": "pierre_runique",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__obsidienne__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__arme__mithril__t8",
+    "station": "forge",
+    "time_sec": 10,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "essence_lumiere",
+        "qty": 896
+      },
+      {
+        "resource": "poussiere_arcane",
+        "qty": 832
+      },
+      {
+        "resource": "fragment_relique",
+        "qty": 640
+      },
+      {
+        "resource": "pierre_runique",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__mithril__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__casque__rune__t8",
+    "station": "enchantement",
+    "time_sec": 8,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "fragment_relique",
+        "qty": 896
+      },
+      {
+        "resource": "pierre_runique",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__rune__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__casque__obsidienne__t8",
+    "station": "forge",
+    "time_sec": 8,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "poussiere_arcane",
+        "qty": 768
+      },
+      {
+        "resource": "fragment_relique",
+        "qty": 832
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__obsidienne__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__casque__mithril__t8",
+    "station": "forge",
+    "time_sec": 8,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "pierre_runique",
+        "qty": 768
+      },
+      {
+        "resource": "poussiere_arcane",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__mithril__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__plastron__rune__t8",
+    "station": "enchantement",
+    "time_sec": 10,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "pierre_runique",
+        "qty": 704
+      },
+      {
+        "resource": "essence_lumiere",
+        "qty": 704
+      },
+      {
+        "resource": "fragment_relique",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__rune__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__plastron__obsidienne__t8",
+    "station": "forge",
+    "time_sec": 10,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "essence_lumiere",
+        "qty": 640
+      },
+      {
+        "resource": "poussiere_arcane",
+        "qty": 832
+      },
+      {
+        "resource": "pierre_runique",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__obsidienne__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__plastron__mithril__t8",
+    "station": "forge",
+    "time_sec": 10,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "pierre_runique",
+        "qty": 640
+      },
+      {
+        "resource": "essence_lumiere",
+        "qty": 896
+      },
+      {
+        "resource": "poussiere_arcane",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__mithril__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__gants__rune__t8",
+    "station": "enchantement",
+    "time_sec": 8,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "fragment_relique",
+        "qty": 832
+      },
+      {
+        "resource": "pierre_runique",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__rune__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__gants__obsidienne__t8",
+    "station": "forge",
+    "time_sec": 8,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "pierre_runique",
+        "qty": 768
+      },
+      {
+        "resource": "fragment_relique",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__obsidienne__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__gants__mithril__t8",
+    "station": "forge",
+    "time_sec": 8,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "essence_lumiere",
+        "qty": 704
+      },
+      {
+        "resource": "poussiere_arcane",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__mithril__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__bottes__rune__t8",
+    "station": "enchantement",
+    "time_sec": 8,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "poussiere_arcane",
+        "qty": 896
+      },
+      {
+        "resource": "essence_lumiere",
+        "qty": 896
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__rune__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__bottes__obsidienne__t8",
+    "station": "forge",
+    "time_sec": 8,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "fragment_relique",
+        "qty": 640
+      },
+      {
+        "resource": "pierre_runique",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__obsidienne__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__bottes__mithril__t8",
+    "station": "forge",
+    "time_sec": 8,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "poussiere_arcane",
+        "qty": 896
+      },
+      {
+        "resource": "essence_lumiere",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__mithril__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__anneau__rune__t8",
+    "station": "enchantement",
+    "time_sec": 8,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "pierre_runique",
+        "qty": 832
+      },
+      {
+        "resource": "poussiere_arcane",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__rune__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__anneau__obsidienne__t8",
+    "station": "forge",
+    "time_sec": 8,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "fragment_relique",
+        "qty": 832
+      },
+      {
+        "resource": "poussiere_arcane",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__obsidienne__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__anneau__mithril__t8",
+    "station": "forge",
+    "time_sec": 8,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "poussiere_arcane",
+        "qty": 640
+      },
+      {
+        "resource": "pierre_runique",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__mithril__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__amulette__rune__t8",
+    "station": "enchantement",
+    "time_sec": 8,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "fragment_relique",
+        "qty": 704
+      },
+      {
+        "resource": "poussiere_arcane",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__rune__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__amulette__obsidienne__t8",
+    "station": "forge",
+    "time_sec": 8,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "essence_lumiere",
+        "qty": 704
+      },
+      {
+        "resource": "fragment_relique",
+        "qty": 896
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__obsidienne__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__amulette__mithril__t8",
+    "station": "forge",
+    "time_sec": 8,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "poussiere_arcane",
+        "qty": 704
+      },
+      {
+        "resource": "essence_lumiere",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__mithril__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__bouclier__rune__t8",
+    "station": "enchantement",
+    "time_sec": 10,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "poussiere_arcane",
+        "qty": 768
+      },
+      {
+        "resource": "pierre_runique",
+        "qty": 768
+      },
+      {
+        "resource": "essence_lumiere",
+        "qty": 832
+      },
+      {
+        "resource": "pierre_runique",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__rune__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__bouclier__obsidienne__t8",
+    "station": "forge",
+    "time_sec": 10,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "pierre_runique",
+        "qty": 768
+      },
+      {
+        "resource": "poussiere_arcane",
+        "qty": 640
+      },
+      {
+        "resource": "fragment_relique",
+        "qty": 832
+      },
+      {
+        "resource": "pierre_runique",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__obsidienne__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__bouclier__mithril__t8",
+    "station": "forge",
+    "time_sec": 10,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "essence_lumiere",
+        "qty": 896
+      },
+      {
+        "resource": "fragment_relique",
+        "qty": 896
+      },
+      {
+        "resource": "poussiere_arcane",
+        "qty": 896
+      },
+      {
+        "resource": "pierre_runique",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__mithril__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__relique__rune__t8",
+    "station": "enchantement",
+    "time_sec": 8,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "fragment_relique",
+        "qty": 896
+      },
+      {
+        "resource": "essence_lumiere",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "relique__rune__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__relique__obsidienne__t8",
+    "station": "forge",
+    "time_sec": 8,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "pierre_runique",
+        "qty": 640
+      },
+      {
+        "resource": "poussiere_arcane",
+        "qty": 896
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "relique__obsidienne__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__relique__mithril__t8",
+    "station": "forge",
+    "time_sec": 8,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "poussiere_arcane",
+        "qty": 896
+      },
+      {
+        "resource": "fragment_relique",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "relique__mithril__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__outil_hache__obsidienne__t8",
+    "station": "atelier",
+    "time_sec": 8,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "essence_lumiere",
+        "qty": 832
+      },
+      {
+        "resource": "pierre_runique",
+        "qty": 832
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_hache__obsidienne__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__outil_hache__mithril__t8",
+    "station": "atelier",
+    "time_sec": 8,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "fragment_relique",
+        "qty": 704
+      },
+      {
+        "resource": "pierre_runique",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_hache__mithril__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__outil_pioche__obsidienne__t8",
+    "station": "atelier",
+    "time_sec": 8,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "pierre_runique",
+        "qty": 896
+      },
+      {
+        "resource": "fragment_relique",
+        "qty": 640
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_pioche__obsidienne__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__outil_pioche__mithril__t8",
+    "station": "atelier",
+    "time_sec": 8,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "poussiere_arcane",
+        "qty": 832
+      },
+      {
+        "resource": "essence_lumiere",
+        "qty": 832
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_pioche__mithril__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__outil_serpe__obsidienne__t8",
+    "station": "atelier",
+    "time_sec": 8,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "fragment_relique",
+        "qty": 832
+      },
+      {
+        "resource": "essence_lumiere",
+        "qty": 832
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_serpe__obsidienne__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__outil_serpe__mithril__t8",
+    "station": "atelier",
+    "time_sec": 8,
+    "gold_cost": 13900,
+    "inputs": [
+      {
+        "resource": "poussiere_arcane",
+        "qty": 768
+      },
+      {
+        "resource": "pierre_runique",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_serpe__mithril__t8",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 71
+  },
+  {
+    "id": "recipe__arme__cristal__t9",
+    "station": "enchantement",
+    "time_sec": 11,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "essence_foudre",
+        "qty": 832
+      },
+      {
+        "resource": "eau_celeste",
+        "qty": 704
+      },
+      {
+        "resource": "cristal_azur",
+        "qty": 832
+      },
+      {
+        "resource": "cristal_azur",
+        "qty": 832
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__cristal__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__arme__mithril__t9",
+    "station": "forge",
+    "time_sec": 11,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "plume_d_orage",
+        "qty": 768
+      },
+      {
+        "resource": "essence_foudre",
+        "qty": 704
+      },
+      {
+        "resource": "eau_celeste",
+        "qty": 960
+      },
+      {
+        "resource": "cristal_azur",
+        "qty": 832
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__mithril__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__arme__aether__t9",
+    "station": "enchantement",
+    "time_sec": 11,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "essence_foudre",
+        "qty": 960
+      },
+      {
+        "resource": "plume_d_orage",
+        "qty": 960
+      },
+      {
+        "resource": "cristal_azur",
+        "qty": 768
+      },
+      {
+        "resource": "cristal_azur",
+        "qty": 832
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__aether__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__casque__cristal__t9",
+    "station": "enchantement",
+    "time_sec": 9,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "essence_foudre",
+        "qty": 960
+      },
+      {
+        "resource": "plume_d_orage",
+        "qty": 896
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__cristal__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__casque__mithril__t9",
+    "station": "forge",
+    "time_sec": 9,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "cristal_azur",
+        "qty": 832
+      },
+      {
+        "resource": "plume_d_orage",
+        "qty": 896
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__mithril__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__casque__aether__t9",
+    "station": "enchantement",
+    "time_sec": 9,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "eau_celeste",
+        "qty": 960
+      },
+      {
+        "resource": "cristal_azur",
+        "qty": 960
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__aether__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__plastron__cristal__t9",
+    "station": "enchantement",
+    "time_sec": 11,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "essence_foudre",
+        "qty": 960
+      },
+      {
+        "resource": "cristal_azur",
+        "qty": 768
+      },
+      {
+        "resource": "plume_d_orage",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__cristal__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__plastron__mithril__t9",
+    "station": "forge",
+    "time_sec": 11,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "essence_foudre",
+        "qty": 896
+      },
+      {
+        "resource": "plume_d_orage",
+        "qty": 704
+      },
+      {
+        "resource": "eau_celeste",
+        "qty": 896
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__mithril__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__plastron__aether__t9",
+    "station": "enchantement",
+    "time_sec": 11,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "essence_foudre",
+        "qty": 960
+      },
+      {
+        "resource": "cristal_azur",
+        "qty": 704
+      },
+      {
+        "resource": "eau_celeste",
+        "qty": 832
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__aether__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__gants__cristal__t9",
+    "station": "enchantement",
+    "time_sec": 9,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "cristal_azur",
+        "qty": 896
+      },
+      {
+        "resource": "plume_d_orage",
+        "qty": 960
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__cristal__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__gants__mithril__t9",
+    "station": "forge",
+    "time_sec": 9,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "eau_celeste",
+        "qty": 896
+      },
+      {
+        "resource": "plume_d_orage",
+        "qty": 960
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__mithril__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__gants__aether__t9",
+    "station": "enchantement",
+    "time_sec": 9,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "eau_celeste",
+        "qty": 832
+      },
+      {
+        "resource": "cristal_azur",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__aether__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__bottes__cristal__t9",
+    "station": "enchantement",
+    "time_sec": 9,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "cristal_azur",
+        "qty": 896
+      },
+      {
+        "resource": "eau_celeste",
+        "qty": 896
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__cristal__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__bottes__mithril__t9",
+    "station": "forge",
+    "time_sec": 9,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "plume_d_orage",
+        "qty": 896
+      },
+      {
+        "resource": "eau_celeste",
+        "qty": 896
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__mithril__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__bottes__aether__t9",
+    "station": "enchantement",
+    "time_sec": 9,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "eau_celeste",
+        "qty": 960
+      },
+      {
+        "resource": "essence_foudre",
+        "qty": 896
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__aether__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__anneau__cristal__t9",
+    "station": "enchantement",
+    "time_sec": 9,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "plume_d_orage",
+        "qty": 896
+      },
+      {
+        "resource": "essence_foudre",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__cristal__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__anneau__mithril__t9",
+    "station": "forge",
+    "time_sec": 9,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "plume_d_orage",
+        "qty": 768
+      },
+      {
+        "resource": "cristal_azur",
+        "qty": 896
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__mithril__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__anneau__aether__t9",
+    "station": "enchantement",
+    "time_sec": 9,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "eau_celeste",
+        "qty": 768
+      },
+      {
+        "resource": "cristal_azur",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__aether__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__amulette__cristal__t9",
+    "station": "enchantement",
+    "time_sec": 9,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "cristal_azur",
+        "qty": 768
+      },
+      {
+        "resource": "essence_foudre",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__cristal__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__amulette__mithril__t9",
+    "station": "forge",
+    "time_sec": 9,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "plume_d_orage",
+        "qty": 832
+      },
+      {
+        "resource": "cristal_azur",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__mithril__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__amulette__aether__t9",
+    "station": "enchantement",
+    "time_sec": 9,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "eau_celeste",
+        "qty": 960
+      },
+      {
+        "resource": "cristal_azur",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__aether__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__bouclier__cristal__t9",
+    "station": "enchantement",
+    "time_sec": 11,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "cristal_azur",
+        "qty": 768
+      },
+      {
+        "resource": "essence_foudre",
+        "qty": 704
+      },
+      {
+        "resource": "eau_celeste",
+        "qty": 704
+      },
+      {
+        "resource": "cristal_azur",
+        "qty": 832
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__cristal__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__bouclier__mithril__t9",
+    "station": "forge",
+    "time_sec": 11,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "plume_d_orage",
+        "qty": 960
+      },
+      {
+        "resource": "eau_celeste",
+        "qty": 704
+      },
+      {
+        "resource": "essence_foudre",
+        "qty": 768
+      },
+      {
+        "resource": "cristal_azur",
+        "qty": 832
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__mithril__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__bouclier__aether__t9",
+    "station": "enchantement",
+    "time_sec": 11,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "plume_d_orage",
+        "qty": 960
+      },
+      {
+        "resource": "essence_foudre",
+        "qty": 768
+      },
+      {
+        "resource": "cristal_azur",
+        "qty": 832
+      },
+      {
+        "resource": "cristal_azur",
+        "qty": 832
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__aether__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__relique__cristal__t9",
+    "station": "enchantement",
+    "time_sec": 9,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "cristal_azur",
+        "qty": 896
+      },
+      {
+        "resource": "eau_celeste",
+        "qty": 896
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "relique__cristal__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__relique__mithril__t9",
+    "station": "forge",
+    "time_sec": 9,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "essence_foudre",
+        "qty": 832
+      },
+      {
+        "resource": "plume_d_orage",
+        "qty": 896
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "relique__mithril__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__relique__aether__t9",
+    "station": "enchantement",
+    "time_sec": 9,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "essence_foudre",
+        "qty": 832
+      },
+      {
+        "resource": "plume_d_orage",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "relique__aether__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__outil_hache__mithril__t9",
+    "station": "atelier",
+    "time_sec": 9,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "plume_d_orage",
+        "qty": 704
+      },
+      {
+        "resource": "cristal_azur",
+        "qty": 896
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_hache__mithril__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__outil_pioche__mithril__t9",
+    "station": "atelier",
+    "time_sec": 9,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "essence_foudre",
+        "qty": 896
+      },
+      {
+        "resource": "cristal_azur",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_pioche__mithril__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__outil_serpe__mithril__t9",
+    "station": "atelier",
+    "time_sec": 9,
+    "gold_cost": 16800,
+    "inputs": [
+      {
+        "resource": "plume_d_orage",
+        "qty": 768
+      },
+      {
+        "resource": "eau_celeste",
+        "qty": 704
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "outil_serpe__mithril__t9",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 81
+  },
+  {
+    "id": "recipe__arme__abyssal__t10",
+    "station": "enchantement",
+    "time_sec": 12,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "essence_ombre",
+        "qty": 768
+      },
+      {
+        "resource": "clef_paradoxe",
+        "qty": 960
+      },
+      {
+        "resource": "encre_vivante",
+        "qty": 896
+      },
+      {
+        "resource": "fragment_abyssal",
+        "qty": 896
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__abyssal__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__arme__paradoxe__t10",
+    "station": "enchantement",
+    "time_sec": 12,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "fragment_abyssal",
+        "qty": 1024
+      },
+      {
+        "resource": "encre_vivante",
+        "qty": 960
+      },
+      {
+        "resource": "clef_paradoxe",
+        "qty": 896
+      },
+      {
+        "resource": "fragment_abyssal",
+        "qty": 896
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__paradoxe__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__arme__aether__t10",
+    "station": "enchantement",
+    "time_sec": 12,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "essence_ombre",
+        "qty": 896
+      },
+      {
+        "resource": "encre_vivante",
+        "qty": 832
+      },
+      {
+        "resource": "clef_paradoxe",
+        "qty": 960
+      },
+      {
+        "resource": "fragment_abyssal",
+        "qty": 896
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "arme__aether__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__casque__abyssal__t10",
+    "station": "enchantement",
+    "time_sec": 10,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "fragment_abyssal",
+        "qty": 1024
+      },
+      {
+        "resource": "encre_vivante",
+        "qty": 1024
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__abyssal__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__casque__paradoxe__t10",
+    "station": "enchantement",
+    "time_sec": 10,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "fragment_abyssal",
+        "qty": 832
+      },
+      {
+        "resource": "encre_vivante",
+        "qty": 896
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__paradoxe__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__casque__aether__t10",
+    "station": "enchantement",
+    "time_sec": 10,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "fragment_abyssal",
+        "qty": 832
+      },
+      {
+        "resource": "encre_vivante",
+        "qty": 960
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "casque__aether__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__plastron__abyssal__t10",
+    "station": "enchantement",
+    "time_sec": 12,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "encre_vivante",
+        "qty": 768
+      },
+      {
+        "resource": "clef_paradoxe",
+        "qty": 960
+      },
+      {
+        "resource": "essence_ombre",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__abyssal__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__plastron__paradoxe__t10",
+    "station": "enchantement",
+    "time_sec": 12,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "fragment_abyssal",
+        "qty": 960
+      },
+      {
+        "resource": "essence_ombre",
+        "qty": 896
+      },
+      {
+        "resource": "clef_paradoxe",
+        "qty": 832
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__paradoxe__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__plastron__aether__t10",
+    "station": "enchantement",
+    "time_sec": 12,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "clef_paradoxe",
+        "qty": 960
+      },
+      {
+        "resource": "encre_vivante",
+        "qty": 960
+      },
+      {
+        "resource": "essence_ombre",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "plastron__aether__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__gants__abyssal__t10",
+    "station": "enchantement",
+    "time_sec": 10,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "fragment_abyssal",
+        "qty": 768
+      },
+      {
+        "resource": "essence_ombre",
+        "qty": 832
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__abyssal__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__gants__paradoxe__t10",
+    "station": "enchantement",
+    "time_sec": 10,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "clef_paradoxe",
+        "qty": 832
+      },
+      {
+        "resource": "fragment_abyssal",
+        "qty": 896
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__paradoxe__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__gants__aether__t10",
+    "station": "enchantement",
+    "time_sec": 10,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "encre_vivante",
+        "qty": 768
+      },
+      {
+        "resource": "fragment_abyssal",
+        "qty": 1024
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "gants__aether__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__bottes__abyssal__t10",
+    "station": "enchantement",
+    "time_sec": 10,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "clef_paradoxe",
+        "qty": 768
+      },
+      {
+        "resource": "encre_vivante",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__abyssal__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__bottes__paradoxe__t10",
+    "station": "enchantement",
+    "time_sec": 10,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "fragment_abyssal",
+        "qty": 960
+      },
+      {
+        "resource": "clef_paradoxe",
+        "qty": 832
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__paradoxe__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__bottes__aether__t10",
+    "station": "enchantement",
+    "time_sec": 10,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "fragment_abyssal",
+        "qty": 896
+      },
+      {
+        "resource": "clef_paradoxe",
+        "qty": 896
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bottes__aether__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__anneau__abyssal__t10",
+    "station": "enchantement",
+    "time_sec": 10,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "fragment_abyssal",
+        "qty": 960
+      },
+      {
+        "resource": "essence_ombre",
+        "qty": 1024
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__abyssal__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__anneau__paradoxe__t10",
+    "station": "enchantement",
+    "time_sec": 10,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "encre_vivante",
+        "qty": 832
+      },
+      {
+        "resource": "clef_paradoxe",
+        "qty": 1024
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__paradoxe__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__anneau__aether__t10",
+    "station": "enchantement",
+    "time_sec": 10,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "encre_vivante",
+        "qty": 1024
+      },
+      {
+        "resource": "essence_ombre",
+        "qty": 960
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "anneau__aether__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__amulette__abyssal__t10",
+    "station": "enchantement",
+    "time_sec": 10,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "essence_ombre",
+        "qty": 832
+      },
+      {
+        "resource": "clef_paradoxe",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__abyssal__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__amulette__paradoxe__t10",
+    "station": "enchantement",
+    "time_sec": 10,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "clef_paradoxe",
+        "qty": 768
+      },
+      {
+        "resource": "encre_vivante",
+        "qty": 768
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__paradoxe__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__amulette__aether__t10",
+    "station": "enchantement",
+    "time_sec": 10,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "fragment_abyssal",
+        "qty": 960
+      },
+      {
+        "resource": "encre_vivante",
+        "qty": 896
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "amulette__aether__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__bouclier__abyssal__t10",
+    "station": "enchantement",
+    "time_sec": 12,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "clef_paradoxe",
+        "qty": 896
+      },
+      {
+        "resource": "encre_vivante",
+        "qty": 960
+      },
+      {
+        "resource": "essence_ombre",
+        "qty": 768
+      },
+      {
+        "resource": "fragment_abyssal",
+        "qty": 896
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__abyssal__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__bouclier__paradoxe__t10",
+    "station": "enchantement",
+    "time_sec": 12,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "fragment_abyssal",
+        "qty": 960
+      },
+      {
+        "resource": "clef_paradoxe",
+        "qty": 768
+      },
+      {
+        "resource": "essence_ombre",
+        "qty": 832
+      },
+      {
+        "resource": "fragment_abyssal",
+        "qty": 896
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__paradoxe__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__bouclier__aether__t10",
+    "station": "enchantement",
+    "time_sec": 12,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "fragment_abyssal",
+        "qty": 832
+      },
+      {
+        "resource": "essence_ombre",
+        "qty": 896
+      },
+      {
+        "resource": "encre_vivante",
+        "qty": 1024
+      },
+      {
+        "resource": "fragment_abyssal",
+        "qty": 896
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "bouclier__aether__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__relique__abyssal__t10",
+    "station": "enchantement",
+    "time_sec": 10,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "fragment_abyssal",
+        "qty": 1024
+      },
+      {
+        "resource": "clef_paradoxe",
+        "qty": 896
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "relique__abyssal__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__relique__paradoxe__t10",
+    "station": "enchantement",
+    "time_sec": 10,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "encre_vivante",
+        "qty": 960
+      },
+      {
+        "resource": "essence_ombre",
+        "qty": 896
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "relique__paradoxe__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__relique__aether__t10",
+    "station": "enchantement",
+    "time_sec": 10,
+    "gold_cost": 19900,
+    "inputs": [
+      {
+        "resource": "clef_paradoxe",
+        "qty": 1024
+      },
+      {
+        "resource": "essence_ombre",
+        "qty": 1024
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "relique__aether__t10",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 91
+  },
+  {
+    "id": "recipe__tool__pioche__t1",
+    "station": "atelier",
+    "time_sec": 7,
+    "gold_cost": 20,
+    "inputs": [
+      {
+        "resource": "bois_tendre",
+        "qty": 8
+      },
+      {
+        "resource": "pierre_brute",
+        "qty": 12
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__pioche__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 3
+  },
+  {
+    "id": "recipe__tool__hache__t1",
+    "station": "atelier",
+    "time_sec": 7,
+    "gold_cost": 20,
+    "inputs": [
+      {
+        "resource": "bois_tendre",
+        "qty": 10
+      },
+      {
+        "resource": "pierre_brute",
+        "qty": 8
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__hache__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 3
+  },
+  {
+    "id": "recipe__tool__faucille__t1",
+    "station": "atelier",
+    "time_sec": 6,
+    "gold_cost": 15,
+    "inputs": [
+      {
+        "resource": "bois_tendre",
+        "qty": 6
+      },
+      {
+        "resource": "fibres_sauvages",
+        "qty": 10
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__faucille__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 3
+  },
+  {
+    "id": "recipe__tool__pioche__t2",
+    "station": "atelier",
+    "time_sec": 9,
+    "gold_cost": 80,
+    "inputs": [
+      {
+        "resource": "bois_chene",
+        "qty": 16
+      },
+      {
+        "resource": "minerai_fer",
+        "qty": 24
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__pioche__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 6
+  },
+  {
+    "id": "recipe__tool__hache__t2",
+    "station": "atelier",
+    "time_sec": 9,
+    "gold_cost": 80,
+    "inputs": [
+      {
+        "resource": "bois_chene",
+        "qty": 20
+      },
+      {
+        "resource": "minerai_fer",
+        "qty": 16
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__hache__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 6
+  },
+  {
+    "id": "recipe__tool__faucille__t2",
+    "station": "atelier",
+    "time_sec": 8,
+    "gold_cost": 60,
+    "inputs": [
+      {
+        "resource": "bois_chene",
+        "qty": 12
+      },
+      {
+        "resource": "fibres_sauvages",
+        "qty": 20
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__faucille__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 6
+  },
+  {
+    "id": "recipe__tool__pioche__t3",
+    "station": "forge",
+    "time_sec": 11,
+    "gold_cost": 180,
+    "inputs": [
+      {
+        "resource": "bois_spongieux",
+        "qty": 24
+      },
+      {
+        "resource": "minerai_fer",
+        "qty": 36
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__pioche__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 9
+  },
+  {
+    "id": "recipe__tool__hache__t3",
+    "station": "forge",
+    "time_sec": 11,
+    "gold_cost": 180,
+    "inputs": [
+      {
+        "resource": "bois_spongieux",
+        "qty": 30
+      },
+      {
+        "resource": "minerai_fer",
+        "qty": 24
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__hache__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 9
+  },
+  {
+    "id": "recipe__tool__faucille__t3",
+    "station": "forge",
+    "time_sec": 10,
+    "gold_cost": 135,
+    "inputs": [
+      {
+        "resource": "bois_chene",
+        "qty": 18
+      },
+      {
+        "resource": "fibres_sauvages",
+        "qty": 30
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__faucille__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 9
+  },
+  {
+    "id": "recipe__tool__pioche__t4",
+    "station": "forge",
+    "time_sec": 13,
+    "gold_cost": 320,
+    "inputs": [
+      {
+        "resource": "bois_spongieux",
+        "qty": 32
+      },
+      {
+        "resource": "minerai_fer",
+        "qty": 48
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__pioche__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 12
+  },
+  {
+    "id": "recipe__tool__hache__t4",
+    "station": "forge",
+    "time_sec": 13,
+    "gold_cost": 320,
+    "inputs": [
+      {
+        "resource": "bois_spongieux",
+        "qty": 40
+      },
+      {
+        "resource": "minerai_fer",
+        "qty": 32
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__hache__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 12
+  },
+  {
+    "id": "recipe__tool__faucille__t4",
+    "station": "forge",
+    "time_sec": 12,
+    "gold_cost": 240,
+    "inputs": [
+      {
+        "resource": "bois_chene",
+        "qty": 24
+      },
+      {
+        "resource": "fibres_sauvages",
+        "qty": 40
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__faucille__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 12
+  },
+  {
+    "id": "recipe__tool__pioche__t5",
+    "station": "forge",
+    "time_sec": 15,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "bois_spongieux",
+        "qty": 40
+      },
+      {
+        "resource": "minerai_fer",
+        "qty": 60
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__pioche__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 15
+  },
+  {
+    "id": "recipe__tool__hache__t5",
+    "station": "forge",
+    "time_sec": 15,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "bois_spongieux",
+        "qty": 50
+      },
+      {
+        "resource": "minerai_fer",
+        "qty": 40
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__hache__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 15
+  },
+  {
+    "id": "recipe__tool__faucille__t5",
+    "station": "forge",
+    "time_sec": 14,
+    "gold_cost": 375,
+    "inputs": [
+      {
+        "resource": "bois_chene",
+        "qty": 30
+      },
+      {
+        "resource": "fibres_sauvages",
+        "qty": 50
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__faucille__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 15
+  },
+  {
+    "id": "recipe__potion__soin__petite",
+    "station": "atelier",
+    "time_sec": 3,
+    "gold_cost": 10,
+    "inputs": [
+      {
+        "resource": "herbe_medicinale",
+        "qty": 3
+      },
+      {
+        "resource": "eau_claire",
+        "qty": 5
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "potion__soin__petite",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__potion__soin__moyenne",
+    "station": "alchimie",
+    "time_sec": 5,
+    "gold_cost": 40,
+    "inputs": [
+      {
+        "resource": "herbe_medicinale",
+        "qty": 10
+      },
+      {
+        "resource": "champignon_lune",
+        "qty": 5
+      },
+      {
+        "resource": "eau_claire",
+        "qty": 8
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "potion__soin__moyenne",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 10
+  },
+  {
+    "id": "recipe__potion__force",
+    "station": "alchimie",
+    "time_sec": 8,
+    "gold_cost": 60,
+    "inputs": [
+      {
+        "resource": "venin_distille",
+        "qty": 5
+      },
+      {
+        "resource": "champignon_lune",
+        "qty": 8
+      },
+      {
+        "resource": "essence_ombre",
+        "qty": 2
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "potion__force",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 15
+  },
+  {
+    "id": "recipe__material__planche",
+    "station": "atelier",
+    "time_sec": 2,
+    "gold_cost": 5,
+    "inputs": [
+      {
+        "resource": "bois_tendre",
+        "qty": 4
+      }
+    ],
+    "outputs": [
+      {
+        "resource": "planche_bois",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__material__lingot_fer",
+    "station": "forge",
+    "time_sec": 5,
+    "gold_cost": 20,
+    "inputs": [
+      {
+        "resource": "minerai_fer",
+        "qty": 8
+      }
+    ],
+    "outputs": [
+      {
+        "resource": "lingot_fer",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 5
+  },
+  {
+    "id": "recipe__material__cuir",
+    "station": "tannerie",
+    "time_sec": 4,
+    "gold_cost": 15,
+    "inputs": [
+      {
+        "resource": "cuir_brut",
+        "qty": 6
+      }
+    ],
+    "outputs": [
+      {
+        "resource": "cuir_traite",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 8
+  },
+  {
+    "id": "recipe__tool__pioche__t1",
+    "station": "atelier",
+    "time_sec": 7,
+    "gold_cost": 20,
+    "inputs": [
+      {
+        "resource": "bois_tendre",
+        "qty": 8
+      },
+      {
+        "resource": "pierre_brute",
+        "qty": 12
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__pioche__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 3
+  },
+  {
+    "id": "recipe__tool__hache__t1",
+    "station": "atelier",
+    "time_sec": 7,
+    "gold_cost": 20,
+    "inputs": [
+      {
+        "resource": "bois_tendre",
+        "qty": 10
+      },
+      {
+        "resource": "pierre_brute",
+        "qty": 8
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__hache__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 3
+  },
+  {
+    "id": "recipe__tool__faucille__t1",
+    "station": "atelier",
+    "time_sec": 6,
+    "gold_cost": 15,
+    "inputs": [
+      {
+        "resource": "bois_tendre",
+        "qty": 6
+      },
+      {
+        "resource": "fibres_sauvages",
+        "qty": 10
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__faucille__t1",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 3
+  },
+  {
+    "id": "recipe__tool__pioche__t2",
+    "station": "atelier",
+    "time_sec": 9,
+    "gold_cost": 80,
+    "inputs": [
+      {
+        "resource": "bois_chene",
+        "qty": 16
+      },
+      {
+        "resource": "minerai_fer",
+        "qty": 24
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__pioche__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 6
+  },
+  {
+    "id": "recipe__tool__hache__t2",
+    "station": "atelier",
+    "time_sec": 9,
+    "gold_cost": 80,
+    "inputs": [
+      {
+        "resource": "bois_chene",
+        "qty": 20
+      },
+      {
+        "resource": "minerai_fer",
+        "qty": 16
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__hache__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 6
+  },
+  {
+    "id": "recipe__tool__faucille__t2",
+    "station": "atelier",
+    "time_sec": 8,
+    "gold_cost": 60,
+    "inputs": [
+      {
+        "resource": "bois_chene",
+        "qty": 12
+      },
+      {
+        "resource": "fibres_sauvages",
+        "qty": 20
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__faucille__t2",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 6
+  },
+  {
+    "id": "recipe__tool__pioche__t3",
+    "station": "forge",
+    "time_sec": 11,
+    "gold_cost": 180,
+    "inputs": [
+      {
+        "resource": "bois_spongieux",
+        "qty": 24
+      },
+      {
+        "resource": "minerai_fer",
+        "qty": 36
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__pioche__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 9
+  },
+  {
+    "id": "recipe__tool__hache__t3",
+    "station": "forge",
+    "time_sec": 11,
+    "gold_cost": 180,
+    "inputs": [
+      {
+        "resource": "bois_spongieux",
+        "qty": 30
+      },
+      {
+        "resource": "minerai_fer",
+        "qty": 24
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__hache__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 9
+  },
+  {
+    "id": "recipe__tool__faucille__t3",
+    "station": "forge",
+    "time_sec": 10,
+    "gold_cost": 135,
+    "inputs": [
+      {
+        "resource": "bois_chene",
+        "qty": 18
+      },
+      {
+        "resource": "fibres_sauvages",
+        "qty": 30
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__faucille__t3",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 9
+  },
+  {
+    "id": "recipe__tool__pioche__t4",
+    "station": "forge",
+    "time_sec": 13,
+    "gold_cost": 320,
+    "inputs": [
+      {
+        "resource": "bois_spongieux",
+        "qty": 32
+      },
+      {
+        "resource": "minerai_fer",
+        "qty": 48
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__pioche__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 12
+  },
+  {
+    "id": "recipe__tool__hache__t4",
+    "station": "forge",
+    "time_sec": 13,
+    "gold_cost": 320,
+    "inputs": [
+      {
+        "resource": "bois_spongieux",
+        "qty": 40
+      },
+      {
+        "resource": "minerai_fer",
+        "qty": 32
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__hache__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 12
+  },
+  {
+    "id": "recipe__tool__faucille__t4",
+    "station": "forge",
+    "time_sec": 12,
+    "gold_cost": 240,
+    "inputs": [
+      {
+        "resource": "bois_chene",
+        "qty": 24
+      },
+      {
+        "resource": "fibres_sauvages",
+        "qty": 40
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__faucille__t4",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 12
+  },
+  {
+    "id": "recipe__tool__pioche__t5",
+    "station": "forge",
+    "time_sec": 15,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "bois_spongieux",
+        "qty": 40
+      },
+      {
+        "resource": "minerai_fer",
+        "qty": 60
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__pioche__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 15
+  },
+  {
+    "id": "recipe__tool__hache__t5",
+    "station": "forge",
+    "time_sec": 15,
+    "gold_cost": 500,
+    "inputs": [
+      {
+        "resource": "bois_spongieux",
+        "qty": 50
+      },
+      {
+        "resource": "minerai_fer",
+        "qty": 40
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__hache__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 15
+  },
+  {
+    "id": "recipe__tool__faucille__t5",
+    "station": "forge",
+    "time_sec": 14,
+    "gold_cost": 375,
+    "inputs": [
+      {
+        "resource": "bois_chene",
+        "qty": 30
+      },
+      {
+        "resource": "fibres_sauvages",
+        "qty": 50
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "tool__faucille__t5",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 15
+  },
+  {
+    "id": "recipe__potion__soin__petite",
+    "station": "atelier",
+    "time_sec": 3,
+    "gold_cost": 10,
+    "inputs": [
+      {
+        "resource": "herbe_medicinale",
+        "qty": 3
+      },
+      {
+        "resource": "eau_claire",
+        "qty": 5
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "potion__soin__petite",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__potion__soin__moyenne",
+    "station": "alchimie",
+    "time_sec": 5,
+    "gold_cost": 40,
+    "inputs": [
+      {
+        "resource": "herbe_medicinale",
+        "qty": 10
+      },
+      {
+        "resource": "champignon_lune",
+        "qty": 5
+      },
+      {
+        "resource": "eau_claire",
+        "qty": 8
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "potion__soin__moyenne",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 10
+  },
+  {
+    "id": "recipe__potion__force",
+    "station": "alchimie",
+    "time_sec": 8,
+    "gold_cost": 60,
+    "inputs": [
+      {
+        "resource": "venin_distille",
+        "qty": 5
+      },
+      {
+        "resource": "champignon_lune",
+        "qty": 8
+      },
+      {
+        "resource": "essence_ombre",
+        "qty": 2
+      }
+    ],
+    "outputs": [
+      {
+        "item_base": "potion__force",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 15
+  },
+  {
+    "id": "recipe__material__planche",
+    "station": "atelier",
+    "time_sec": 2,
+    "gold_cost": 5,
+    "inputs": [
+      {
+        "resource": "bois_tendre",
+        "qty": 4
+      }
+    ],
+    "outputs": [
+      {
+        "resource": "planche_bois",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 1
+  },
+  {
+    "id": "recipe__material__lingot_fer",
+    "station": "forge",
+    "time_sec": 5,
+    "gold_cost": 20,
+    "inputs": [
+      {
+        "resource": "minerai_fer",
+        "qty": 8
+      }
+    ],
+    "outputs": [
+      {
+        "resource": "lingot_fer",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 5
+  },
+  {
+    "id": "recipe__material__cuir",
+    "station": "tannerie",
+    "time_sec": 4,
+    "gold_cost": 15,
+    "inputs": [
+      {
+        "resource": "cuir_brut",
+        "qty": 6
+      }
+    ],
+    "outputs": [
+      {
+        "resource": "cuir_traite",
+        "qty": 1
+      }
+    ],
+    "unlocks_at_level": 8
+  }
+]

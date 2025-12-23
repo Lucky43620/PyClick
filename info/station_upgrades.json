@@ -1,0 +1,122 @@
+[
+  {
+    "station_id": "atelier",
+    "upgrades": [
+      {
+        "level": 1,
+        "name": "Atelier Ameliore",
+        "cost": [
+          {
+            "resource": "planche_bois",
+            "qty": 50
+          },
+          {
+            "resource": "cristal_feu",
+            "qty": 5
+          },
+          {
+            "gold": 1000
+          }
+        ],
+        "bonus": {
+          "craft_speed_pct": 10,
+          "craft_quality_chance": 5
+        }
+      },
+      {
+        "level": 2,
+        "name": "Atelier Avance",
+        "cost": [
+          {
+            "resource": "lingot_fer",
+            "qty": 30
+          },
+          {
+            "resource": "essence_forge",
+            "qty": 3
+          },
+          {
+            "gold": 2500
+          }
+        ],
+        "bonus": {
+          "craft_speed_pct": 25,
+          "craft_quality_chance": 12
+        }
+      }
+    ]
+  },
+  {
+    "station_id": "forge",
+    "upgrades": [
+      {
+        "level": 1,
+        "name": "Forge Renforcee",
+        "cost": [
+          {
+            "resource": "lingot_fer",
+            "qty": 80
+          },
+          {
+            "resource": "cristal_feu",
+            "qty": 10
+          },
+          {
+            "gold": 1500
+          }
+        ],
+        "bonus": {
+          "craft_speed_pct": 15,
+          "item_stat_bonus_pct": 5
+        }
+      },
+      {
+        "level": 2,
+        "name": "Forge Legendaire",
+        "cost": [
+          {
+            "resource": "essence_forge",
+            "qty": 5
+          },
+          {
+            "resource": "cristal_arcane",
+            "qty": 8
+          },
+          {
+            "gold": 5000
+          }
+        ],
+        "bonus": {
+          "craft_speed_pct": 40,
+          "item_stat_bonus_pct": 15
+        }
+      }
+    ]
+  },
+  {
+    "station_id": "alchimie",
+    "upgrades": [
+      {
+        "level": 1,
+        "name": "Laboratoire Alchimique",
+        "cost": [
+          {
+            "resource": "essence_alchimie",
+            "qty": 5
+          },
+          {
+            "resource": "cristal_arcane",
+            "qty": 5
+          },
+          {
+            "gold": 2000
+          }
+        ],
+        "bonus": {
+          "potion_effect_pct": 25,
+          "potion_duration_pct": 50
+        }
+      }
+    ]
+  }
+]

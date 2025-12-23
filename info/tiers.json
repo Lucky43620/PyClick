@@ -1,0 +1,102 @@
+[
+  {
+    "id": "t1",
+    "name": "T1",
+    "recommended_level": 1,
+    "base_power": 10,
+    "node_hp": 20,
+    "enemy_hp": 40,
+    "enemy_atk": 6,
+    "gold_value_mult": 1.0
+  },
+  {
+    "id": "t2",
+    "name": "T2",
+    "recommended_level": 11,
+    "base_power": 25,
+    "node_hp": 47,
+    "enemy_hp": 117,
+    "enemy_atk": 15,
+    "gold_value_mult": 1.25
+  },
+  {
+    "id": "t3",
+    "name": "T3",
+    "recommended_level": 21,
+    "base_power": 44,
+    "node_hp": 78,
+    "enemy_hp": 219,
+    "enemy_atk": 26,
+    "gold_value_mult": 1.5
+  },
+  {
+    "id": "t4",
+    "name": "T4",
+    "recommended_level": 31,
+    "base_power": 64,
+    "node_hp": 113,
+    "enemy_hp": 342,
+    "enemy_atk": 38,
+    "gold_value_mult": 1.75
+  },
+  {
+    "id": "t5",
+    "name": "T5",
+    "recommended_level": 41,
+    "base_power": 87,
+    "node_hp": 149,
+    "enemy_hp": 484,
+    "enemy_atk": 52,
+    "gold_value_mult": 2.0
+  },
+  {
+    "id": "t6",
+    "name": "T6",
+    "recommended_level": 51,
+    "base_power": 112,
+    "node_hp": 187,
+    "enemy_hp": 642,
+    "enemy_atk": 67,
+    "gold_value_mult": 2.25
+  },
+  {
+    "id": "t7",
+    "name": "T7",
+    "recommended_level": 61,
+    "base_power": 138,
+    "node_hp": 227,
+    "enemy_hp": 816,
+    "enemy_atk": 82,
+    "gold_value_mult": 2.5
+  },
+  {
+    "id": "t8",
+    "name": "T8",
+    "recommended_level": 71,
+    "base_power": 165,
+    "node_hp": 269,
+    "enemy_hp": 1004,
+    "enemy_atk": 99,
+    "gold_value_mult": 2.75
+  },
+  {
+    "id": "t9",
+    "name": "T9",
+    "recommended_level": 81,
+    "base_power": 194,
+    "node_hp": 311,
+    "enemy_hp": 1205,
+    "enemy_atk": 116,
+    "gold_value_mult": 3.0
+  },
+  {
+    "id": "t10",
+    "name": "T10",
+    "recommended_level": 91,
+    "base_power": 223,
+    "node_hp": 355,
+    "enemy_hp": 1419,
+    "enemy_atk": 134,
+    "gold_value_mult": 3.25
+  }
+]

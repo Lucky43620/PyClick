@@ -1,0 +1,754 @@
+[
+  {
+    "id": "aff_force",
+    "name": "de la Force",
+    "mods": [
+      {
+        "stat": "atk",
+        "min": 1,
+        "max": 6,
+        "mode": "flat"
+      }
+    ],
+    "tier_min": "t1",
+    "tier_max": "t10",
+    "weight": 12,
+    "tags": [
+      "offense"
+    ],
+    "desc": "de la Force"
+  },
+  {
+    "id": "aff_precision",
+    "name": "de la Visée",
+    "mods": [
+      {
+        "stat": "precision",
+        "min": 1,
+        "max": 5,
+        "mode": "flat"
+      }
+    ],
+    "tier_min": "t1",
+    "tier_max": "t10",
+    "weight": 10,
+    "tags": [
+      "offense"
+    ],
+    "desc": "de la Visée"
+  },
+  {
+    "id": "aff_crit",
+    "name": "de la Morsure",
+    "mods": [
+      {
+        "stat": "crit_chance",
+        "min": 1,
+        "max": 5,
+        "mode": "pct"
+      }
+    ],
+    "tier_min": "t1",
+    "tier_max": "t10",
+    "weight": 8,
+    "tags": [
+      "offense"
+    ],
+    "desc": "de la Morsure"
+  },
+  {
+    "id": "aff_critdmg",
+    "name": "du Carnage",
+    "mods": [
+      {
+        "stat": "crit_degats",
+        "min": 5,
+        "max": 25,
+        "mode": "pct"
+      }
+    ],
+    "tier_min": "t1",
+    "tier_max": "t10",
+    "weight": 7,
+    "tags": [
+      "offense"
+    ],
+    "desc": "du Carnage"
+  },
+  {
+    "id": "aff_as",
+    "name": "de la Hâte",
+    "mods": [
+      {
+        "stat": "vitesse_attaque",
+        "min": 1,
+        "max": 7,
+        "mode": "pct"
+      }
+    ],
+    "tier_min": "t1",
+    "tier_max": "t10",
+    "weight": 8,
+    "tags": [
+      "offense"
+    ],
+    "desc": "de la Hâte"
+  },
+  {
+    "id": "aff_lifesteal",
+    "name": "du Vampire",
+    "mods": [
+      {
+        "stat": "vol_vie",
+        "min": 1,
+        "max": 6,
+        "mode": "pct"
+      }
+    ],
+    "tier_min": "t1",
+    "tier_max": "t10",
+    "weight": 6,
+    "tags": [
+      "offense"
+    ],
+    "desc": "du Vampire"
+  },
+  {
+    "id": "aff_def",
+    "name": "de la Garde",
+    "mods": [
+      {
+        "stat": "def",
+        "min": 1,
+        "max": 7,
+        "mode": "flat"
+      }
+    ],
+    "tier_min": "t1",
+    "tier_max": "t10",
+    "weight": 12,
+    "tags": [
+      "defense"
+    ],
+    "desc": "de la Garde"
+  },
+  {
+    "id": "aff_hp",
+    "name": "du Colosse",
+    "mods": [
+      {
+        "stat": "hp_max",
+        "min": 10,
+        "max": 60,
+        "mode": "flat"
+      }
+    ],
+    "tier_min": "t1",
+    "tier_max": "t10",
+    "weight": 10,
+    "tags": [
+      "defense"
+    ],
+    "desc": "du Colosse"
+  },
+  {
+    "id": "aff_regen",
+    "name": "de la Restauration",
+    "mods": [
+      {
+        "stat": "hp_regen",
+        "min": 1,
+        "max": 4,
+        "mode": "flat"
+      }
+    ],
+    "tier_min": "t1",
+    "tier_max": "t10",
+    "weight": 7,
+    "tags": [
+      "defense"
+    ],
+    "desc": "de la Restauration"
+  },
+  {
+    "id": "aff_block",
+    "name": "du Rempart",
+    "mods": [
+      {
+        "stat": "blocage",
+        "min": 1,
+        "max": 6,
+        "mode": "pct"
+      }
+    ],
+    "tier_min": "t1",
+    "tier_max": "t10",
+    "weight": 7,
+    "tags": [
+      "defense"
+    ],
+    "desc": "du Rempart"
+  },
+  {
+    "id": "aff_dodge",
+    "name": "de la Brume",
+    "mods": [
+      {
+        "stat": "esquive",
+        "min": 1,
+        "max": 6,
+        "mode": "pct"
+      }
+    ],
+    "tier_min": "t1",
+    "tier_max": "t10",
+    "weight": 7,
+    "tags": [
+      "defense"
+    ],
+    "desc": "de la Brume"
+  },
+  {
+    "id": "aff_thorns",
+    "name": "des Épines",
+    "mods": [
+      {
+        "stat": "epines",
+        "min": 1,
+        "max": 12,
+        "mode": "flat"
+      }
+    ],
+    "tier_min": "t1",
+    "tier_max": "t10",
+    "weight": 6,
+    "tags": [
+      "defense"
+    ],
+    "desc": "des Épines"
+  },
+  {
+    "id": "aff_shield",
+    "name": "du Bouclier",
+    "mods": [
+      {
+        "stat": "bouclier",
+        "min": 10,
+        "max": 70,
+        "mode": "flat"
+      }
+    ],
+    "tier_min": "t1",
+    "tier_max": "t10",
+    "weight": 6,
+    "tags": [
+      "defense"
+    ],
+    "desc": "du Bouclier"
+  },
+  {
+    "id": "aff_gold",
+    "name": "du Marchand",
+    "mods": [
+      {
+        "stat": "gain_or_pct",
+        "min": 2,
+        "max": 12,
+        "mode": "pct"
+      }
+    ],
+    "tier_min": "t1",
+    "tier_max": "t10",
+    "weight": 7,
+    "tags": [
+      "utility"
+    ],
+    "desc": "du Marchand"
+  },
+  {
+    "id": "aff_loot",
+    "name": "du Chanceux",
+    "mods": [
+      {
+        "stat": "chance_double_drop_pct",
+        "min": 1,
+        "max": 8,
+        "mode": "pct"
+      }
+    ],
+    "tier_min": "t1",
+    "tier_max": "t10",
+    "weight": 6,
+    "tags": [
+      "utility"
+    ],
+    "desc": "du Chanceux"
+  },
+  {
+    "id": "aff_cd",
+    "name": "de la Concentration",
+    "mods": [
+      {
+        "stat": "cooldown_reduc",
+        "min": 1,
+        "max": 6,
+        "mode": "pct"
+      }
+    ],
+    "tier_min": "t1",
+    "tier_max": "t10",
+    "weight": 6,
+    "tags": [
+      "utility"
+    ],
+    "desc": "de la Concentration"
+  },
+  {
+    "id": "aff_res_gain",
+    "name": "de l'Abondance",
+    "mods": [
+      {
+        "stat": "ressources_gagnees_pct",
+        "min": 2,
+        "max": 15,
+        "mode": "pct"
+      }
+    ],
+    "tier_min": "t1",
+    "tier_max": "t10",
+    "weight": 8,
+    "tags": [
+      "gather"
+    ],
+    "desc": "de l'Abondance"
+  },
+  {
+    "id": "aff_harvest_speed",
+    "name": "du Récolteur",
+    "mods": [
+      {
+        "stat": "vitesse_recolte_pct",
+        "min": 2,
+        "max": 15,
+        "mode": "pct"
+      }
+    ],
+    "tier_min": "t1",
+    "tier_max": "t10",
+    "weight": 7,
+    "tags": [
+      "gather"
+    ],
+    "desc": "du Récolteur"
+  },
+  {
+    "id": "aff_wood_power",
+    "name": "du Bûcheron",
+    "mods": [
+      {
+        "stat": "gather_power_wood",
+        "min": 4,
+        "max": 20,
+        "mode": "flat"
+      }
+    ],
+    "tier_min": "t1",
+    "tier_max": "t10",
+    "weight": 7,
+    "tags": [
+      "gather"
+    ],
+    "desc": "du Bûcheron"
+  },
+  {
+    "id": "aff_ore_power",
+    "name": "du Mineur",
+    "mods": [
+      {
+        "stat": "gather_power_ore",
+        "min": 4,
+        "max": 20,
+        "mode": "flat"
+      }
+    ],
+    "tier_min": "t1",
+    "tier_max": "t10",
+    "weight": 7,
+    "tags": [
+      "gather"
+    ],
+    "desc": "du Mineur"
+  },
+  {
+    "id": "aff_herb_power",
+    "name": "de l'Herboriste",
+    "mods": [
+      {
+        "stat": "gather_power_herb",
+        "min": 4,
+        "max": 20,
+        "mode": "flat"
+      }
+    ],
+    "tier_min": "t1",
+    "tier_max": "t10",
+    "weight": 7,
+    "tags": [
+      "gather"
+    ],
+    "desc": "de l'Herboriste"
+  },
+  {
+    "id": "aff_craft_speed",
+    "name": "du Compagnon d'atelier",
+    "mods": [
+      {
+        "stat": "vitesse_craft_pct",
+        "min": 2,
+        "max": 15,
+        "mode": "pct"
+      }
+    ],
+    "tier_min": "t1",
+    "tier_max": "t10",
+    "weight": 6,
+    "tags": [
+      "craft"
+    ],
+    "desc": "du Compagnon d'atelier"
+  },
+  {
+    "id": "aff_reroll",
+    "name": "du Reforgeron",
+    "mods": [
+      {
+        "stat": "cout_reroll_pct",
+        "min": 2,
+        "max": 15,
+        "mode": "pct"
+      }
+    ],
+    "tier_min": "t1",
+    "tier_max": "t10",
+    "weight": 6,
+    "tags": [
+      "craft"
+    ],
+    "desc": "du Reforgeron"
+  },
+  {
+    "id": "aff_salvage",
+    "name": "du Récupérateur",
+    "mods": [
+      {
+        "stat": "rendement_demantelement_pct",
+        "min": 2,
+        "max": 15,
+        "mode": "pct"
+      }
+    ],
+    "tier_min": "t1",
+    "tier_max": "t10",
+    "weight": 6,
+    "tags": [
+      "craft"
+    ],
+    "desc": "du Récupérateur"
+  },
+  {
+    "id": "aff_bleed",
+    "name": "du Trancheur",
+    "mods": [
+      {
+        "stat": "proc_saignement_chance",
+        "min": 2,
+        "max": 10,
+        "mode": "pct"
+      }
+    ],
+    "tier_min": "t3",
+    "tier_max": "t10",
+    "weight": 5,
+    "tags": [
+      "proc",
+      "offense"
+    ],
+    "desc": "du Trancheur"
+  },
+  {
+    "id": "aff_poison",
+    "name": "du Venimeux",
+    "mods": [
+      {
+        "stat": "proc_poison_chance",
+        "min": 2,
+        "max": 10,
+        "mode": "pct"
+      }
+    ],
+    "tier_min": "t4",
+    "tier_max": "t10",
+    "weight": 5,
+    "tags": [
+      "proc",
+      "offense"
+    ],
+    "desc": "du Venimeux"
+  },
+  {
+    "id": "aff_stun",
+    "name": "du Briseur",
+    "mods": [
+      {
+        "stat": "proc_etourdissement_chance",
+        "min": 1,
+        "max": 6,
+        "mode": "pct"
+      }
+    ],
+    "tier_min": "t5",
+    "tier_max": "t10",
+    "weight": 4,
+    "tags": [
+      "proc",
+      "utility"
+    ],
+    "desc": "du Briseur"
+  },
+  {
+    "id": "aff_doublehit",
+    "name": "de l'Éclair",
+    "mods": [
+      {
+        "stat": "proc_double_coup_chance",
+        "min": 1,
+        "max": 5,
+        "mode": "pct"
+      }
+    ],
+    "tier_min": "t6",
+    "tier_max": "t10",
+    "weight": 4,
+    "tags": [
+      "proc",
+      "offense"
+    ],
+    "desc": "de l'Éclair"
+  },
+  {
+    "id": "aff_execute",
+    "name": "du Bourreau",
+    "mods": [
+      {
+        "stat": "flag_execute",
+        "min": 5,
+        "max": 20,
+        "mode": "pct"
+      }
+    ],
+    "tier_min": "t6",
+    "tier_max": "t10",
+    "weight": 2,
+    "tags": [
+      "legendary"
+    ],
+    "desc": "du Bourreau"
+  },
+  {
+    "id": "aff_boss",
+    "name": "du Chasseur de Titans",
+    "mods": [
+      {
+        "stat": "flag_boss_slayer",
+        "min": 5,
+        "max": 25,
+        "mode": "pct"
+      }
+    ],
+    "tier_min": "t7",
+    "tier_max": "t10",
+    "weight": 2,
+    "tags": [
+      "legendary"
+    ],
+    "desc": "du Chasseur de Titans"
+  },
+  {
+    "id": "aff_spirit",
+    "name": "de l'Appel Sylvestre",
+    "mods": [
+      {
+        "stat": "flag_resource_spirit",
+        "min": 1,
+        "max": 4,
+        "mode": "pct"
+      }
+    ],
+    "tier_min": "t4",
+    "tier_max": "t10",
+    "weight": 2,
+    "tags": [
+      "legendary"
+    ],
+    "desc": "de l'Appel Sylvestre"
+  },
+  {
+    "id": "aff_free_reforge",
+    "name": "du Marteau Bénit",
+    "mods": [
+      {
+        "stat": "flag_reroll_free_chance",
+        "min": 1,
+        "max": 6,
+        "mode": "pct"
+      }
+    ],
+    "tier_min": "t8",
+    "tier_max": "t10",
+    "weight": 2,
+    "tags": [
+      "legendary"
+    ],
+    "desc": "du Marteau Bénit"
+  },
+  {
+    "id": "aff_physique",
+    "name": "de Physique",
+    "mods": [
+      {
+        "stat": "degats_physique",
+        "min": 1,
+        "max": 10,
+        "mode": "flat"
+      }
+    ],
+    "tier_min": "t2",
+    "tier_max": "t10",
+    "weight": 6,
+    "tags": [
+      "elemental",
+      "physique"
+    ],
+    "desc": "de Physique"
+  },
+  {
+    "id": "aff_feu",
+    "name": "de Feu",
+    "mods": [
+      {
+        "stat": "degats_feu",
+        "min": 1,
+        "max": 10,
+        "mode": "flat"
+      }
+    ],
+    "tier_min": "t2",
+    "tier_max": "t10",
+    "weight": 6,
+    "tags": [
+      "elemental",
+      "feu"
+    ],
+    "desc": "de Feu"
+  },
+  {
+    "id": "aff_glace",
+    "name": "de Glace",
+    "mods": [
+      {
+        "stat": "degats_glace",
+        "min": 1,
+        "max": 10,
+        "mode": "flat"
+      }
+    ],
+    "tier_min": "t2",
+    "tier_max": "t10",
+    "weight": 6,
+    "tags": [
+      "elemental",
+      "glace"
+    ],
+    "desc": "de Glace"
+  },
+  {
+    "id": "aff_foudre",
+    "name": "de Foudre",
+    "mods": [
+      {
+        "stat": "degats_foudre",
+        "min": 1,
+        "max": 10,
+        "mode": "flat"
+      }
+    ],
+    "tier_min": "t2",
+    "tier_max": "t10",
+    "weight": 6,
+    "tags": [
+      "elemental",
+      "foudre"
+    ],
+    "desc": "de Foudre"
+  },
+  {
+    "id": "aff_poison",
+    "name": "de Poison",
+    "mods": [
+      {
+        "stat": "degats_poison",
+        "min": 1,
+        "max": 10,
+        "mode": "flat"
+      }
+    ],
+    "tier_min": "t2",
+    "tier_max": "t10",
+    "weight": 6,
+    "tags": [
+      "elemental",
+      "poison"
+    ],
+    "desc": "de Poison"
+  },
+  {
+    "id": "aff_ombre",
+    "name": "de Ombre",
+    "mods": [
+      {
+        "stat": "degats_ombre",
+        "min": 1,
+        "max": 10,
+        "mode": "flat"
+      }
+    ],
+    "tier_min": "t2",
+    "tier_max": "t10",
+    "weight": 6,
+    "tags": [
+      "elemental",
+      "ombre"
+    ],
+    "desc": "de Ombre"
+  },
+  {
+    "id": "aff_lumiere",
+    "name": "de Lumiere",
+    "mods": [
+      {
+        "stat": "degats_lumiere",
+        "min": 1,
+        "max": 10,
+        "mode": "flat"
+      }
+    ],
+    "tier_min": "t2",
+    "tier_max": "t10",
+    "weight": 6,
+    "tags": [
+      "elemental",
+      "lumiere"
+    ],
+    "desc": "de Lumiere"
+  }
+]

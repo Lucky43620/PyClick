@@ -1,0 +1,42 @@
+[
+  {
+    "id": "commun",
+    "name": "Commun",
+    "affix_min": 0,
+    "affix_max": 1,
+    "mult": 1.0,
+    "drop_weight": 55
+  },
+  {
+    "id": "peu_commun",
+    "name": "Peu commun",
+    "affix_min": 1,
+    "affix_max": 2,
+    "mult": 1.1,
+    "drop_weight": 25
+  },
+  {
+    "id": "rare",
+    "name": "Rare",
+    "affix_min": 2,
+    "affix_max": 3,
+    "mult": 1.25,
+    "drop_weight": 12
+  },
+  {
+    "id": "epique",
+    "name": "Épique",
+    "affix_min": 3,
+    "affix_max": 4,
+    "mult": 1.45,
+    "drop_weight": 6
+  },
+  {
+    "id": "legendaire",
+    "name": "Légendaire",
+    "affix_min": 4,
+    "affix_max": 5,
+    "mult": 1.7,
+    "drop_weight": 2
+  }
+]

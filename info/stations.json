@@ -1,0 +1,32 @@
+[
+  {
+    "id": "atelier",
+    "name": "Atelier",
+    "desc": "Fabrication bois/outils basiques."
+  },
+  {
+    "id": "forge",
+    "name": "Forge",
+    "desc": "Métaux et armes."
+  },
+  {
+    "id": "tannerie",
+    "name": "Tannerie",
+    "desc": "Cuir et armures légères."
+  },
+  {
+    "id": "metier_a_tisser",
+    "name": "Métier à tisser",
+    "desc": "Tissu et robes."
+  },
+  {
+    "id": "alchimie",
+    "name": "Alchimie",
+    "desc": "Potions, venins, essences."
+  },
+  {
+    "id": "enchantement",
+    "name": "Autel d'enchantement",
+    "desc": "Rerolls, gemmes, reliques."
+  }
+]

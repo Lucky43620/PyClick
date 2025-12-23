@@ -1,0 +1,653 @@
+[
+  {
+    "id": "bois_tendre",
+    "name": "Bois tendre",
+    "category": "bois",
+    "tier": "t1",
+    "rarity": "commun",
+    "base_value_gold": 1,
+    "tags": [
+      "bois",
+      "t1"
+    ],
+    "desc": "Ressource bois de T1."
+  },
+  {
+    "id": "bois_chene",
+    "name": "Bois de chêne",
+    "category": "bois",
+    "tier": "t2",
+    "rarity": "commun",
+    "base_value_gold": 2,
+    "tags": [
+      "bois",
+      "t2"
+    ],
+    "desc": "Ressource bois de T2."
+  },
+  {
+    "id": "bois_spongieux",
+    "name": "Bois spongieux",
+    "category": "bois",
+    "tier": "t4",
+    "rarity": "peu_commun",
+    "base_value_gold": 6,
+    "tags": [
+      "bois",
+      "t4"
+    ],
+    "desc": "Ressource bois de T4."
+  },
+  {
+    "id": "pierre_brute",
+    "name": "Pierre brute",
+    "category": "pierre_ore",
+    "tier": "t1",
+    "rarity": "commun",
+    "base_value_gold": 1,
+    "tags": [
+      "pierre_ore",
+      "t1"
+    ],
+    "desc": "Ressource pierre ore de T1."
+  },
+  {
+    "id": "pierre_taillable",
+    "name": "Pierre taillable",
+    "category": "pierre_ore",
+    "tier": "t3",
+    "rarity": "peu_commun",
+    "base_value_gold": 4,
+    "tags": [
+      "pierre_ore",
+      "t3"
+    ],
+    "desc": "Ressource pierre ore de T3."
+  },
+  {
+    "id": "minerai_cuivre",
+    "name": "Minerai de cuivre",
+    "category": "pierre_ore",
+    "tier": "t3",
+    "rarity": "peu_commun",
+    "base_value_gold": 4,
+    "tags": [
+      "pierre_ore",
+      "t3"
+    ],
+    "desc": "Ressource pierre ore de T3."
+  },
+  {
+    "id": "minerai_fer",
+    "name": "Minerai de fer",
+    "category": "pierre_ore",
+    "tier": "t3",
+    "rarity": "peu_commun",
+    "base_value_gold": 4,
+    "tags": [
+      "pierre_ore",
+      "t3"
+    ],
+    "desc": "Ressource pierre ore de T3."
+  },
+  {
+    "id": "minerai_argent",
+    "name": "Minerai d'argent",
+    "category": "pierre_ore",
+    "tier": "t5",
+    "rarity": "rare",
+    "base_value_gold": 9,
+    "tags": [
+      "pierre_ore",
+      "t5"
+    ],
+    "desc": "Ressource pierre ore de T5."
+  },
+  {
+    "id": "minerai_or",
+    "name": "Minerai d'or",
+    "category": "pierre_ore",
+    "tier": "t6",
+    "rarity": "rare",
+    "base_value_gold": 12,
+    "tags": [
+      "pierre_ore",
+      "t6"
+    ],
+    "desc": "Ressource pierre ore de T6."
+  },
+  {
+    "id": "minerai_mithril",
+    "name": "Minerai de mithril",
+    "category": "pierre_ore",
+    "tier": "t7",
+    "rarity": "epique",
+    "base_value_gold": 15,
+    "tags": [
+      "pierre_ore",
+      "t7"
+    ],
+    "desc": "Ressource pierre ore de T7."
+  },
+  {
+    "id": "obsidienne",
+    "name": "Obsidienne",
+    "category": "pierre_ore",
+    "tier": "t7",
+    "rarity": "epique",
+    "base_value_gold": 15,
+    "tags": [
+      "pierre_ore",
+      "t7"
+    ],
+    "desc": "Ressource pierre ore de T7."
+  },
+  {
+    "id": "pierre_runique",
+    "name": "Pierre runique",
+    "category": "pierre_ore",
+    "tier": "t8",
+    "rarity": "epique",
+    "base_value_gold": 18,
+    "tags": [
+      "pierre_ore",
+      "t8"
+    ],
+    "desc": "Ressource pierre ore de T8."
+  },
+  {
+    "id": "cristal_azur",
+    "name": "Cristal azur",
+    "category": "pierre_ore",
+    "tier": "t9",
+    "rarity": "legendaire",
+    "base_value_gold": 21,
+    "tags": [
+      "pierre_ore",
+      "t9"
+    ],
+    "desc": "Ressource pierre ore de T9."
+  },
+  {
+    "id": "fragment_abyssal",
+    "name": "Fragment abyssal",
+    "category": "pierre_ore",
+    "tier": "t10",
+    "rarity": "legendaire",
+    "base_value_gold": 25,
+    "tags": [
+      "pierre_ore",
+      "t10"
+    ],
+    "desc": "Ressource pierre ore de T10."
+  },
+  {
+    "id": "fibres_sauvages",
+    "name": "Fibres sauvages",
+    "category": "plantes",
+    "tier": "t1",
+    "rarity": "commun",
+    "base_value_gold": 1,
+    "tags": [
+      "plantes",
+      "t1"
+    ],
+    "desc": "Ressource plantes de T1."
+  },
+  {
+    "id": "champignon_lune",
+    "name": "Champignon-lune",
+    "category": "plantes",
+    "tier": "t2",
+    "rarity": "commun",
+    "base_value_gold": 2,
+    "tags": [
+      "plantes",
+      "t2"
+    ],
+    "desc": "Ressource plantes de T2."
+  },
+  {
+    "id": "herbe_medicinale",
+    "name": "Herbe médicinale",
+    "category": "plantes",
+    "tier": "t4",
+    "rarity": "peu_commun",
+    "base_value_gold": 6,
+    "tags": [
+      "plantes",
+      "t4"
+    ],
+    "desc": "Ressource plantes de T4."
+  },
+  {
+    "id": "cactus_sucre",
+    "name": "Cactus sucré",
+    "category": "plantes",
+    "tier": "t5",
+    "rarity": "rare",
+    "base_value_gold": 9,
+    "tags": [
+      "plantes",
+      "t5"
+    ],
+    "desc": "Ressource plantes de T5."
+  },
+  {
+    "id": "soufre",
+    "name": "Soufre",
+    "category": "plantes",
+    "tier": "t7",
+    "rarity": "epique",
+    "base_value_gold": 15,
+    "tags": [
+      "plantes",
+      "t7"
+    ],
+    "desc": "Ressource plantes de T7."
+  },
+  {
+    "id": "poussiere_arcane",
+    "name": "Poussière arcane",
+    "category": "plantes",
+    "tier": "t8",
+    "rarity": "epique",
+    "base_value_gold": 18,
+    "tags": [
+      "plantes",
+      "t8"
+    ],
+    "desc": "Ressource plantes de T8."
+  },
+  {
+    "id": "plume_d_orage",
+    "name": "Plume d'orage",
+    "category": "plantes",
+    "tier": "t9",
+    "rarity": "legendaire",
+    "base_value_gold": 21,
+    "tags": [
+      "plantes",
+      "t9"
+    ],
+    "desc": "Ressource plantes de T9."
+  },
+  {
+    "id": "encre_vivante",
+    "name": "Encre vivante",
+    "category": "plantes",
+    "tier": "t10",
+    "rarity": "legendaire",
+    "base_value_gold": 25,
+    "tags": [
+      "plantes",
+      "t10"
+    ],
+    "desc": "Ressource plantes de T10."
+  },
+  {
+    "id": "cuir_brut",
+    "name": "Cuir brut",
+    "category": "plantes",
+    "tier": "t2",
+    "rarity": "commun",
+    "base_value_gold": 2,
+    "tags": [
+      "plantes",
+      "t2"
+    ],
+    "desc": "Ressource plantes de T2."
+  },
+  {
+    "id": "fourrure_epaisse",
+    "name": "Fourrure épaisse",
+    "category": "plantes",
+    "tier": "t6",
+    "rarity": "rare",
+    "base_value_gold": 12,
+    "tags": [
+      "plantes",
+      "t6"
+    ],
+    "desc": "Ressource plantes de T6."
+  },
+  {
+    "id": "eau_claire",
+    "name": "Eau claire",
+    "category": "liquides",
+    "tier": "t1",
+    "rarity": "commun",
+    "base_value_gold": 1,
+    "tags": [
+      "liquides",
+      "t1"
+    ],
+    "desc": "Ressource liquides de T1."
+  },
+  {
+    "id": "seve",
+    "name": "Sève",
+    "category": "liquides",
+    "tier": "t2",
+    "rarity": "commun",
+    "base_value_gold": 2,
+    "tags": [
+      "liquides",
+      "t2"
+    ],
+    "desc": "Ressource liquides de T2."
+  },
+  {
+    "id": "venin_distille",
+    "name": "Venin distillé",
+    "category": "liquides",
+    "tier": "t4",
+    "rarity": "peu_commun",
+    "base_value_gold": 6,
+    "tags": [
+      "liquides",
+      "t4"
+    ],
+    "desc": "Ressource liquides de T4."
+  },
+  {
+    "id": "eau_celeste",
+    "name": "Eau céleste",
+    "category": "liquides",
+    "tier": "t9",
+    "rarity": "legendaire",
+    "base_value_gold": 21,
+    "tags": [
+      "liquides",
+      "t9"
+    ],
+    "desc": "Ressource liquides de T9."
+  },
+  {
+    "id": "sel_amer",
+    "name": "Sel amer",
+    "category": "liquides",
+    "tier": "t3",
+    "rarity": "peu_commun",
+    "base_value_gold": 4,
+    "tags": [
+      "liquides",
+      "t3"
+    ],
+    "desc": "Ressource liquides de T3."
+  },
+  {
+    "id": "sable_vitre",
+    "name": "Sable vitrifié",
+    "category": "liquides",
+    "tier": "t5",
+    "rarity": "rare",
+    "base_value_gold": 9,
+    "tags": [
+      "liquides",
+      "t5"
+    ],
+    "desc": "Ressource liquides de T5."
+  },
+  {
+    "id": "glace_pure",
+    "name": "Glace pure",
+    "category": "liquides",
+    "tier": "t6",
+    "rarity": "rare",
+    "base_value_gold": 12,
+    "tags": [
+      "liquides",
+      "t6"
+    ],
+    "desc": "Ressource liquides de T6."
+  },
+  {
+    "id": "essence_feu",
+    "name": "Essence de feu",
+    "category": "essences",
+    "tier": "t5",
+    "rarity": "rare",
+    "base_value_gold": 9,
+    "tags": [
+      "essences",
+      "t5"
+    ],
+    "desc": "Ressource essences de T5."
+  },
+  {
+    "id": "essence_glace",
+    "name": "Essence de glace",
+    "category": "essences",
+    "tier": "t6",
+    "rarity": "rare",
+    "base_value_gold": 12,
+    "tags": [
+      "essences",
+      "t6"
+    ],
+    "desc": "Ressource essences de T6."
+  },
+  {
+    "id": "essence_foudre",
+    "name": "Essence de foudre",
+    "category": "essences",
+    "tier": "t9",
+    "rarity": "legendaire",
+    "base_value_gold": 21,
+    "tags": [
+      "essences",
+      "t9"
+    ],
+    "desc": "Ressource essences de T9."
+  },
+  {
+    "id": "essence_ombre",
+    "name": "Essence d'ombre",
+    "category": "essences",
+    "tier": "t4",
+    "rarity": "peu_commun",
+    "base_value_gold": 6,
+    "tags": [
+      "essences",
+      "t4"
+    ],
+    "desc": "Ressource essences de T4."
+  },
+  {
+    "id": "essence_lumiere",
+    "name": "Essence de lumière",
+    "category": "essences",
+    "tier": "t8",
+    "rarity": "epique",
+    "base_value_gold": 18,
+    "tags": [
+      "essences",
+      "t8"
+    ],
+    "desc": "Ressource essences de T8."
+  },
+  {
+    "id": "fragment_relique",
+    "name": "Fragment de relique",
+    "category": "special",
+    "tier": "t8",
+    "rarity": "epique",
+    "base_value_gold": 18,
+    "tags": [
+      "special",
+      "t8"
+    ],
+    "desc": "Ressource special de T8."
+  },
+  {
+    "id": "clef_paradoxe",
+    "name": "Clef du paradoxe",
+    "category": "special",
+    "tier": "t10",
+    "rarity": "legendaire",
+    "base_value_gold": 25,
+    "tags": [
+      "special",
+      "t10"
+    ],
+    "desc": "Ressource special de T10."
+  },
+  {
+    "id": "planche_bois",
+    "name": "Planche de bois",
+    "tier": "t1",
+    "desc": "Matériau crafté"
+  },
+  {
+    "id": "lingot_fer",
+    "name": "Lingot de fer",
+    "tier": "t2",
+    "desc": "Matériau crafté"
+  },
+  {
+    "id": "cuir_traite",
+    "name": "Cuir traité",
+    "tier": "t2",
+    "desc": "Matériau crafté"
+  },
+  {
+    "id": "planche_bois",
+    "name": "Planche de bois",
+    "tier": "t1",
+    "desc": "Matériau crafté"
+  },
+  {
+    "id": "lingot_fer",
+    "name": "Lingot de fer",
+    "tier": "t2",
+    "desc": "Matériau crafté"
+  },
+  {
+    "id": "cuir_traite",
+    "name": "Cuir traité",
+    "tier": "t2",
+    "desc": "Matériau crafté"
+  },
+  {
+    "id": "cristal_feu",
+    "name": "Cristal de Feu",
+    "category": "cristal",
+    "tier": "t2",
+    "rarity": "rare",
+    "base_value_gold": 50,
+    "tags": [
+      "cristal",
+      "elementaire",
+      "rare"
+    ],
+    "desc": "Cristal elementaire rare. Utilise pour ameliorer les stations."
+  },
+  {
+    "id": "cristal_glace",
+    "name": "Cristal de Glace",
+    "category": "cristal",
+    "tier": "t3",
+    "rarity": "rare",
+    "base_value_gold": 75,
+    "tags": [
+      "cristal",
+      "elementaire",
+      "rare"
+    ],
+    "desc": "Cristal elementaire rare. Utilise pour ameliorer les stations."
+  },
+  {
+    "id": "cristal_arcane",
+    "name": "Cristal Arcane",
+    "category": "cristal",
+    "tier": "t4",
+    "rarity": "epic",
+    "base_value_gold": 150,
+    "tags": [
+      "cristal",
+      "elementaire",
+      "epic"
+    ],
+    "desc": "Cristal arcane puissant. Utilise pour debloquer les skills."
+  },
+  {
+    "id": "fragment_combat",
+    "name": "Fragment de Combat",
+    "category": "fragment",
+    "tier": "t2",
+    "rarity": "rare",
+    "base_value_gold": 40,
+    "tags": [
+      "fragment",
+      "skill"
+    ],
+    "desc": "Fragment permettant d'apprendre des competences de combat."
+  },
+  {
+    "id": "fragment_artisan",
+    "name": "Fragment d'Artisanat",
+    "category": "fragment",
+    "tier": "t2",
+    "rarity": "rare",
+    "base_value_gold": 40,
+    "tags": [
+      "fragment",
+      "skill"
+    ],
+    "desc": "Fragment permettant d'apprendre des competences d'artisanat."
+  },
+  {
+    "id": "fragment_collecte",
+    "name": "Fragment de Collecte",
+    "category": "fragment",
+    "tier": "t2",
+    "rarity": "rare",
+    "base_value_gold": 40,
+    "tags": [
+      "fragment",
+      "skill"
+    ],
+    "desc": "Fragment permettant d'apprendre des competences de collecte."
+  },
+  {
+    "id": "essence_forge",
+    "name": "Essence de Forge",
+    "category": "essence",
+    "tier": "t3",
+    "rarity": "epic",
+    "base_value_gold": 100,
+    "tags": [
+      "essence",
+      "upgrade"
+    ],
+    "desc": "Essence magique pour ameliorer la forge."
+  },
+  {
+    "id": "essence_alchimie",
+    "name": "Essence d'Alchimie",
+    "category": "essence",
+    "tier": "t3",
+    "rarity": "epic",
+    "base_value_gold": 100,
+    "tags": [
+      "essence",
+      "upgrade"
+    ],
+    "desc": "Essence magique pour ameliorer l'atelier d'alchimie."
+  },
+  {
+    "id": "parchemin_ancien",
+    "name": "Parchemin Ancien",
+    "category": "parchemin",
+    "tier": "t4",
+    "rarity": "legendary",
+    "base_value_gold": 250,
+    "tags": [
+      "parchemin",
+      "skill",
+      "legendary"
+    ],
+    "desc": "Parchemin contenant des connaissances anciennes."
+  }
+]

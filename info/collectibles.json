@@ -1,0 +1,380 @@
+[
+  {
+    "id": "lore__prairie_des_jeunes_pousses",
+    "type": "page_lore",
+    "name": "Chronique: Prairie des Jeunes Pousses",
+    "desc": "Une page de chronique décrivant Prairie des Jeunes Pousses et ses secrets.",
+    "bonus": [
+      {
+        "stat": "gain_xp_pct",
+        "value": 1,
+        "mode": "pct"
+      }
+    ],
+    "where": {
+      "zone": "prairie_des_jeunes_pousses",
+      "source": "boss",
+      "chance_pct": 15
+    }
+  },
+  {
+    "id": "lore__bois_des_murmures",
+    "type": "page_lore",
+    "name": "Chronique: Bois des Murmures",
+    "desc": "Une page de chronique décrivant Bois des Murmures et ses secrets.",
+    "bonus": [
+      {
+        "stat": "gain_xp_pct",
+        "value": 1,
+        "mode": "pct"
+      }
+    ],
+    "where": {
+      "zone": "bois_des_murmures",
+      "source": "boss",
+      "chance_pct": 15
+    }
+  },
+  {
+    "id": "lore__carriere_aux_echos",
+    "type": "page_lore",
+    "name": "Chronique: Carrière aux Échos",
+    "desc": "Une page de chronique décrivant Carrière aux Échos et ses secrets.",
+    "bonus": [
+      {
+        "stat": "gain_xp_pct",
+        "value": 1,
+        "mode": "pct"
+      }
+    ],
+    "where": {
+      "zone": "carriere_aux_echos",
+      "source": "boss",
+      "chance_pct": 15
+    }
+  },
+  {
+    "id": "lore__marais_des_lueurs",
+    "type": "page_lore",
+    "name": "Chronique: Marais des Lueurs",
+    "desc": "Une page de chronique décrivant Marais des Lueurs et ses secrets.",
+    "bonus": [
+      {
+        "stat": "gain_xp_pct",
+        "value": 1,
+        "mode": "pct"
+      }
+    ],
+    "where": {
+      "zone": "marais_des_lueurs",
+      "source": "boss",
+      "chance_pct": 15
+    }
+  },
+  {
+    "id": "lore__desert_des_verres",
+    "type": "page_lore",
+    "name": "Chronique: Désert des Verres",
+    "desc": "Une page de chronique décrivant Désert des Verres et ses secrets.",
+    "bonus": [
+      {
+        "stat": "gain_xp_pct",
+        "value": 1,
+        "mode": "pct"
+      }
+    ],
+    "where": {
+      "zone": "desert_des_verres",
+      "source": "boss",
+      "chance_pct": 15
+    }
+  },
+  {
+    "id": "lore__toundra_des_ancetres",
+    "type": "page_lore",
+    "name": "Chronique: Toundra des Ancêtres",
+    "desc": "Une page de chronique décrivant Toundra des Ancêtres et ses secrets.",
+    "bonus": [
+      {
+        "stat": "gain_xp_pct",
+        "value": 1,
+        "mode": "pct"
+      }
+    ],
+    "where": {
+      "zone": "toundra_des_ancetres",
+      "source": "boss",
+      "chance_pct": 15
+    }
+  },
+  {
+    "id": "lore__volcan_de_kar",
+    "type": "page_lore",
+    "name": "Chronique: Volcan de Kar",
+    "desc": "Une page de chronique décrivant Volcan de Kar et ses secrets.",
+    "bonus": [
+      {
+        "stat": "gain_xp_pct",
+        "value": 1,
+        "mode": "pct"
+      }
+    ],
+    "where": {
+      "zone": "volcan_de_kar",
+      "source": "boss",
+      "chance_pct": 15
+    }
+  },
+  {
+    "id": "lore__ruines_de_l_ordre",
+    "type": "page_lore",
+    "name": "Chronique: Ruines de l'Ordre",
+    "desc": "Une page de chronique décrivant Ruines de l'Ordre et ses secrets.",
+    "bonus": [
+      {
+        "stat": "gain_xp_pct",
+        "value": 1,
+        "mode": "pct"
+      }
+    ],
+    "where": {
+      "zone": "ruines_de_l_ordre",
+      "source": "boss",
+      "chance_pct": 15
+    }
+  },
+  {
+    "id": "lore__iles_celestes",
+    "type": "page_lore",
+    "name": "Chronique: Îles Célestes",
+    "desc": "Une page de chronique décrivant Îles Célestes et ses secrets.",
+    "bonus": [
+      {
+        "stat": "gain_xp_pct",
+        "value": 1,
+        "mode": "pct"
+      }
+    ],
+    "where": {
+      "zone": "iles_celestes",
+      "source": "boss",
+      "chance_pct": 15
+    }
+  },
+  {
+    "id": "lore__abysse_palimpseste",
+    "type": "page_lore",
+    "name": "Chronique: Abyssse Palimpseste",
+    "desc": "Une page de chronique décrivant Abyssse Palimpseste et ses secrets.",
+    "bonus": [
+      {
+        "stat": "gain_xp_pct",
+        "value": 1,
+        "mode": "pct"
+      }
+    ],
+    "where": {
+      "zone": "abysse_palimpseste",
+      "source": "boss",
+      "chance_pct": 15
+    }
+  },
+  {
+    "id": "relique_scie_ancestrale",
+    "type": "relique_permanente",
+    "name": "Scie ancestrale",
+    "desc": "Collectible permanent donnant un bonus global.",
+    "bonus": [
+      {
+        "stat": "gather_power_wood",
+        "value": 10,
+        "mode": "flat"
+      }
+    ],
+    "where": {
+      "zone": "bois_des_murmures",
+      "source": "coffre_rare",
+      "chance_pct": 5
+    }
+  },
+  {
+    "id": "relique_pic_sans_faille",
+    "type": "relique_permanente",
+    "name": "Pic sans faille",
+    "desc": "Collectible permanent donnant un bonus global.",
+    "bonus": [
+      {
+        "stat": "gather_power_ore",
+        "value": 10,
+        "mode": "flat"
+      }
+    ],
+    "where": {
+      "zone": "carriere_aux_echos",
+      "source": "coffre_rare",
+      "chance_pct": 5
+    }
+  },
+  {
+    "id": "relique_herbier_scelle",
+    "type": "relique_permanente",
+    "name": "Herbier scellé",
+    "desc": "Collectible permanent donnant un bonus global.",
+    "bonus": [
+      {
+        "stat": "gather_power_herb",
+        "value": 10,
+        "mode": "flat"
+      }
+    ],
+    "where": {
+      "zone": "marais_des_lueurs",
+      "source": "coffre_rare",
+      "chance_pct": 5
+    }
+  },
+  {
+    "id": "relique_coffre_du_choix",
+    "type": "relique_permanente",
+    "name": "Coffre du choix",
+    "desc": "Collectible permanent donnant un bonus global.",
+    "bonus": [
+      {
+        "stat": "chance_double_drop_pct",
+        "value": 3,
+        "mode": "pct"
+      }
+    ],
+    "where": {
+      "zone": "desert_des_verres",
+      "source": "coffre_rare",
+      "chance_pct": 5
+    }
+  },
+  {
+    "id": "relique_sceau_du_bastion",
+    "type": "relique_permanente",
+    "name": "Sceau du bastion",
+    "desc": "Collectible permanent donnant un bonus global.",
+    "bonus": [
+      {
+        "stat": "def",
+        "value": 8,
+        "mode": "flat"
+      }
+    ],
+    "where": {
+      "zone": "ruines_de_l_ordre",
+      "source": "coffre_rare",
+      "chance_pct": 5
+    }
+  },
+  {
+    "id": "relique_plume_tempete",
+    "type": "relique_permanente",
+    "name": "Plume de tempête",
+    "desc": "Collectible permanent donnant un bonus global.",
+    "bonus": [
+      {
+        "stat": "esquive",
+        "value": 3,
+        "mode": "pct"
+      }
+    ],
+    "where": {
+      "zone": "iles_celestes",
+      "source": "coffre_rare",
+      "chance_pct": 5
+    }
+  },
+  {
+    "id": "relique_encrier_vide",
+    "type": "relique_permanente",
+    "name": "Encrier vide",
+    "desc": "Collectible permanent donnant un bonus global.",
+    "bonus": [
+      {
+        "stat": "cout_reroll_pct",
+        "value": 8,
+        "mode": "pct"
+      }
+    ],
+    "where": {
+      "zone": "abysse_palimpseste",
+      "source": "coffre_rare",
+      "chance_pct": 5
+    }
+  },
+  {
+    "id": "pet_luciole",
+    "type": "familier",
+    "name": "Luciole",
+    "desc": "Familier rare. Bonus léger + style.",
+    "bonus": [
+      {
+        "stat": "hp_regen",
+        "value": 1,
+        "mode": "flat"
+      }
+    ],
+    "where": {
+      "zone": "marais_des_lueurs",
+      "source": "ennemis",
+      "chance_pct": 1
+    }
+  },
+  {
+    "id": "pet_corbeau",
+    "type": "familier",
+    "name": "Corbeau",
+    "desc": "Familier rare. Bonus léger + style.",
+    "bonus": [
+      {
+        "stat": "crit_chance",
+        "value": 1,
+        "mode": "pct"
+      }
+    ],
+    "where": {
+      "zone": "prairie_des_jeunes_pousses",
+      "source": "ennemis",
+      "chance_pct": 1
+    }
+  },
+  {
+    "id": "pet_taupe",
+    "type": "familier",
+    "name": "Taupe",
+    "desc": "Familier rare. Bonus léger + style.",
+    "bonus": [
+      {
+        "stat": "gather_power_ore",
+        "value": 6,
+        "mode": "flat"
+      }
+    ],
+    "where": {
+      "zone": "carriere_aux_echos",
+      "source": "ennemis",
+      "chance_pct": 1
+    }
+  },
+  {
+    "id": "pet_faucon",
+    "type": "familier",
+    "name": "Faucon",
+    "desc": "Familier rare. Bonus léger + style.",
+    "bonus": [
+      {
+        "stat": "precision",
+        "value": 3,
+        "mode": "flat"
+      }
+    ],
+    "where": {
+      "zone": "iles_celestes",
+      "source": "ennemis",
+      "chance_pct": 1
+    }
+  }
+]

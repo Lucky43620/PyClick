@@ -1,0 +1,31 @@
+{
+  "premise": "Un monde où la matière garde mémoire. Chaque ressource porte une 'empreinte' qui peut se réveiller via l'artisanat et le combat.",
+  "factions": [
+    {
+      "id": "guilde_des_bateliers",
+      "name": "Guilde des Bâteliers",
+      "desc": "Contrôle les routes, exige des taxes en essences."
+    },
+    {
+      "id": "ordre_runique",
+      "name": "Ordre Runique",
+      "desc": "Gardien des ruines, protège les sceaux et les connaissances."
+    },
+    {
+      "id": "forge_rouge",
+      "name": "Forge Rouge",
+      "desc": "Artisans extrêmes. Le métal doit souffrir pour devenir parfait."
+    },
+    {
+      "id": "scribes_du_vide",
+      "name": "Scribes du Vide",
+      "desc": "Écrivent des lois qui changent la réalité dans l'Abyssse."
+    }
+  ],
+  "mystery": "Pourquoi l'Abyssse réécrit-elle les règles ? Qui était l'Archiviste du néant avant de devenir un boss ?",
+  "hooks": [
+    "Les sets d'armure sont des 'serments' : collecter les pièces révèle une chronique.",
+    "Des 'Clefs du paradoxe' ouvrent des donjons générés (mods aléatoires).",
+    "Un mode 'Ascension' (prestige) réécrit ton arbre de talents."
+  ]
+}

@@ -1,0 +1,206 @@
+[
+  {
+    "id": "prairie_des_jeunes_pousses__arbre_jeune",
+    "name": "Jeune arbre",
+    "zone": "prairie_des_jeunes_pousses",
+    "tier": "t1",
+    "resource": "bois_tendre",
+    "yield": {
+      "min": 1,
+      "max": 2
+    },
+    "node_hp": 20,
+    "respawn_sec": 10,
+    "tool_requirement": "aucun",
+    "crit_yield_chance_pct": 4,
+    "crit_yield_mult": 2.0,
+    "desc": "Noeud cliquable de Prairie des Jeunes Pousses."
+  },
+  {
+    "id": "prairie_des_jeunes_pousses__rocher",
+    "name": "Rocher",
+    "zone": "prairie_des_jeunes_pousses",
+    "tier": "t1",
+    "resource": "pierre_brute",
+    "yield": {
+      "min": 1,
+      "max": 2
+    },
+    "node_hp": 25,
+    "respawn_sec": 12,
+    "tool_requirement": "pioche",
+    "crit_yield_chance_pct": 4,
+    "crit_yield_mult": 2.0,
+    "desc": "Noeud cliquable de Prairie des Jeunes Pousses."
+  },
+  {
+    "id": "prairie_des_jeunes_pousses__herbes",
+    "name": "Touffe d'herbes",
+    "zone": "prairie_des_jeunes_pousses",
+    "tier": "t1",
+    "resource": "fibres_sauvages",
+    "yield": {
+      "min": 1,
+      "max": 2
+    },
+    "node_hp": 18,
+    "respawn_sec": 9,
+    "tool_requirement": "serpe",
+    "crit_yield_chance_pct": 4,
+    "crit_yield_mult": 2.0,
+    "desc": "Noeud cliquable de Prairie des Jeunes Pousses."
+  },
+  {
+    "id": "prairie_des_jeunes_pousses__source",
+    "name": "Source",
+    "zone": "prairie_des_jeunes_pousses",
+    "tier": "t1",
+    "resource": "eau_claire",
+    "yield": {
+      "min": 1,
+      "max": 2
+    },
+    "node_hp": 15,
+    "respawn_sec": 8,
+    "tool_requirement": "aucun",
+    "crit_yield_chance_pct": 4,
+    "crit_yield_mult": 2.0,
+    "desc": "Noeud cliquable de Prairie des Jeunes Pousses."
+  },
+  {
+    "id": "bois_des_murmures__arbre_chene",
+    "name": "Chêne",
+    "zone": "bois_des_murmures",
+    "tier": "t2",
+    "resource": "bois_chene",
+    "yield": {
+      "min": 2,
+      "max": 4
+    },
+    "node_hp": 83,
+    "respawn_sec": 25,
+    "tool_requirement": "hache",
+    "crit_yield_chance_pct": 5,
+    "crit_yield_mult": 2.0,
+    "desc": "Noeud cliquable de Bois des Murmures."
+  },
+  {
+    "id": "bois_des_murmures__champis",
+    "name": "Bûche à champignons",
+    "zone": "bois_des_murmures",
+    "tier": "t2",
+    "resource": "champignon_lune",
+    "yield": {
+      "min": 1,
+      "max": 3
+    },
+    "node_hp": 95,
+    "respawn_sec": 22,
+    "tool_requirement": "aucun",
+    "crit_yield_chance_pct": 5,
+    "crit_yield_mult": 2.0,
+    "desc": "Noeud cliquable de Bois des Murmures."
+  },
+  {
+    "id": "carriere_aux_echos__filon_cuivre",
+    "name": "Filon de cuivre",
+    "zone": "carriere_aux_echos",
+    "tier": "t3",
+    "resource": "minerai_cuivre",
+    "yield": {
+      "min": 2,
+      "max": 4
+    },
+    "node_hp": 197,
+    "respawn_sec": 52,
+    "tool_requirement": "pioche",
+    "crit_yield_chance_pct": 6,
+    "crit_yield_mult": 2.0,
+    "desc": "Noeud cliquable de Carrière aux Échos."
+  },
+  {
+    "id": "marais_des_lueurs__marais_venin",
+    "name": "Nid de venin",
+    "zone": "marais_des_lueurs",
+    "tier": "t4",
+    "resource": "venin_distille",
+    "yield": {
+      "min": 2,
+      "max": 4
+    },
+    "node_hp": 339,
+    "respawn_sec": 78,
+    "tool_requirement": "serpe",
+    "crit_yield_chance_pct": 7,
+    "crit_yield_mult": 2.0,
+    "desc": "Noeud cliquable de Marais des Lueurs."
+  },
+  {
+    "id": "toundra_des_ancetres__glacier",
+    "name": "Bloc de glace",
+    "zone": "toundra_des_ancetres",
+    "tier": "t6",
+    "resource": "glace_pure",
+    "yield": {
+      "min": 3,
+      "max": 7
+    },
+    "node_hp": 751,
+    "respawn_sec": 123,
+    "tool_requirement": "pioche",
+    "crit_yield_chance_pct": 9,
+    "crit_yield_mult": 2.0,
+    "desc": "Noeud cliquable de Toundra des Ancêtres."
+  },
+  {
+    "id": "ruines_de_l_ordre__ruine_relique",
+    "name": "Autel brisé",
+    "zone": "ruines_de_l_ordre",
+    "tier": "t8",
+    "resource": "fragment_relique",
+    "yield": {
+      "min": 2,
+      "max": 4
+    },
+    "node_hp": 2152,
+    "respawn_sec": 330,
+    "tool_requirement": "aucun",
+    "crit_yield_chance_pct": 11,
+    "crit_yield_mult": 2.0,
+    "desc": "Noeud cliquable de Ruines de l'Ordre."
+  },
+  {
+    "id": "iles_celestes__cristal",
+    "name": "Amas de cristal",
+    "zone": "iles_celestes",
+    "tier": "t9",
+    "resource": "cristal_azur",
+    "yield": {
+      "min": 3,
+      "max": 7
+    },
+    "node_hp": 1870,
+    "respawn_sec": 240,
+    "tool_requirement": "pioche",
+    "crit_yield_chance_pct": 12,
+    "crit_yield_mult": 2.0,
+    "desc": "Noeud cliquable de Îles Célestes."
+  },
+  {
+    "id": "abysse_palimpseste__faille_encre",
+    "name": "Flaque d'encre",
+    "zone": "abysse_palimpseste",
+    "tier": "t10",
+    "resource": "encre_vivante",
+    "yield": {
+      "min": 2,
+      "max": 4
+    },
+    "node_hp": 3912,
+    "respawn_sec": 520,
+    "tool_requirement": "aucun",
+    "crit_yield_chance_pct": 13,
+    "crit_yield_mult": 2.0,
+    "desc": "Noeud cliquable de Abyssse Palimpseste."
+  }
+]

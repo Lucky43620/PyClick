@@ -1,0 +1,27 @@
+[
+  {
+    "id": "q1",
+    "name": "Brut",
+    "mult": 0.95
+  },
+  {
+    "id": "q2",
+    "name": "Correct",
+    "mult": 1.0
+  },
+  {
+    "id": "q3",
+    "name": "Soigné",
+    "mult": 1.07
+  },
+  {
+    "id": "q4",
+    "name": "Maître",
+    "mult": 1.15
+  },
+  {
+    "id": "q5",
+    "name": "Chef-d'œuvre",
+    "mult": 1.25
+  }
+]

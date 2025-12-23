@@ -1,0 +1,831 @@
+"""
+Vue principale du jeu avec UI fantasy sombre
+"""
+
+import arcade
+import arcade.gui
+from typing import Optional
+from src.ui.tooltip import ItemTooltip
+
+class GameView(arcade.View):
+    """Vue principale du jeu avec toutes les interfaces"""
+
+    def __init__(self, player, data_manager, item_generator,
+                 combat_system, gathering_system, crafting_system,
+                 skill_system, station_upgrade_system, save_system):
+        super().__init__()
+
+        self.player = player
+        self.data = data_manager
+        self.item_gen = item_generator
+        self.combat = combat_system
+        self.gathering = gathering_system
+        self.crafting = crafting_system
+        self.skills = skill_system
+        self.station_upgrades = station_upgrade_system
+        self.save = save_system
+
+        # UI Manager
+        self.ui_manager = arcade.gui.UIManager()
+        self.ui_manager.enable()
+
+        # Mode actuel
+        self.current_mode = "combat"  # combat, gathering, crafting, inventory, upgrades
+
+        # Initialiser les nodes de récolte pour la zone actuelle
+        self.gathering.spawn_nodes_for_zone(self.player.current_zone_id, 5)
+
+        # Démarrer un combat automatiquement
+        self.combat.start_combat(self.player.current_zone_id, spawn_boss=False)
+
+        # UI State
+        self.selected_item_index: Optional[int] = None
+        self.selected_recipe_index: Optional[int] = None
+        self.show_player_stats: bool = False
+        self.hovered_item: Optional[tuple] = None  # (item, x, y) pour tooltip
+        self.tooltip = ItemTooltip()
+        self.recipe_scroll_offset: int = 0  # Pour scroller les recettes
+
+        # Crafting en cours
+        self.crafting_in_progress: bool = False
+        self.craft_timer: float = 0.0
+        self.craft_duration: float = 0.0
+        self.current_recipe_id: Optional[str] = None
+
+        # Couleurs fantasy sombre
+        self.COLOR_BG = (15, 10, 15)
+        self.COLOR_PANEL = (30, 25, 30)
+        self.COLOR_PANEL_LIGHT = (45, 35, 45)
+        self.COLOR_BORDER = (80, 60, 50)
+        self.COLOR_TEXT = (220, 200, 180)
+        self.COLOR_TEXT_DIM = (150, 130, 110)
+        self.COLOR_HIGHLIGHT = (200, 150, 50)
+
+        self.COLOR_HP = (180, 40, 40)
+        self.COLOR_HP_BG = (80, 20, 20)
+        self.COLOR_XP = (50, 150, 200)
+        self.COLOR_XP_BG = (20, 60, 80)
+
+        # Rareté colors
+        self.RARITY_COLORS = {
+            "common": (180, 180, 180),
+            "uncommon": (100, 200, 100),
+            "rare": (100, 150, 255),
+            "epic": (200, 100, 255),
+            "legendary": (255, 180, 50)
+        }
+
+    def on_show_view(self):
+        """Appelé quand la vue devient active"""
+        arcade.set_background_color(self.COLOR_BG)
+
+    def on_hide_view(self):
+        """Appelé quand la vue devient inactive"""
+        self.ui_manager.disable()
+
+    def on_update(self, delta_time: float):
+        """Update de la logique du jeu"""
+        # Update gathering
+        self.gathering.update(delta_time)
+
+        # Update player buffs
+        self.player.update_buffs(delta_time)
+
+        # Update combat si actif
+        if self.combat.combat_active and self.current_mode == "combat":
+            result = self.combat.update(delta_time, self.player)
+
+            if result.get("player_dead"):
+                self._handle_player_death()
+
+            if result.get("enemy_dead"):
+                # Spawn un nouvel ennemi après 1 seconde
+                # Pour l'instant, spawn immédiatement
+                self.combat.start_combat(self.player.current_zone_id, spawn_boss=False)
+
+        # Auto-save
+        self.save.update_auto_save(delta_time, self.player)
+
+    def _handle_player_death(self):
+        """Gère la mort du joueur"""
+        # Respawn avec pénalité
+        self.player.base_stats.hp_current = self.player.base_stats.hp_max * 0.5
+        self.player.gold = int(self.player.gold * 0.9)  # Perd 10% de l'or
+        print("Vous êtes mort! -10% or")
+
+    def on_draw(self):
+        """Dessine l'interface"""
+        self.clear()
+
+        # Dessiner selon le mode
+        if self.current_mode == "combat":
+            self._draw_combat_view()
+        elif self.current_mode == "gathering":
+            self._draw_gathering_view()
+        elif self.current_mode == "crafting":
+            self._draw_crafting_view()
+        elif self.current_mode == "inventory":
+            self._draw_inventory_view()
+
+        # HUD permanent (en haut)
+        self._draw_hud()
+
+        # Boutons de navigation (en bas)
+        self._draw_nav_buttons()
+
+    def _draw_rect_filled(self, x, y, width, height, color):
+        """Helper pour dessiner un rectangle rempli (x, y, width, height)"""
+        arcade.draw_lrbt_rectangle_filled(x, x + width, y, y + height, color)
+
+    def _draw_rect_outline(self, x, y, width, height, color, border_width=2):
+        """Helper pour dessiner un contour de rectangle"""
+        arcade.draw_lrbt_rectangle_outline(x, x + width, y, y + height, color, border_width)
+
+    def _draw_hud(self):
+        """Dessine le HUD en haut de l'écran"""
+        width = self.window.width
+        hud_height = 100
+        hud_y = self.window.height - hud_height
+
+        # Panel du HUD
+        self._draw_rect_filled(0, hud_y, width, hud_height, self.COLOR_PANEL)
+        self._draw_rect_outline(0, hud_y, width, hud_height, self.COLOR_BORDER, 2)
+
+        # Stats du joueur
+        stats = self.player.get_total_stats()
+        y = self.window.height - 25
+
+        # Nom et niveau
+        arcade.draw_text(f"{self.player.name} - Niveau {self.player.level}",
+                        20, y, self.COLOR_HIGHLIGHT, 16, bold=True)
+
+        # Barre de HP
+        y -= 25
+        hp_percent = stats.hp_current / stats.hp_max
+        self._draw_bar(20, y, 250, 20, hp_percent, self.COLOR_HP, self.COLOR_HP_BG)
+        arcade.draw_text(f"HP: {int(stats.hp_current)}/{int(stats.hp_max)}",
+                        30, y + 3, self.COLOR_TEXT, 12, bold=True)
+
+        # Barre d'XP
+        y -= 25
+        xp_percent = self.player.xp / self.player.xp_to_next_level
+        self._draw_bar(20, y, 250, 20, xp_percent, self.COLOR_XP, self.COLOR_XP_BG)
+        arcade.draw_text(f"XP: {self.player.xp}/{self.player.xp_to_next_level}",
+                        30, y + 3, self.COLOR_TEXT, 12, bold=True)
+
+        # Or et zone
+        y = self.window.height - 25
+        x = 320
+        arcade.draw_text(f"Or: {self.player.gold}", x, y, self.COLOR_HIGHLIGHT, 14, bold=True)
+
+        zone = self.data.get_zone(self.player.current_zone_id)
+        if zone:
+            y -= 25
+            arcade.draw_text(f"Zone: {zone['name']}", x, y, self.COLOR_TEXT, 12)
+            y -= 20
+            arcade.draw_text(f"{zone['desc']}", x, y, self.COLOR_TEXT_DIM, 10, width=400)
+
+        # Stats de combat (droite)
+        x = width - 300
+        y = self.window.height - 25
+        arcade.draw_text(f"ATK: {int(stats.atk)}  DEF: {int(stats.def_stat)}", x, y, self.COLOR_TEXT, 12)
+        y -= 20
+        arcade.draw_text(f"Crit: {stats.crit_chance:.1f}%  Esq: {stats.esquive:.1f}%", x, y, self.COLOR_TEXT, 12)
+
+    def _draw_nav_buttons(self):
+        """Dessine les boutons de navigation"""
+        width = self.window.width
+        button_width = width // 4
+        button_height = 50
+
+        buttons = [
+            ("COMBAT", "combat"),
+            ("RÉCOLTE", "gathering"),
+            ("CRAFT", "crafting"),
+            ("INVENTAIRE", "inventory")
+        ]
+
+        for i, (label, mode) in enumerate(buttons):
+            x = i * button_width
+            color = self.COLOR_HIGHLIGHT if mode == self.current_mode else self.COLOR_PANEL_LIGHT
+
+            arcade.draw_lrbt_rectangle_filled(x, x + button_width, 0, button_height, color)
+            arcade.draw_lrbt_rectangle_outline(x, x + button_width, 0, button_height, self.COLOR_BORDER, 2)
+
+            text_x = x + button_width // 2
+            arcade.draw_text(label, text_x, button_height // 2 - 7, self.COLOR_TEXT, 14,
+                           bold=(mode == self.current_mode), anchor_x="center")
+
+    def _draw_combat_view(self):
+        """Vue de combat"""
+        width = self.window.width
+        height = self.window.height - 150  # HUD + nav buttons
+
+        # Zone de combat principale
+        combat_y = height - 200
+        combat_x = width // 2
+
+        if self.combat.current_enemy:
+            enemy = self.combat.current_enemy
+
+            # Nom de l'ennemi
+            name_color = self.COLOR_HIGHLIGHT if enemy.is_boss else self.COLOR_TEXT
+            arcade.draw_text(enemy.name, combat_x, combat_y + 80, name_color, 20,
+                           bold=enemy.is_boss, anchor_x="center")
+
+            # Barre de HP de l'ennemi
+            hp_percent = enemy.stats.hp_current / enemy.stats.hp_max
+            bar_width = 400
+            self._draw_bar(combat_x - bar_width // 2, combat_y + 50, bar_width, 30,
+                          hp_percent, self.COLOR_HP, self.COLOR_HP_BG)
+            arcade.draw_text(f"{int(enemy.stats.hp_current)}/{int(enemy.stats.hp_max)}",
+                           combat_x, combat_y + 58, self.COLOR_TEXT, 14,
+                           bold=True, anchor_x="center")
+
+            # Représentation visuelle de l'ennemi (placeholder)
+            enemy_size = 100 if enemy.is_boss else 60
+            arcade.draw_circle_filled(combat_x, combat_y - 50, enemy_size, (120, 40, 40))
+            arcade.draw_circle_outline(combat_x, combat_y - 50, enemy_size, self.COLOR_BORDER, 3)
+
+        # Log de combat
+        log_x = 50
+        log_y = combat_y - 200
+        arcade.draw_text("Combat Log:", log_x, log_y + 180, self.COLOR_HIGHLIGHT, 14, bold=True)
+
+        arcade.draw_lrbt_rectangle_filled(log_x, log_x + 500, log_y, log_y + 160,
+                                         self.COLOR_PANEL)
+        arcade.draw_lrbt_rectangle_outline(log_x, log_x + 500, log_y, log_y + 160,
+                                          self.COLOR_BORDER, 2)
+
+        combat_log = self.combat.get_combat_log()
+        for i, message in enumerate(reversed(combat_log)):
+            arcade.draw_text(message, log_x + 10, log_y + 140 - i * 15, self.COLOR_TEXT, 11)
+
+        # Boutons d'action de combat
+        button_y = combat_y - 180
+        button_width = 140
+        button_height = 45
+        button_spacing = 15
+
+        # Bouton PAUSE/RESUME
+        pause_button_x = width - 500
+        pause_color = self.COLOR_HIGHLIGHT if self.combat.combat_paused else self.COLOR_PANEL_LIGHT
+        pause_text = "REPRENDRE" if self.combat.combat_paused else "PAUSE"
+
+        arcade.draw_lrbt_rectangle_filled(pause_button_x, pause_button_x + button_width,
+                                         button_y, button_y + button_height, pause_color)
+        arcade.draw_lrbt_rectangle_outline(pause_button_x, pause_button_x + button_width,
+                                          button_y, button_y + button_height, self.COLOR_BORDER, 2)
+        arcade.draw_text(pause_text, pause_button_x + button_width // 2, button_y + 15,
+                        self.COLOR_TEXT, 11, bold=True, anchor_x="center")
+
+        # Bouton FUIR
+        flee_button_x = pause_button_x + button_width + button_spacing
+        arcade.draw_lrbt_rectangle_filled(flee_button_x, flee_button_x + button_width,
+                                         button_y, button_y + button_height, (140, 40, 40))
+        arcade.draw_lrbt_rectangle_outline(flee_button_x, flee_button_x + button_width,
+                                          button_y, button_y + button_height, self.COLOR_BORDER, 2)
+        arcade.draw_text("FUIR (-20% OR)", flee_button_x + button_width // 2, button_y + 15,
+                        self.COLOR_TEXT, 11, bold=True, anchor_x="center")
+
+        # Bouton SPAWN BOSS
+        boss_button_x = flee_button_x + button_width + button_spacing
+        arcade.draw_lrbt_rectangle_filled(boss_button_x, boss_button_x + button_width,
+                                         button_y, button_y + button_height, self.COLOR_PANEL_LIGHT)
+        arcade.draw_lrbt_rectangle_outline(boss_button_x, boss_button_x + button_width,
+                                          button_y, button_y + button_height, self.COLOR_BORDER, 2)
+        arcade.draw_text("SPAWN BOSS", boss_button_x + button_width // 2, button_y + 15,
+                        self.COLOR_HIGHLIGHT, 11, bold=True, anchor_x="center")
+
+        # Panneau de stats de combat (à droite)
+        stats_x = width - 350
+        stats_y = combat_y + 80
+        stats_width = 320
+        stats_height = 200
+
+        arcade.draw_lrbt_rectangle_filled(stats_x, stats_x + stats_width,
+                                         stats_y, stats_y + stats_height, self.COLOR_PANEL)
+        arcade.draw_lrbt_rectangle_outline(stats_x, stats_x + stats_width,
+                                          stats_y, stats_y + stats_height, self.COLOR_BORDER, 2)
+
+        arcade.draw_text("Stats de Combat", stats_x + 10, stats_y + stats_height - 25,
+                        self.COLOR_HIGHLIGHT, 13, bold=True)
+
+        # Stats du combat actuel
+        current_y = stats_y + stats_height - 50
+        if self.combat.combat_active and self.combat.current_enemy:
+            arcade.draw_text("Combat actuel:", stats_x + 10, current_y, self.COLOR_TEXT, 11, bold=True)
+            current_y -= 20
+
+            fight_time = int(self.combat.current_fight_time)
+            arcade.draw_text(f"Duree: {fight_time}s", stats_x + 15, current_y, self.COLOR_TEXT, 10)
+            current_y -= 18
+
+            dmg_dealt = int(self.combat.current_fight_damage_dealt)
+            arcade.draw_text(f"Degats infliges: {dmg_dealt}", stats_x + 15, current_y, (100, 200, 100), 10)
+            current_y -= 18
+
+            dmg_taken = int(self.combat.current_fight_damage_taken)
+            arcade.draw_text(f"Degats recus: {dmg_taken}", stats_x + 15, current_y, (200, 100, 100), 10)
+            current_y -= 25
+
+        # Stats globales
+        arcade.draw_text("Stats totales:", stats_x + 10, current_y, self.COLOR_TEXT, 11, bold=True)
+        current_y -= 20
+
+        arcade.draw_text(f"Kills: {self.player.combat_stats['kills']}",
+                        stats_x + 15, current_y, self.COLOR_TEXT, 10)
+        current_y -= 18
+
+        arcade.draw_text(f"Boss vaincus: {self.player.combat_stats['boss_kills']}",
+                        stats_x + 15, current_y, self.COLOR_HIGHLIGHT, 10)
+        current_y -= 18
+
+        arcade.draw_text(f"Morts: {self.player.combat_stats['deaths']}",
+                        stats_x + 15, current_y, (200, 100, 100), 10)
+        current_y -= 18
+
+        total_dmg = self.player.combat_stats['damage_dealt']
+        arcade.draw_text(f"Degats total: {total_dmg}",
+                        stats_x + 15, current_y, (150, 150, 150), 9)
+
+    def _draw_gathering_view(self):
+        """Vue de récolte"""
+        width = self.window.width
+        height = self.window.height - 150
+
+        # Titre
+        arcade.draw_text("Nodes de Récolte", width // 2, height - 30, self.COLOR_HIGHLIGHT, 18,
+                        bold=True, anchor_x="center")
+
+        # Grille de nodes
+        nodes = self.gathering.get_nodes_status()
+        cols = 3
+        node_width = 250
+        node_height = 120
+        spacing = 20
+
+        start_x = (width - (cols * node_width + (cols - 1) * spacing)) // 2
+        start_y = height - 100
+
+        for i, node_status in enumerate(nodes):
+            row = i // cols
+            col = i % cols
+
+            x = start_x + col * (node_width + spacing)
+            y = start_y - row * (node_height + spacing)
+
+            # Panel du node
+            color = self.COLOR_PANEL if not node_status["depleted"] else self.COLOR_PANEL_LIGHT
+            arcade.draw_lrbt_rectangle_filled(x, x + node_width, y, y + node_height, color)
+            arcade.draw_lrbt_rectangle_outline(x, x + node_width, y, y + node_height, self.COLOR_BORDER, 2)
+
+            if node_status["depleted"]:
+                # Node déplété
+                arcade.draw_text("ÉPUISÉ", x + node_width // 2, y + node_height // 2,
+                               self.COLOR_TEXT_DIM, 14, bold=True, anchor_x="center")
+                arcade.draw_text(f"Respawn: {node_status['respawn_time']:.1f}s",
+                               x + node_width // 2, y + node_height // 2 - 20,
+                               self.COLOR_TEXT_DIM, 11, anchor_x="center")
+            else:
+                # Nom du node
+                arcade.draw_text(node_status["name"], x + node_width // 2, y + node_height - 20,
+                               self.COLOR_TEXT, 12, bold=True, anchor_x="center")
+
+                # Ressource
+                res = self.data.get_resource(node_status["resource_id"])
+                res_name = res.get("name", node_status["resource_id"]) if res else node_status["resource_id"]
+                arcade.draw_text(f"→ {res_name}", x + node_width // 2, y + node_height - 40,
+                               self.COLOR_HIGHLIGHT, 10, anchor_x="center")
+
+                # Barre de HP
+                hp_pct = node_status["hp_percent"] / 100.0
+                self._draw_bar(x + 10, y + 30, node_width - 20, 20, hp_pct,
+                             (100, 150, 100), (40, 60, 40))
+
+                # Bouton cliquer
+                arcade.draw_text("[ Cliquer pour récolter ]", x + node_width // 2, y + 8,
+                               self.COLOR_TEXT_DIM, 10, anchor_x="center")
+
+    def _draw_crafting_view(self):
+        """Vue de crafting"""
+        width = self.window.width
+        height = self.window.height - 150
+
+        # Stations débloquées
+        arcade.draw_text("Stations de Craft", 20, height - 30, self.COLOR_HIGHLIGHT, 16, bold=True)
+
+        y = height - 60
+        for station_id in self.player.unlocked_stations:
+            station = self.data.get_station(station_id)
+            if station:
+                arcade.draw_text(f"• {station['name']}", 30, y, self.COLOR_TEXT, 12)
+                y -= 20
+
+        # Recettes disponibles
+        recipes = self.crafting.get_available_recipes(self.player)
+        total_recipes = len(recipes)
+
+        arcade.draw_text(f"Recettes ({total_recipes} disponibles)", width // 2, height - 30,
+                        self.COLOR_HIGHLIGHT, 16, bold=True, anchor_x="center")
+
+        # Instructions de navigation
+        if total_recipes > 8:
+            arcade.draw_text("[ UP/DOWN pour naviguer ]", width // 2, height - 50,
+                           self.COLOR_TEXT_DIM, 10, anchor_x="center")
+
+        recipe_y = height - 80
+        recipe_width = 600
+        recipe_height = 70  # Réduit pour afficher plus
+        recipe_x = (width - recipe_width) // 2
+        max_display = 8  # Afficher 8 recettes à la fois
+
+        # Assurer que l'offset reste dans les limites
+        max_offset = max(0, total_recipes - max_display)
+        self.recipe_scroll_offset = max(0, min(self.recipe_scroll_offset, max_offset))
+
+        # Afficher les recettes avec offset
+        displayed_recipes = recipes[self.recipe_scroll_offset:self.recipe_scroll_offset + max_display]
+        for i, recipe_info in enumerate(displayed_recipes):
+            recipe = recipe_info["recipe"]
+            can_craft = recipe_info["can_craft"]
+
+            y = recipe_y - i * (recipe_height + 10)
+
+            # Panel
+            color = self.COLOR_PANEL_LIGHT if can_craft else self.COLOR_PANEL
+            arcade.draw_lrbt_rectangle_filled(recipe_x, recipe_x + recipe_width, y, y + recipe_height, color)
+            arcade.draw_lrbt_rectangle_outline(recipe_x, recipe_x + recipe_width, y, y + recipe_height,
+                                              self.COLOR_BORDER, 2)
+
+            # Nom de la recette (depuis l'output)
+            outputs = recipe.get("outputs", [])
+            if outputs and "item_base" in outputs[0]:
+                item_base = self.data.get_item_base(outputs[0]["item_base"])
+                output_name = item_base.get("name", "???") if item_base else "???"
+            else:
+                output_name = recipe.get("id", "???")
+
+            arcade.draw_text(output_name, recipe_x + 10, y + recipe_height - 25,
+                           self.COLOR_HIGHLIGHT if can_craft else self.COLOR_TEXT_DIM, 14, bold=True)
+
+            # Coûts (format: inputs avec resource et qty)
+            cost_text = ""
+            for res in recipe.get("inputs", [])[:3]:  # Afficher 3 premières ressources
+                res_data = self.data.get_resource(res["resource"])
+                res_name = res_data.get("name", res["resource"]) if res_data else res["resource"]
+                cost_text += f"{res['qty']}x {res_name}, "
+
+            if recipe.get("gold_cost", 0) > 0:
+                cost_text += f"{recipe['gold_cost']} or"
+
+            arcade.draw_text(cost_text.rstrip(", "), recipe_x + 10, y + recipe_height - 50,
+                           self.COLOR_TEXT if can_craft else self.COLOR_TEXT_DIM, 10)
+
+            # Status
+            if can_craft:
+                arcade.draw_text("[ Cliquer pour crafter ]", recipe_x + recipe_width - 150, y + 20,
+                               self.COLOR_HIGHLIGHT, 11)
+            else:
+                arcade.draw_text(recipe_info["reason"], recipe_x + recipe_width - 200, y + 20,
+                               self.COLOR_TEXT_DIM, 10)
+
+    def _draw_inventory_view(self):
+        """Vue d'inventaire et équipement"""
+        width = self.window.width
+        height = self.window.height - 150
+
+        # Équipement (gauche)
+        equip_x = 50
+        equip_y = height - 50
+
+        arcade.draw_text("Équipement", equip_x, equip_y, self.COLOR_HIGHLIGHT, 16, bold=True)
+
+        slot_names = {
+            "weapon": "Arme",
+            "helmet": "Casque",
+            "chest": "Armure",
+            "legs": "Jambes",
+            "boots": "Bottes",
+            "gloves": "Gants",
+            "ring1": "Anneau 1",
+            "ring2": "Anneau 2",
+            "amulet": "Amulette"
+        }
+
+        y = equip_y - 30
+        for slot, label in slot_names.items():
+            item = self.player.equipment.get(slot)
+
+            if item:
+                rarity_color = self.RARITY_COLORS.get(item.rarity_id, self.COLOR_TEXT)
+                arcade.draw_text(f"{label}: {item.name}", equip_x, y, rarity_color, 11)
+            else:
+                arcade.draw_text(f"{label}: [Vide]", equip_x, y, self.COLOR_TEXT_DIM, 11)
+
+            y -= 25
+
+        # Potions et buffs (gauche, en dessous équipement)
+        potion_y = y - 30
+        arcade.draw_text("Potions", equip_x, potion_y, self.COLOR_HIGHLIGHT, 14, bold=True)
+        potion_y -= 25
+
+        if self.player.potions:
+            for potion_id, qty in list(self.player.potions.items())[:5]:  # Afficher 5 premières
+                item_base = self.data.get_item_base(potion_id)
+                potion_name = item_base.get("name", potion_id) if item_base else potion_id
+                arcade.draw_text(f"[{qty}x] {potion_name}", equip_x, potion_y, (100, 200, 255), 10)
+                potion_y -= 18
+        else:
+            arcade.draw_text("Aucune potion", equip_x, potion_y, self.COLOR_TEXT_DIM, 10)
+
+        # Buffs actifs
+        if self.player.buffs:
+            buff_y = potion_y - 20
+            arcade.draw_text("Buffs actifs:", equip_x, buff_y, self.COLOR_HIGHLIGHT, 12, bold=True)
+            buff_y -= 20
+
+            for buff in self.player.buffs[:3]:  # Afficher 3 premiers buffs
+                buff_type = buff.get("type")
+                buff_value = buff.get("value")
+                time_left = int(buff.get("remaining", 0))
+                arcade.draw_text(f"+{buff_value} {buff_type} ({time_left}s)",
+                               equip_x, buff_y, (255, 200, 100), 10)
+                buff_y -= 18
+
+        # Inventaire (centre-droit)
+        inv_x = 350
+        inv_y = height - 50
+
+        arcade.draw_text(f"Inventaire ({len(self.player.inventory)}/{self.player.inventory_size})",
+                        inv_x, inv_y, self.COLOR_HIGHLIGHT, 16, bold=True)
+
+        # Grille d'inventaire
+        cols = 5
+        item_size = 60
+        spacing = 10
+
+        for i, item in enumerate(self.player.inventory):
+            row = i // cols
+            col = i % cols
+
+            x = inv_x + col * (item_size + spacing)
+            y = inv_y - 40 - row * (item_size + spacing)
+
+            # Case d'item
+            rarity_color = self.RARITY_COLORS.get(item.rarity_id, self.COLOR_TEXT)
+            arcade.draw_lrbt_rectangle_filled(x, x + item_size, y, y + item_size, self.COLOR_PANEL)
+            arcade.draw_lrbt_rectangle_outline(x, x + item_size, y, y + item_size, rarity_color, 2)
+
+            # Icône simplifiée (première lettre du slot)
+            icon = item.slot[0].upper()
+            arcade.draw_text(icon, x + item_size // 2, y + item_size // 2 - 8,
+                           rarity_color, 20, bold=True, anchor_x="center")
+
+        # Ressources (bas)
+        res_y = 200
+        arcade.draw_text("Ressources:", 50, res_y, self.COLOR_HIGHLIGHT, 14, bold=True)
+
+        res_x = 50
+        res_y -= 25
+        col = 0
+        for res_id, quantity in list(self.player.resources.items())[:15]:  # Afficher 15 premières
+            res_data = self.data.get_resource(res_id)
+            res_name = res_data.get("name", res_id) if res_data else res_id
+
+            arcade.draw_text(f"{res_name}: {quantity}", res_x + col * 200, res_y - (col // 3) * 20,
+                           self.COLOR_TEXT, 10)
+            col += 1
+
+    def _draw_bar(self, x, y, width, height, percent, color, bg_color):
+        """Dessine une barre de progression"""
+        # Fond
+        arcade.draw_lrbt_rectangle_filled(x, x + width, y, y + height, bg_color)
+
+        # Remplissage
+        fill_width = width * max(0.0, min(1.0, percent))
+        if fill_width > 0:
+            arcade.draw_lrbt_rectangle_filled(x, x + fill_width, y, y + height, color)
+
+        # Bordure
+        arcade.draw_lrbt_rectangle_outline(x, x + width, y, y + height, self.COLOR_BORDER, 2)
+
+    def on_mouse_press(self, x, y, button, modifiers):
+        """Gère les clics de souris"""
+        width = self.window.width
+        height = self.window.height
+
+        # Navigation buttons
+        if y < 50:
+            button_width = width // 4
+            button_index = int(x // button_width)
+            modes = ["combat", "gathering", "crafting", "inventory"]
+            if 0 <= button_index < len(modes):
+                self.current_mode = modes[button_index]
+
+                # Respawn nodes si on va sur gathering
+                if self.current_mode == "gathering":
+                    if not self.gathering.active_nodes:
+                        self.gathering.spawn_nodes_for_zone(self.player.current_zone_id, 5)
+
+                # Redémarrer un combat si on revient sur combat et qu'il n'y en a pas
+                elif self.current_mode == "combat":
+                    if not self.combat.combat_active:
+                        self.combat.start_combat(self.player.current_zone_id, spawn_boss=False)
+
+                return
+
+        # Clics spécifiques selon le mode
+        if self.current_mode == "combat":
+            self._handle_combat_click(x, y)
+        elif self.current_mode == "gathering":
+            self._handle_gathering_click(x, y)
+        elif self.current_mode == "crafting":
+            self._handle_crafting_click(x, y)
+        elif self.current_mode == "inventory":
+            self._handle_inventory_click(x, y)
+
+    def _handle_combat_click(self, x, y):
+        """Gère les clics en mode combat"""
+        width = self.window.width
+        height = self.window.height - 150
+
+        combat_y = height - 200
+        button_y = combat_y - 180
+        button_width = 140
+        button_height = 45
+        button_spacing = 15
+
+        # Bouton PAUSE
+        pause_button_x = width - 500
+        if (pause_button_x <= x <= pause_button_x + button_width and
+            button_y <= y <= button_y + button_height):
+            if self.combat.combat_active:
+                self.combat.toggle_pause()
+            return
+
+        # Bouton FUIR
+        flee_button_x = pause_button_x + button_width + button_spacing
+        if (flee_button_x <= x <= flee_button_x + button_width and
+            button_y <= y <= button_y + button_height):
+            if self.combat.combat_active:
+                self.combat.flee_combat(self.player)
+            return
+
+        # Bouton SPAWN BOSS
+        boss_button_x = flee_button_x + button_width + button_spacing
+        if (boss_button_x <= x <= boss_button_x + button_width and
+            button_y <= y <= button_y + button_height):
+            # Spawn un boss
+            self.combat.combat_active = False
+            self.combat.start_combat(self.player.current_zone_id, spawn_boss=True)
+            return
+
+    def _handle_gathering_click(self, x, y):
+        """Gère les clics en mode récolte"""
+        width = self.window.width
+        height = self.window.height - 150
+
+        nodes = self.gathering.get_nodes_status()
+        cols = 3
+        node_width = 250
+        node_height = 120
+        spacing = 20
+
+        start_x = (width - (cols * node_width + (cols - 1) * spacing)) // 2
+        start_y = height - 100
+
+        for i, node_status in enumerate(nodes):
+            if node_status["depleted"]:
+                continue
+
+            row = i // cols
+            col = i % cols
+
+            nx = start_x + col * (node_width + spacing)
+            ny = start_y - row * (node_height + spacing)
+
+            if nx <= x <= nx + node_width and ny <= y <= ny + node_height:
+                # Clic sur ce node
+                reward = self.gathering.harvest_node(i, self.player)
+                if reward:
+                    print(f"Récolté: {reward['quantity']}x {reward['resource_id']} (+{reward['xp']} XP)")
+                break
+
+    def _handle_crafting_click(self, x, y):
+        """Gère les clics en mode crafting"""
+        width = self.window.width
+        height = self.window.height - 150
+
+        recipes = self.crafting.get_available_recipes(self.player)
+        recipe_y = height - 80
+        recipe_width = 600
+        recipe_height = 70
+        recipe_x = (width - recipe_width) // 2
+        max_display = 8
+
+        # Utiliser le même offset que pour l'affichage
+        displayed_recipes = recipes[self.recipe_scroll_offset:self.recipe_scroll_offset + max_display]
+        for i, recipe_info in enumerate(displayed_recipes):
+            if not recipe_info["can_craft"]:
+                continue
+
+            ry = recipe_y - i * (recipe_height + 10)
+
+            if recipe_x <= x <= recipe_x + recipe_width and ry <= y <= ry + recipe_height:
+                # Craft!
+                item = self.crafting.craft_item(recipe_info["recipe"]["id"], self.player)
+                if item:
+                    self.player.add_item_to_inventory(item)
+                    print(f"Crafté: {item.name}")
+                break
+
+    def _handle_inventory_click(self, x, y):
+        """Gère les clics en mode inventaire"""
+        height = self.window.height - 150
+        equip_x = 50
+
+        # Vérifier clics sur les potions (gauche, sous équipement)
+        # Calculer la position Y approximative des potions
+        potion_start_y = height - 50 - (9 * 25) - 30 - 25  # équipement + marge + titre potions
+        potion_height = 18
+
+        potion_list = list(self.player.potions.items())[:5]
+        for i, (potion_id, qty) in enumerate(potion_list):
+            py = potion_start_y - i * potion_height
+            if equip_x <= x <= equip_x + 250 and py - potion_height <= y <= py:
+                # Utiliser la potion
+                item_base = self.data.get_item_base(potion_id)
+                if item_base and self.player.use_potion(potion_id, item_base):
+                    print(f"Utilisé: {item_base.get('name', potion_id)}")
+                return
+
+        # Clics sur l'inventaire normal
+        inv_x = 350
+        inv_y = height - 50
+
+        cols = 5
+        item_size = 60
+        spacing = 10
+
+        for i, item in enumerate(self.player.inventory):
+            row = i // cols
+            col = i % cols
+
+            ix = inv_x + col * (item_size + spacing)
+            iy = inv_y - 40 - row * (item_size + spacing)
+
+            if ix <= x <= ix + item_size and iy <= y <= iy + item_size:
+                # Équiper l'item
+                old_item = self.player.equip_item(item)
+                self.player.inventory.remove(item)
+                if old_item:
+                    self.player.add_item_to_inventory(old_item)
+                print(f"Équipé: {item.name}")
+                break
+
+    def on_key_press(self, symbol, modifiers):
+        """Gère les touches du clavier"""
+        # Sauvegarder avec S
+        if symbol == arcade.key.S:
+            self.save.save_game(self.player)
+            print("Jeu sauvegardé manuellement")
+
+        # Passer à la zone suivante avec N
+        if symbol == arcade.key.N:
+            self._change_zone(1)
+
+        # Passer à la zone précédente avec P
+        if symbol == arcade.key.P:
+            self._change_zone(-1)
+
+        # Scroller les recettes avec UP/DOWN (si en mode crafting)
+        if self.current_mode == "crafting":
+            if symbol == arcade.key.UP:
+                self.recipe_scroll_offset = max(0, self.recipe_scroll_offset - 1)
+            elif symbol == arcade.key.DOWN:
+                recipes = self.crafting.get_available_recipes(self.player)
+                max_offset = max(0, len(recipes) - 8)
+                self.recipe_scroll_offset = min(max_offset, self.recipe_scroll_offset + 1)
+
+    def _change_zone(self, direction: int):
+        """Change de zone"""
+        zones = self.data.zones
+        current_index = next((i for i, z in enumerate(zones) if z["id"] == self.player.current_zone_id), 0)
+
+        new_index = (current_index + direction) % len(zones)
+        new_zone_id = zones[new_index]["id"]
+        new_zone = zones[new_index]
+
+        self.player.current_zone_id = new_zone_id
+
+        # Respawn les nodes de la nouvelle zone
+        self.gathering.spawn_nodes_for_zone(new_zone_id, 5)
+
+        # Arrêter le combat actuel et en démarrer un nouveau avec les ennemis de la nouvelle zone
+        if self.combat.combat_active:
+            self.combat.combat_active = False
+        self.combat.start_combat(new_zone_id, spawn_boss=False)
+
+        print(f"Voyage vers: {new_zone['name']} (Tier {new_zone['tier']})")
+        print(f"Ennemis: {', '.join(new_zone.get('enemies', []))}")

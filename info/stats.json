@@ -1,0 +1,212 @@
+[
+  {
+    "id": "hp_max",
+    "name": "PV max",
+    "desc": "Points de vie maximum."
+  },
+  {
+    "id": "hp_regen",
+    "name": "Régénération PV/s",
+    "desc": "PV régénérés par seconde."
+  },
+  {
+    "id": "atk",
+    "name": "Attaque",
+    "desc": "Dégâts de base infligés."
+  },
+  {
+    "id": "def",
+    "name": "Défense",
+    "desc": "Réduit les dégâts reçus."
+  },
+  {
+    "id": "armure",
+    "name": "Armure",
+    "desc": "Réduction additionnelle des dégâts physiques."
+  },
+  {
+    "id": "resistance_elementaire",
+    "name": "Résistance élémentaire",
+    "desc": "Réduction des dégâts élémentaires (par type via tags)."
+  },
+  {
+    "id": "vitesse_attaque",
+    "name": "Vitesse d'attaque",
+    "desc": "Attaques par seconde (ou multiplicateur)."
+  },
+  {
+    "id": "crit_chance",
+    "name": "Chance de critique",
+    "desc": "Probabilité de critique (%)."
+  },
+  {
+    "id": "crit_degats",
+    "name": "Dégâts critiques",
+    "desc": "Multiplicateur de dégâts en critique (%)."
+  },
+  {
+    "id": "precision",
+    "name": "Précision",
+    "desc": "Réduit les esquives adverses / augmente la fiabilité des coups."
+  },
+  {
+    "id": "esquive",
+    "name": "Esquive",
+    "desc": "Chance d'éviter une attaque (%)."
+  },
+  {
+    "id": "blocage",
+    "name": "Blocage",
+    "desc": "Chance de bloquer (%), réduit fortement les dégâts."
+  },
+  {
+    "id": "vol_vie",
+    "name": "Vol de vie",
+    "desc": "Pourcentage des dégâts converti en soin (%)."
+  },
+  {
+    "id": "epines",
+    "name": "Épines",
+    "desc": "Renvoie des dégâts à l'attaquant."
+  },
+  {
+    "id": "bouclier",
+    "name": "Bouclier",
+    "desc": "Points de bouclier absorbant les dégâts."
+  },
+  {
+    "id": "cooldown_reduc",
+    "name": "Réduction de CD",
+    "desc": "Réduit les temps de recharge des compétences (%)."
+  },
+  {
+    "id": "ressources_gagnees_pct",
+    "name": "Ressources gagnées",
+    "desc": "Bonus % sur toutes les ressources ramassées."
+  },
+  {
+    "id": "chance_double_drop_pct",
+    "name": "Chance double drop",
+    "desc": "Chance % d'obtenir un doublon sur récolte/loot."
+  },
+  {
+    "id": "gather_power_wood",
+    "name": "Puissance récolte (bois)",
+    "desc": "Augmente l'efficacité sur les noeuds bois."
+  },
+  {
+    "id": "gather_power_ore",
+    "name": "Puissance récolte (minerai)",
+    "desc": "Augmente l'efficacité sur les noeuds minerai/pierre."
+  },
+  {
+    "id": "gather_power_herb",
+    "name": "Puissance récolte (plantes)",
+    "desc": "Augmente l'efficacité sur les noeuds plantes."
+  },
+  {
+    "id": "vitesse_recolte_pct",
+    "name": "Vitesse de récolte",
+    "desc": "Réduit le temps/les clics nécessaires pour récolter (%)."
+  },
+  {
+    "id": "vitesse_craft_pct",
+    "name": "Vitesse de craft",
+    "desc": "Réduit le temps de craft (%)."
+  },
+  {
+    "id": "cout_reroll_pct",
+    "name": "Réduction coût reroll",
+    "desc": "Réduit le coût de reforger/reroll (%)."
+  },
+  {
+    "id": "rendement_demantelement_pct",
+    "name": "Rendement démantèlement",
+    "desc": "Augmente les matériaux récupérés au démantèlement (%)."
+  },
+  {
+    "id": "gain_or_pct",
+    "name": "Gain d'or",
+    "desc": "Bonus % sur l'or gagné."
+  },
+  {
+    "id": "gain_xp_pct",
+    "name": "Gain d'XP",
+    "desc": "Bonus % sur l'expérience gagnée."
+  },
+  {
+    "id": "proc_saignement_chance",
+    "name": "Proc: saignement",
+    "desc": "Chance d'infliger saignement (%)."
+  },
+  {
+    "id": "proc_poison_chance",
+    "name": "Proc: poison",
+    "desc": "Chance d'infliger poison (%)."
+  },
+  {
+    "id": "proc_etourdissement_chance",
+    "name": "Proc: étourdissement",
+    "desc": "Chance d'étourdir (%)."
+  },
+  {
+    "id": "proc_double_coup_chance",
+    "name": "Proc: double coup",
+    "desc": "Chance de frapper deux fois (%)."
+  },
+  {
+    "id": "flag_execute",
+    "name": "Exécution",
+    "desc": "+X% dégâts sur cibles <30% PV."
+  },
+  {
+    "id": "flag_boss_slayer",
+    "name": "Tueur de Boss",
+    "desc": "+X% dégâts contre boss."
+  },
+  {
+    "id": "flag_resource_spirit",
+    "name": "Esprit des Ressources",
+    "desc": "Chance d'invoquer un esprit donnant un loot bonus."
+  },
+  {
+    "id": "flag_reroll_free_chance",
+    "name": "Reforge gratuit",
+    "desc": "Chance que le reroll ne coûte rien."
+  },
+  {
+    "id": "degats_physique",
+    "name": "Dégâts physique",
+    "desc": "Ajoute/augmente les dégâts de type physique."
+  },
+  {
+    "id": "degats_feu",
+    "name": "Dégâts feu",
+    "desc": "Ajoute/augmente les dégâts de type feu."
+  },
+  {
+    "id": "degats_glace",
+    "name": "Dégâts glace",
+    "desc": "Ajoute/augmente les dégâts de type glace."
+  },
+  {
+    "id": "degats_foudre",
+    "name": "Dégâts foudre",
+    "desc": "Ajoute/augmente les dégâts de type foudre."
+  },
+  {
+    "id": "degats_poison",
+    "name": "Dégâts poison",
+    "desc": "Ajoute/augmente les dégâts de type poison."
+  },
+  {
+    "id": "degats_ombre",
+    "name": "Dégâts ombre",
+    "desc": "Ajoute/augmente les dégâts de type ombre."
+  },
+  {
+    "id": "degats_lumiere",
+    "name": "Dégâts lumiere",
+    "desc": "Ajoute/augmente les dégâts de type lumiere."
+  }
+]

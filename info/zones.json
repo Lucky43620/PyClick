@@ -1,0 +1,260 @@
+[
+  {
+    "id": "prairie_des_jeunes_pousses",
+    "name": "Prairie des Jeunes Pousses",
+    "tier": "t1",
+    "desc": "Une plaine douce où les premiers aventuriers apprennent à tailler, récolter et survivre.",
+    "environment_effects": [
+      {
+        "type": "bonus",
+        "stat": "ressources_gagnees_pct",
+        "value": 3,
+        "desc": "Abondance (+3% ressources)."
+      }
+    ],
+    "resources": [
+      "bois_tendre",
+      "pierre_brute",
+      "fibres_sauvages",
+      "eau_claire"
+    ],
+    "enemies": [
+      "limace_verte",
+      "rat_des_foins",
+      "corneille_volee"
+    ],
+    "boss": "sanglier_cuirasse"
+  },
+  {
+    "id": "bois_des_murmures",
+    "name": "Bois des Murmures",
+    "tier": "t2",
+    "desc": "Une forêt aux arbres noueux. Les branches craquent comme des chuchotements.",
+    "environment_effects": [
+      {
+        "type": "malus",
+        "stat": "precision",
+        "value": -2,
+        "desc": "Brouillard (Précision -2)."
+      }
+    ],
+    "resources": [
+      "bois_chene",
+      "seve",
+      "champignon_lune",
+      "cuir_brut"
+    ],
+    "enemies": [
+      "loup_jeune",
+      "esprit_de_branche",
+      "araignee_grise"
+    ],
+    "boss": "ent_fissure"
+  },
+  {
+    "id": "carriere_aux_echos",
+    "name": "Carrière aux Échos",
+    "tier": "t3",
+    "desc": "La pierre y chante sous le pic. On dit que les murs se souviennent.",
+    "environment_effects": [
+      {
+        "type": "bonus",
+        "stat": "chance_double_drop_pct",
+        "value": 2,
+        "desc": "Veines riches (+2% double drop)."
+      }
+    ],
+    "resources": [
+      "pierre_taillable",
+      "minerai_cuivre",
+      "minerai_fer",
+      "sel_amer"
+    ],
+    "enemies": [
+      "taupe_mineuse",
+      "golem_de_gravats",
+      "chauve_souris"
+    ],
+    "boss": "golem_du_puits"
+  },
+  {
+    "id": "marais_des_lueurs",
+    "name": "Marais des Lueurs",
+    "tier": "t4",
+    "desc": "Des feux follets guident… ou égarent. Les eaux soignent et empoisonnent.",
+    "environment_effects": [
+      {
+        "type": "malus",
+        "stat": "hp_regen",
+        "value": -1,
+        "desc": "Miasmes (Regen -1)."
+      }
+    ],
+    "resources": [
+      "herbe_medicinale",
+      "venin_distille",
+      "bois_spongieux",
+      "essence_ombre"
+    ],
+    "enemies": [
+      "moustique_gigante",
+      "sangsue_sombre",
+      "secte_boueuse"
+    ],
+    "boss": "reine_sangsue"
+  },
+  {
+    "id": "desert_des_verres",
+    "name": "Désert des Verres",
+    "tier": "t5",
+    "desc": "Sable vitrifié, tempêtes de silice. Les reliques affleurent sous les dunes.",
+    "environment_effects": [
+      {
+        "type": "malus",
+        "stat": "hp_max",
+        "value": -15,
+        "desc": "Chaleur (PV max -15)."
+      }
+    ],
+    "resources": [
+      "sable_vitre",
+      "minerai_argent",
+      "cactus_sucre",
+      "essence_feu"
+    ],
+    "enemies": [
+      "scorpion_rouge",
+      "bandit_des_dunes",
+      "serpent_de_verre"
+    ],
+    "boss": "titan_de_sable"
+  },
+  {
+    "id": "toundra_des_ancetres",
+    "name": "Toundra des Ancêtres",
+    "tier": "t6",
+    "desc": "Le vent mord. Les esprits anciens réclament des offrandes.",
+    "environment_effects": [
+      {
+        "type": "malus",
+        "stat": "vitesse_attaque",
+        "value": -3,
+        "desc": "Froid (Vitesse d'attaque -3%)."
+      }
+    ],
+    "resources": [
+      "fourrure_epaisse",
+      "minerai_or",
+      "glace_pure",
+      "essence_glace"
+    ],
+    "enemies": [
+      "ours_blanc",
+      "chaman_froid",
+      "loups_du_givre"
+    ],
+    "boss": "matriarche_du_givre"
+  },
+  {
+    "id": "volcan_de_kar",
+    "name": "Volcan de Kar",
+    "tier": "t7",
+    "desc": "Roches rouges, métal incandescent. Les forges naturelles rugissent.",
+    "environment_effects": [
+      {
+        "type": "bonus",
+        "stat": "degats_feu",
+        "value": 5,
+        "desc": "Résonance ignée (+5 dégâts feu)."
+      }
+    ],
+    "resources": [
+      "obsidienne",
+      "minerai_mithril",
+      "soufre",
+      "essence_feu"
+    ],
+    "enemies": [
+      "salamandre",
+      "forgeron_fou",
+      "elementaire_braise"
+    ],
+    "boss": "coeur_de_magma"
+  },
+  {
+    "id": "ruines_de_l_ordre",
+    "name": "Ruines de l'Ordre",
+    "tier": "t8",
+    "desc": "Une cité effondrée. Des runes réagissent aux pas des vivants.",
+    "environment_effects": [
+      {
+        "type": "bonus",
+        "stat": "cooldown_reduc",
+        "value": 2,
+        "desc": "Rythme runique (CD -2%)."
+      }
+    ],
+    "resources": [
+      "pierre_runique",
+      "fragment_relique",
+      "poussiere_arcane",
+      "essence_lumiere"
+    ],
+    "enemies": [
+      "sentinelle_brisee",
+      "mage_oubli",
+      "spectre"
+    ],
+    "boss": "gardien_du_sceau"
+  },
+  {
+    "id": "iles_celestes",
+    "name": "Îles Célestes",
+    "tier": "t9",
+    "desc": "Plateformes flottantes et vents capricieux. Les cristaux chantent.",
+    "environment_effects": [
+      {
+        "type": "bonus",
+        "stat": "esquive",
+        "value": 2,
+        "desc": "Vent porteur (Esquive +2%)."
+      }
+    ],
+    "resources": [
+      "cristal_azur",
+      "plume_d_orage",
+      "essence_foudre",
+      "eau_celeste"
+    ],
+    "enemies": [
+      "harpie",
+      "golem_cristal",
+      "tempete_vivante"
+    ],
+    "boss": "arbitre_des_nues"
+  },
+  {
+    "id": "abysse_palimpseste",
+    "name": "Abyssse Palimpseste",
+    "tier": "t10",
+    "desc": "Un lieu écrit et réécrit. Les règles y changent à chaque descente.",
+    "environment_effects": [
+      {
+        "type": "special",
+        "desc": "Chaque run applique un modificateur aléatoire (ex: +20% dégâts, -10% PV, loot +15%)."
+      }
+    ],
+    "resources": [
+      "encre_vivante",
+      "fragment_abyssal",
+      "essence_ombre",
+      "clef_paradoxe"
+    ],
+    "enemies": [
+      "ombre_lame",
+      "scribe_vide",
+      "bete_paradoxe"
+    ],
+    "boss": "archiviste_du_neant"
+  }
+]

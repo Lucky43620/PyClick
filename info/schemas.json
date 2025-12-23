@@ -1,0 +1,75 @@
+{
+  "resource": {
+    "id": "str",
+    "name": "str",
+    "category": "str",
+    "tier": "t1..t10",
+    "rarity": "commun..legendaire",
+    "base_value_gold": "int",
+    "tags": "list[str]",
+    "desc": "str"
+  },
+  "node": {
+    "id": "str",
+    "name": "str",
+    "zone": "zone_id",
+    "tier": "t1..t10",
+    "resource": "resource_id",
+    "yield": "{min,max}",
+    "node_hp": "int",
+    "respawn_sec": "int",
+    "tool_requirement": "aucun|hache|pioche|serpe"
+  },
+  "item_base": {
+    "id": "str",
+    "name": "str",
+    "slot": "slot_id",
+    "tier": "t1..t10",
+    "material": "str",
+    "base_stats": "dict(stat->{min,max})",
+    "allowed_rarities": "list",
+    "affix_tags": "list[str]"
+  },
+  "affix": {
+    "id": "str",
+    "name": "str",
+    "mods": "list[{stat,min,max,mode}]",
+    "tier_min": "t1..t10",
+    "tier_max": "t1..t10",
+    "weight": "int",
+    "tags": "list[str]"
+  },
+  "recipe": {
+    "id": "str",
+    "station": "station_id",
+    "time_sec": "int",
+    "gold_cost": "int",
+    "inputs": "list[{resource,qty}]",
+    "outputs": "list[{item_base,qty}]",
+    "unlocks_at_level": "int"
+  },
+  "enemy": {
+    "id": "str",
+    "name": "str",
+    "tier": "t1..t10",
+    "is_boss": "bool",
+    "stats": "{hp,atk,def}",
+    "loot": "object"
+  },
+  "zone": {
+    "id": "str",
+    "name": "str",
+    "tier": "t1..t10",
+    "desc": "str",
+    "resources": "list[resource_id]",
+    "enemies": "list[enemy_id]",
+    "boss": "enemy_id"
+  },
+  "collectible": {
+    "id": "str",
+    "type": "page_lore|relique_permanente|familier",
+    "name": "str",
+    "bonus": "list",
+    "where": "object"
+  }
+}

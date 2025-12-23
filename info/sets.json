@@ -1,0 +1,115 @@
+[
+  {
+    "id": "set_ecorcegarde",
+    "name": "Écorcegarde",
+    "pieces": [
+      "casque",
+      "plastron",
+      "gants",
+      "bottes"
+    ],
+    "tier_min": "t1",
+    "tier_max": "t3",
+    "bonuses": {
+      "2": [
+        {
+          "stat": "def",
+          "value": 5,
+          "mode": "flat"
+        }
+      ],
+      "4": [
+        {
+          "stat": "ressources_gagnees_pct",
+          "value": 5,
+          "mode": "pct"
+        }
+      ]
+    },
+    "desc": "Rustique, protège et aide à la récolte."
+  },
+  {
+    "id": "set_serment_du_mineur",
+    "name": "Serment du Mineur",
+    "pieces": [
+      "casque",
+      "plastron",
+      "bouclier"
+    ],
+    "tier_min": "t3",
+    "tier_max": "t6",
+    "bonuses": {
+      "2": [
+        {
+          "stat": "gather_power_ore",
+          "value": 12,
+          "mode": "flat"
+        }
+      ],
+      "3": [
+        {
+          "stat": "chance_double_drop_pct",
+          "value": 4,
+          "mode": "pct"
+        }
+      ]
+    },
+    "desc": "Forgé pour la pierre et le métal."
+  },
+  {
+    "id": "set_givre_ancien",
+    "name": "Givre Ancien",
+    "pieces": [
+      "arme",
+      "casque",
+      "plastron"
+    ],
+    "tier_min": "t6",
+    "tier_max": "t8",
+    "bonuses": {
+      "2": [
+        {
+          "stat": "degats_glace",
+          "value": 8,
+          "mode": "flat"
+        }
+      ],
+      "3": [
+        {
+          "stat": "blocage",
+          "value": 5,
+          "mode": "pct"
+        }
+      ]
+    },
+    "desc": "Le froid se fige sur la lame."
+  },
+  {
+    "id": "set_ordre_runique",
+    "name": "Ordre Runique",
+    "pieces": [
+      "anneau",
+      "amulette",
+      "relique"
+    ],
+    "tier_min": "t8",
+    "tier_max": "t10",
+    "bonuses": {
+      "2": [
+        {
+          "stat": "cooldown_reduc",
+          "value": 6,
+          "mode": "pct"
+        }
+      ],
+      "3": [
+        {
+          "stat": "flag_execute",
+          "value": 10,
+          "mode": "pct"
+        }
+      ]
+    },
+    "desc": "Les runes accélèrent la pensée et la fin des combats."
+  }
+]
