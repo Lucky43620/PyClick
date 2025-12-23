@@ -126,6 +126,8 @@ class GameView(arcade.View):
             self._draw_crafting_view()
         elif self.current_mode == "inventory":
             self._draw_inventory_view()
+        elif self.current_mode == "upgrades":
+            self._draw_upgrades_view()
 
         # HUD permanent (en haut)
         self._draw_hud()
@@ -195,14 +197,15 @@ class GameView(arcade.View):
     def _draw_nav_buttons(self):
         """Dessine les boutons de navigation"""
         width = self.window.width
-        button_width = width // 4
+        button_width = width // 5  # 5 boutons maintenant
         button_height = 50
 
         buttons = [
             ("COMBAT", "combat"),
             ("RÉCOLTE", "gathering"),
             ("CRAFT", "crafting"),
-            ("INVENTAIRE", "inventory")
+            ("INVENTAIRE", "inventory"),
+            ("UPGRADES", "upgrades")
         ]
 
         for i, (label, mode) in enumerate(buttons):
@@ -617,9 +620,9 @@ class GameView(arcade.View):
 
         # Navigation buttons
         if y < 50:
-            button_width = width // 4
+            button_width = width // 5  # 5 boutons maintenant
             button_index = int(x // button_width)
-            modes = ["combat", "gathering", "crafting", "inventory"]
+            modes = ["combat", "gathering", "crafting", "inventory", "upgrades"]
             if 0 <= button_index < len(modes):
                 self.current_mode = modes[button_index]
 
@@ -644,6 +647,8 @@ class GameView(arcade.View):
             self._handle_crafting_click(x, y)
         elif self.current_mode == "inventory":
             self._handle_inventory_click(x, y)
+        elif self.current_mode == "upgrades":
+            self._handle_upgrades_click(x, y)
 
     def _handle_combat_click(self, x, y):
         """Gère les clics en mode combat"""
@@ -829,3 +834,170 @@ class GameView(arcade.View):
 
         print(f"Voyage vers: {new_zone['name']} (Tier {new_zone['tier']})")
         print(f"Ennemis: {', '.join(new_zone.get('enemies', []))}")
+
+    def _draw_upgrades_view(self):
+        """Vue des skills et upgrades de stations"""
+        width = self.window.width
+        height = self.window.height - 150
+
+        # Titre
+        arcade.draw_text("SKILLS & UPGRADES", width // 2, height - 20,
+                        self.COLOR_HIGHLIGHT, 20, bold=True, anchor_x="center")
+
+        # Colonne gauche: Skills
+        skill_x = 50
+        skill_y = height - 60
+
+        arcade.draw_text("COMPETENCES", skill_x, skill_y, self.COLOR_HIGHLIGHT, 16, bold=True)
+        skill_y -= 30
+
+        # Skills deja debloques
+        unlocked_skills = self.skills.get_unlocked_skills()
+        if unlocked_skills:
+            arcade.draw_text("Actives:", skill_x, skill_y, (100, 200, 100), 12, bold=True)
+            skill_y -= 20
+            for skill in unlocked_skills[:3]:
+                arcade.draw_text(f"[OK] {skill['name']}", skill_x + 10, skill_y, (100, 200, 100), 10)
+                skill_y -= 16
+            skill_y -= 10
+
+        # Skills disponibles
+        available_skills = self.skills.get_available_skills(self.player)
+        arcade.draw_text("Disponibles:", skill_x, skill_y, self.COLOR_TEXT, 12, bold=True)
+        skill_y -= 25
+
+        for i, skill_info in enumerate(available_skills[:5]):
+            skill = skill_info["skill"]
+            can_unlock = skill_info["can_unlock"]
+
+            panel_width = 350
+            panel_height = 80
+            panel_y = skill_y - panel_height
+
+            color = self.COLOR_PANEL_LIGHT if can_unlock else self.COLOR_PANEL
+            arcade.draw_lrbt_rectangle_filled(skill_x, skill_x + panel_width,
+                                             panel_y, skill_y, color)
+            arcade.draw_lrbt_rectangle_outline(skill_x, skill_x + panel_width,
+                                              panel_y, skill_y, self.COLOR_BORDER, 2)
+
+            # Nom + type
+            type_colors = {"combat": (255, 100, 100), "crafting": (100, 200, 255), 
+                           "gathering": (100, 255, 100), "general": (255, 200, 100)}
+            type_color = type_colors.get(skill.get("type"), self.COLOR_TEXT)
+
+            arcade.draw_text(skill["name"], skill_x + 5, skill_y - 20, type_color, 12, bold=True)
+            arcade.draw_text(f"[{skill['type']}]", skill_x + 5, skill_y - 35, type_color, 9)
+
+            # Description
+            arcade.draw_text(skill["desc"], skill_x + 5, skill_y - 52, self.COLOR_TEXT_DIM, 9)
+
+            # Status
+            if can_unlock:
+                arcade.draw_text("[CLIQUER POUR DEBLOQUER]", skill_x + panel_width - 140,
+                               skill_y - 70, self.COLOR_HIGHLIGHT, 9)
+            else:
+                arcade.draw_text(skill_info["reason"], skill_x + panel_width - 140,
+                               skill_y - 70, self.COLOR_TEXT_DIM, 8)
+
+            skill_y -= panel_height + 10
+
+        # Colonne droite: Station Upgrades
+        station_x = width - 550
+        station_y = height - 60
+
+        arcade.draw_text("AMELIORATIONS DE STATIONS", station_x, station_y,
+                        self.COLOR_HIGHLIGHT, 16, bold=True)
+        station_y -= 30
+
+        available_upgrades = self.station_upgrades.get_available_upgrades(self.player)
+
+        for i, upgrade_info in enumerate(available_upgrades[:6]):
+            station_id = upgrade_info["station_id"]
+            station_data = self.data.get_station(station_id)
+            station_name = station_data.get("name", station_id) if station_data else station_id
+
+            current_level = upgrade_info["current_level"]
+            upgrade = upgrade_info["upgrade"]
+            can_upgrade = upgrade_info["can_upgrade"]
+
+            panel_width = 500
+            panel_height = 90
+            panel_y = station_y - panel_height
+
+            color = self.COLOR_PANEL_LIGHT if can_upgrade else self.COLOR_PANEL
+            arcade.draw_lrbt_rectangle_filled(station_x, station_x + panel_width,
+                                             panel_y, station_y, color)
+            arcade.draw_lrbt_rectangle_outline(station_x, station_x + panel_width,
+                                              panel_y, station_y, self.COLOR_BORDER, 2)
+
+            # Nom station + level
+            arcade.draw_text(f"{station_name} LVL {current_level} -> {upgrade['level']}",
+                           station_x + 5, station_y - 20, self.COLOR_HIGHLIGHT, 12, bold=True)
+
+            # Nom upgrade
+            arcade.draw_text(upgrade["name"], station_x + 5, station_y - 38,
+                           self.COLOR_TEXT, 10)
+
+            # Bonus
+            bonus_text = "Bonus: " + ", ".join([f"+{v} {k}" for k, v in upgrade.get("bonus", {}).items()])
+            arcade.draw_text(bonus_text, station_x + 5, station_y - 55,
+                           (100, 200, 255), 9)
+
+            # Status
+            if can_upgrade:
+                arcade.draw_text("[CLIQUER POUR AMELIORER]", station_x + panel_width - 160,
+                               station_y - 75, self.COLOR_HIGHLIGHT, 9)
+            else:
+                arcade.draw_text(upgrade_info["reason"], station_x + panel_width - 160,
+                               station_y - 75, self.COLOR_TEXT_DIM, 8)
+
+            station_y -= panel_height + 10
+
+    def _handle_upgrades_click(self, x, y):
+        """Gère les clics en mode upgrades"""
+        width = self.window.width
+        height = self.window.height - 150
+
+        # Skills (gauche)
+        skill_x = 50
+        skill_y = height - 90
+        unlocked_count = len(self.skills.get_unlocked_skills())
+        if unlocked_count > 0:
+            skill_y -= 20 + unlocked_count * 16 + 10
+        skill_y -= 25
+
+        available_skills = self.skills.get_available_skills(self.player)
+        panel_width = 350
+        panel_height = 80
+
+        for i, skill_info in enumerate(available_skills[:5]):
+            panel_y = skill_y - panel_height
+
+            if (skill_x <= x <= skill_x + panel_width and
+                panel_y <= y <= skill_y):
+                if skill_info["can_unlock"]:
+                    if self.skills.unlock_skill(skill_info["skill"]["id"], self.player):
+                        print(f"Skill debloque: {skill_info['skill']['name']}")
+                return
+
+            skill_y -= panel_height + 10
+
+        # Station Upgrades (droite)
+        station_x = width - 550
+        station_y = height - 90
+
+        available_upgrades = self.station_upgrades.get_available_upgrades(self.player)
+        panel_width = 500
+        panel_height = 90
+
+        for i, upgrade_info in enumerate(available_upgrades[:6]):
+            panel_y = station_y - panel_height
+
+            if (station_x <= x <= station_x + panel_width and
+                panel_y <= y <= station_y):
+                if upgrade_info["can_upgrade"]:
+                    if self.station_upgrades.upgrade_station(upgrade_info["station_id"], self.player):
+                        print(f"Station amelioree: {upgrade_info['station_id']} -> LVL {upgrade_info['current_level'] + 1}")
+                return
+
+            station_y -= panel_height + 10
